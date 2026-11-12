@@ -1,0 +1,87 @@
+name: "Fehler melden"
+description: "Etwas funktioniert nicht so, wie es soll"
+title: "[Fehler] "
+labels: ["bug", "aus-der-praxis"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke, dass du dir die Zeit nimmst.
+
+        **Ein Fehler pro Meldung.** Zwei Dinge in einer Meldung heißt fast immer: eines wird vergessen. Lieber zweimal melden.
+
+        Du musst **nichts** einschätzen: keine Dringlichkeit, keinen Lösungsvorschlag, keine Fachbegriffe. Beschreib es so, wie du es einer Kollegin oder einem Kollegen erzählen würdest.
+
+        **Bitte keine persönlichen Daten** (Namen, Telefonnummern, Geburtsdaten, Gesundheitsangaben, Passwörter) in Text oder Bild. Diese Meldung können viele Menschen lesen.
+  - type: textarea
+    id: vorhaben
+    attributes:
+      label: "Was wolltest du tun?"
+      description: "Der Weg dorthin hilft oft mehr als das Ergebnis, weil der Fehler häufig unterwegs liegt."
+      placeholder: "Ich wollte nach der Übung die Teilnehmer eintragen."
+    validations:
+      required: true
+  - type: textarea
+    id: passiert
+    attributes:
+      label: "Was ist stattdessen passiert?"
+      description: "Wenn möglich wörtlich: die Meldung, die auf dem Bildschirm stand."
+      placeholder: "Es kam die Meldung 'Speichern fehlgeschlagen', und die Liste war wieder leer."
+    validations:
+      required: true
+  - type: dropdown
+    id: bereich
+    attributes:
+      label: "Wo in der Software?"
+      description: "Wenn du unsicher bist: 'Weiß ich nicht' ist völlig in Ordnung."
+      # Diese Liste an die Bereiche des eigenen Projekts anpassen.
+      options:
+        - "Startseite / Übersicht"
+        - "Personen / Mitglieder / Gäste"
+        - "Termine / Buchungen / Dienste"
+        - "Ausstattung / Geräte / Zimmer"
+        - "Berichte und Auswertungen"
+        - "Anmeldung und Rechte"
+        - "Einstellungen"
+        - "Weiß ich nicht"
+    validations:
+      required: true
+  - type: dropdown
+    id: umgebung
+    attributes:
+      label: "Wo ist es passiert?"
+      options:
+        - "In der echten Software (Alltag)"
+        - "Auf der Test-Umgebung"
+        - "Weiß ich nicht"
+    validations:
+      required: true
+  - type: dropdown
+    id: haeufigkeit
+    attributes:
+      label: "Wie oft tritt es auf?"
+      options:
+        - "Jedes Mal"
+        - "Manchmal"
+        - "Bisher einmal"
+    validations:
+      required: true
+  - type: dropdown
+    id: geraet
+    attributes:
+      label: "Womit hast du gearbeitet? (optional)"
+      options:
+        - "Handy"
+        - "Tablet"
+        - "PC oder Laptop"
+        - "Weiß ich nicht"
+  - type: textarea
+    id: bild
+    attributes:
+      label: "Bildschirmfoto (optional, aber sehr hilfreich)"
+      description: "Einfach ins Feld ziehen oder einfügen. Vorher Namen und andere persönliche Angaben schwärzen oder nur den Ausschnitt mit dem Problem zeigen."
+  - type: input
+    id: wann
+    attributes:
+      label: "Wann war das ungefähr? (optional)"
+      placeholder: "heute Vormittag, ca. 10:30"
