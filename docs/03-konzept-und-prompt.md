@@ -6,7 +6,7 @@ Nach dem Gespräch (Modul 02) hast du eine Zusammenfassung mit Ideen und offenen
 2. ein **Issue**, also einen Eintrag in der Aufgabenliste des Projekts
 3. einen **Prompt**, also den Arbeitsauftrag für den Coding-Agenten
 
-Die Vorlagen dafür liegen im Ordner [vorlagen](../vorlagen/): [konzept.md](../vorlagen/konzept.md), [issue.md](../vorlagen/issue.md) und [prompt-coding-agent.md](../vorlagen/prompt-coding-agent.md).
+Die Vorlagen dafür liegen im Ordner [vorlagen](vorlagen/README.md): [konzept.md](vorlagen/konzept.md), [issue.md](vorlagen/issue.md) und [prompt-coding-agent.md](vorlagen/prompt-coding-agent.md).
 
 ## Warum erst ein Konzept und nicht gleich programmieren?
 

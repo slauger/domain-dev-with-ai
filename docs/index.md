@@ -2,6 +2,10 @@
 
 Im Kern geht es um die Zusammenarbeit von Domänenexperten und IT-Experten: Fachleute aus der Praxis tragen die Entwicklung mit, statt nur Tickets zu eröffnen, und bauen mit KI-Coding-Agenten selbst. IT-Experten für Architektur und Sicherheit hinterfragen, beraten und geben per Review frei. Die Schulung führt Schritt für Schritt durch diese Zusammenarbeit. Jedes Modul ist für sich lesbar; zusammen ergeben sie den kompletten Weg von der Idee bis zur gewarteten Software.
 
+## Wer verantwortet was
+
+Wer wofür zuständig ist, zeigt das [Modell der geteilten Verantwortung](geteilte-verantwortung.md): Domänenexperten für das, was in der Software passiert, IT-Experten für die Software selbst, manches gemeinsam.
+
 ## Das Beispiel
 
 Durch alle Module zieht sich ein erfundenes Beispiel: die [Feuerwehr Musterstadt](beispiel-feuerwehr-musterstadt.md) und ihre Software "Wachbuch".
@@ -32,6 +36,7 @@ Durch alle Module zieht sich ein erfundenes Beispiel: die [Feuerwehr Musterstadt
 | 13 | [Werkzeuge und Kosten](13-werkzeuge-und-kosten.md) | Welche Konten und Werkzeuge man braucht, was sie kosten, warum Tokens Geld kosten |
 | 14 | [KI und Datenschutz](14-ki-und-datenschutz.md) | Welche Daten in welchen KI-Dienst dürfen, Auftragsverarbeitung, Testdaten |
 | 15 | [Projekt-Lebenszyklus](15-projekt-lebenszyklus.md) | Vom Prototyp über die gemeinsame Basis bis zur Übernahme durch die Fachleute |
+| 16 | [Vom Prototyp zum Betrieb](16-vom-prototyp-zum-betrieb.md) | Warum ein Prototyp in einer Stunde steht, der Betrieb aber Backup, Monitoring, automatische Updates, CVEs und SBOMs braucht |
 | | [Übungen](uebungen.md) | Übungen zu den Modulen und eine Checkliste für den ersten eigenen Pull Request |
 | | [Schulungsablauf](schulungsablauf.md) | Wie die Schulung durchgeführt wird: Formate, Dauer, Reihenfolge |
 | | [Glossar](glossar.md) | Begriffe von Abhängigkeit bis Pull Request, einfach erklärt |

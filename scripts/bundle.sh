@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# Writes all training content into one file (tutor/wissen.md) for upload to an AI assistant.
+# Writes all training content into one file (docs/tutor/wissen.md) for upload to an AI assistant.
 # The order and the file list come from llms.txt, so both stay in sync; a missing file fails.
 # With --check it only verifies that tutor/wissen.md is up to date (for CI).
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
-target=tutor/wissen.md
+target=docs/tutor/wissen.md
 out=$(mktemp)
 trap 'rm -f "$out"' EXIT
 

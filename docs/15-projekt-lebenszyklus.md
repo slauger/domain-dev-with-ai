@@ -35,7 +35,7 @@ Regeln für diese Phase:
 - **Keine Freigabe an andere.** Der Prototyp läuft nicht im Gerätehaus und wird nicht an die Kameraden verteilt.
 - **Notizen machen.** Was hat überrascht? Welche Fragen sind aufgetaucht? Genau das ist das Ergebnis dieser Phase, nicht der Code.
 
-Ergebnis: ein Prototyp zum Vorzeigen, eine Liste mit Erkenntnissen und offenen Fragen, idealerweise ein erstes Konzept ([Modul 03](03-konzept-und-prompt.md)).
+Ergebnis: ein Prototyp zum Vorzeigen, eine Liste mit Erkenntnissen und offenen Fragen, idealerweise ein erstes Konzept ([Modul 03](03-konzept-und-prompt.md)). Warum ein Prototyp kein produktiver Betrieb ist, erklärt [Modul 16](16-vom-prototyp-zum-betrieb.md).
 
 ## Phase 2: Gemeinsames Requirements Engineering
 
@@ -61,7 +61,7 @@ Jetzt baut Peter das Fundament. Das ist die Phase, in der Erfahrung am meisten z
 - **Umgebungen:** mindestens eine Test-Umgebung mit erfundenen Daten ([Modul 11](11-umgebungen-und-zusammenarbeit.md)).
 - **Projektrahmen:** Dokumentationsstruktur, `AGENTS.md`, Renovate für Updates, Review-Regeln, Branch-Schutz ([Ein Projekt vorbereiten](neues-projekt.md)).
 
-Ein Projektgerüst zum Kopieren liegt im Ordner [starter/](../starter/README.md).
+Ein Projektgerüst zum Kopieren liegt im Ordner [starter/](https://github.com/slauger/domain-dev-with-ai/blob/main/starter/README.md).
 
 ### Warum der Prototyp meist nicht die Basis wird
 
@@ -105,6 +105,7 @@ Software ist nie fertig. Auch wenn keine neuen Funktionen kommen, müssen Update
 - **Wer ist langfristig verantwortlich?** Mit Namen aufschreiben: Wer betreibt die Software, wer wartet sie, wer bezahlt Server und Werkzeuge? Meist ist das der Verein, vertreten durch den Kommandanten, mit Peter oder einem Nachfolger als Maintainer.
 - **Bus-Faktor:** Wie viele Menschen müssten ausfallen, damit niemand mehr die Software versteht? Ist die Antwort "einer", ist das Projekt gefährdet. Ziel: mindestens zwei Personen, die Releases und Notfälle beherrschen.
 - **Übergabe planen:** Gute Dokumentation, ADRs, Tests und eine aktuelle `AGENTS.md` machen es möglich, dass ein neuer Maintainer übernimmt. Ohne das meist nicht.
+- **Betrieb einrichten:** Hosting, Backups, Monitoring, automatische Updates und SBOM beschreibt [Modul 16](16-vom-prototyp-zum-betrieb.md).
 - **Ausstieg vorbereiten:** Was passiert, wenn niemand mehr wartet? Daten exportieren können, auf ein fertiges Produkt wechseln ([Ein Projekt vorbereiten](neues-projekt.md#was-kostet-das-wirklich)).
 
 ## Wer entscheidet, baut und reviewt?

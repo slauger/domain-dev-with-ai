@@ -1,6 +1,6 @@
 # GitHub-Vorlagen: Issue-Formulare
 
-Dieser Ordner enthält Issue-Formulare für GitHub. Ein Issue-Formular ist ein Formular mit Feldern, das erscheint, wenn jemand im Projekt auf "New issue" klickt. So können auch Menschen ohne Technikwissen Fehler melden, Wünsche beschreiben und offene Fragen beantworten (siehe [Mitwirken ohne Code](../../docs/mitwirken-ohne-code.md)).
+Dieser Ordner enthält Issue-Formulare für GitHub. Ein Issue-Formular ist ein Formular mit Feldern, das erscheint, wenn jemand im Projekt auf "New issue" klickt. So können auch Menschen ohne Technikwissen Fehler melden, Wünsche beschreiben und offene Fragen beantworten (siehe [Mitwirken ohne Code](../../mitwirken-ohne-code.md)).
 
 | Datei | Formular | Labels |
 | --- | --- | --- |
@@ -31,6 +31,6 @@ gh label create entscheidung-vorschlag --description "Antwort auf eine offene Fr
 - Felder mit `required: true` müssen ausgefüllt werden. Bewusst sind nur wenige Felder Pflicht, damit niemand an einem Formular scheitert.
 - Die Formulare weisen ausdrücklich darauf hin, keine persönlichen Daten zu melden. Diesen Hinweis nicht entfernen.
 - Für Sicherheitslücken gibt es bewusst **kein** Formular. Sie gehören nicht in ein öffentliches Issue, sondern auf den Weg aus `SECURITY.md`.
-- Ein Nachschlagewerk-Agent (siehe [Nachschlagewerk einrichten](../../docs/nachschlagewerk-einrichten.md)) liest diese Formulare und stellt dieselben Fragen. Wer die Formulare ändert, ändert damit auch, was der Agent fragt.
+- Ein Nachschlagewerk-Agent (siehe [Nachschlagewerk einrichten](../../nachschlagewerk-einrichten.md)) liest diese Formulare und stellt dieselben Fragen. Wer die Formulare ändert, ändert damit auch, was der Agent fragt.
 
-Quelle zur Syntax der Formulare: [GitHub Docs, Syntax for issue forms](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-discussions/syntax-for-issue-forms), Stand: 2026-11-12.
+Quelle zur Syntax der Formulare: [GitHub Docs, Syntax for issue forms](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms), Stand: 2026-11-12.

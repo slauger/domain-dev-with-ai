@@ -172,7 +172,7 @@ Wichtige Entscheidungen zum Datenmodell und zur Architektur werden in einem **AD
 
 Warum das wichtig ist: In zwei Jahren fragt jemand "Warum werden Einsätze nicht gelöscht?". Ohne ADR weiß das niemand mehr, und jemand baut es "zur Vereinfachung" um. Mit ADR steht die Antwort da. Auch der Coding-Agent liest die ADRs und hält sich daran.
 
-Die Vorlage dafür liegt unter [vorlagen/](../vorlagen/).
+Die Vorlage dafür liegt unter [vorlagen/](vorlagen/README.md).
 
 ### Wer macht was?
 

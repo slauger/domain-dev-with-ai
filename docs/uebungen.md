@@ -29,11 +29,11 @@ Lösungshinweis: Ein gutes Gespräch endet mit mehr offenen Fragen, als du am An
 
 ## Modul 03: Konzept und Prompt
 
-**Übung 3.1: Konzept schreiben.** Schreibe mit der [Konzept-Vorlage](../vorlagen/konzept.md) ein Konzept zu deiner Idee. Höchstens eine Seite. Besonders wichtig: die Abschnitte Daten, Rechte und Grenzen.
+**Übung 3.1: Konzept schreiben.** Schreibe mit der [Konzept-Vorlage](vorlagen/konzept.md) ein Konzept zu deiner Idee. Höchstens eine Seite. Besonders wichtig: die Abschnitte Daten, Rechte und Grenzen.
 
-**Übung 3.2: Issue ableiten.** Mach aus dem Konzept ein Issue mit der [Issue-Vorlage](../vorlagen/issue.md). Formuliere mindestens drei Abnahmekriterien, die man mit Ja oder Nein prüfen kann.
+**Übung 3.2: Issue ableiten.** Mach aus dem Konzept ein Issue mit der [Issue-Vorlage](vorlagen/issue.md). Formuliere mindestens drei Abnahmekriterien, die man mit Ja oder Nein prüfen kann.
 
-**Übung 3.3: Prompt schreiben.** Schreibe mit der [Prompt-Vorlage](../vorlagen/prompt-coding-agent.md) einen Auftrag für den Coding-Agenten. Prüfe: Steht drin, dass er erst planen und auf dein OK warten soll? Steht drin, dass er keine Prüfung abschalten darf?
+**Übung 3.3: Prompt schreiben.** Schreibe mit der [Prompt-Vorlage](vorlagen/prompt-coding-agent.md) einen Auftrag für den Coding-Agenten. Prüfe: Steht drin, dass er erst planen und auf dein OK warten soll? Steht drin, dass er keine Prüfung abschalten darf?
 
 Lösungshinweis: Tausche Konzept und Prompt mit einer anderen Person aus. Kann sie ohne Rückfrage verstehen, was gebaut werden soll?
 

@@ -1,0 +1,113 @@
+# Website der Schulung (MkDocs Material). Bauen mit `make docs`, ansehen mit `make docs-serve`.
+# Der Build ist streng: kaputte Links und Seiten ohne Eintrag in nav brechen ab.
+site_name: Software gemeinsam entwickeln
+site_description: Zusammenarbeit von Domänenexperten und IT-Experten mit KI-Agenten
+repo_url: https://github.com/slauger/domain-dev-with-ai
+edit_uri: edit/main/docs/
+docs_dir: docs
+strict: true
+
+validation:
+  omitted_files: warn
+  absolute_links: ignore
+  unrecognized_links: warn
+  anchors: warn
+
+theme:
+  name: material
+  language: de
+  palette:
+    - scheme: default
+      primary: red
+      accent: red
+      toggle:
+        icon: material/brightness-7
+        name: Dunkler Modus
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/brightness-4
+        name: Heller Modus
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search:
+      lang: de
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+
+# Alle Inhalte in einer Datei, zum Hochladen in einen Assistenten; liegt im Repository, nicht auf der Website.
+exclude_docs: |
+  tutor/wissen.md
+
+nav:
+  - Start: index.md
+  - Lernbegleiter:
+      - tutor/README.md
+      - Prompt zum Kopieren: tutor/prompt.md
+  - Geteilte Verantwortung: geteilte-verantwortung.md
+  - Das Beispiel: beispiel-feuerwehr-musterstadt.md
+  - Grundlagen:
+      - grundlagen/index.md
+      - Versionskontrolle mit Git: grundlagen/versionskontrolle.md
+      - Sprachen und Plattformen: grundlagen/sprachen-und-plattformen.md
+      - Web und Daten: grundlagen/web-und-daten.md
+      - Werkzeuge: grundlagen/werkzeuge.md
+  - Module:
+      - 00 Warum diese Schulung: 00-warum.md
+      - 01 Rollen und Arbeitsablauf: 01-rollen-und-ablauf.md
+      - 02 Ideen im Gespräch: 02-ideen-per-sprache.md
+      - 03 Konzept und Prompt: 03-konzept-und-prompt.md
+      - 04 Marktrecherche: 04-marktrecherche.md
+      - 05 Datenmodell: 05-datenmodell.md
+      - 06 Coding-Agent: 06-coding-agent.md
+      - 07 Pull Request und Review: 07-pull-request-und-review.md
+      - 08 Sicherheit: 08-sicherheit.md
+      - 09 Wartung und Releases: 09-wartung-und-releases.md
+      - 10 Standards: 10-standards.md
+      - 11 Umgebungen und Zusammenarbeit: 11-umgebungen-und-zusammenarbeit.md
+      - 12 Testen: 12-testen.md
+      - 13 Werkzeuge und Kosten: 13-werkzeuge-und-kosten.md
+      - 14 KI und Datenschutz: 14-ki-und-datenschutz.md
+      - 15 Projekt-Lebenszyklus: 15-projekt-lebenszyklus.md
+      - 16 Vom Prototyp zum Betrieb: 16-vom-prototyp-zum-betrieb.md
+  - Praxis:
+      - Mitwirken ohne Code: mitwirken-ohne-code.md
+      - Nachschlagewerk einrichten: nachschlagewerk-einrichten.md
+      - Fachliche Prüfung: fachliche-pruefung.md
+      - Ein Projekt vorbereiten: neues-projekt.md
+  - Üben und Nachschlagen:
+      - Übungen: uebungen.md
+      - Schulungsablauf: schulungsablauf.md
+      - Glossar: glossar.md
+  - Vorlagen:
+      - vorlagen/README.md
+      - Konzept: vorlagen/konzept.md
+      - Issue: vorlagen/issue.md
+      - Prompt für den Coding-Agenten: vorlagen/prompt-coding-agent.md
+      - Pull Request: vorlagen/pull-request.md
+      - Architekturentscheidung: vorlagen/adr.md
+      - Review-Checkliste: vorlagen/review-checkliste.md
+      - Neues Projekt aufsetzen: vorlagen/prompt-projekt-aufsetzen.md
+      - Issue-Formulare: vorlagen/github/README.md

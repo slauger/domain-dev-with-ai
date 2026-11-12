@@ -74,7 +74,7 @@ Für private Repositories muss der Inhaber dem Agenten einmalig Zugriff geben (z
 
 ## Den Agenten richtig beauftragen
 
-Ein guter Auftrag entsteht aus dem Konzept und dem Issue aus [Modul 03](03-konzept-und-prompt.md). Die Vorlage dazu liegt unter [vorlagen/prompt-coding-agent.md](../vorlagen/prompt-coding-agent.md).
+Ein guter Auftrag entsteht aus dem Konzept und dem Issue aus [Modul 03](03-konzept-und-prompt.md). Die Vorlage dazu liegt unter [vorlagen/prompt-coding-agent.md](vorlagen/prompt-coding-agent.md).
 
 1. **Issue verlinken.** Der Agent soll das Issue lesen. Dort stehen Ziel, Abgrenzung und Abnahmekriterien.
 2. **Auf AGENTS.md verweisen.** "Halte dich an AGENTS.md" erinnert den Agenten daran, die Projektregeln zu beachten.

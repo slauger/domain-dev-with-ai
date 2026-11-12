@@ -18,7 +18,7 @@ Ein Bild dazu: `main` ist das offizielle Wachbuch im Gerätehaus. Ein Branch ist
 
 ## Die Pull-Request-Beschreibung
 
-Eine gute Beschreibung spart allen Zeit. Die Vorlage liegt unter [vorlagen/pull-request.md](../vorlagen/pull-request.md). Mindestens gehören hinein:
+Eine gute Beschreibung spart allen Zeit. Die Vorlage liegt unter [vorlagen/pull-request.md](vorlagen/pull-request.md). Mindestens gehören hinein:
 
 - **Welches Issue** wird gelöst (Link, z. B. "Closes #43")?
 - **Was ändert sich** für Nutzer, in einfachen Worten?
@@ -80,10 +80,10 @@ Peter, der Architekt, liest jeden Pull Request vollständig. Er fragt nicht nur 
 - **Passt das Datenmodell?** Werden Daten an der richtigen Stelle gespeichert, ohne Dopplungen, ohne Felder, die später niemand versteht (siehe [Modul 05](05-datenmodell.md))?
 - **Stimmen die Rechte?** Wird auf dem Server geprüft, wer das sehen oder ändern darf?
 - **Geht es einfacher?** Weniger Code ist weniger Wartung und weniger Fehler.
-- **Braucht es eine Architekturentscheidung (ADR)?** Bei neuen Abhängigkeiten, neuen externen Diensten, Änderungen am Datenmodell oder an der Sicherheit wird die Entscheidung schriftlich festgehalten (Vorlage: [vorlagen/adr.md](../vorlagen/adr.md)).
+- **Braucht es eine Architekturentscheidung (ADR)?** Bei neuen Abhängigkeiten, neuen externen Diensten, Änderungen am Datenmodell oder an der Sicherheit wird die Entscheidung schriftlich festgehalten (Vorlage: [vorlagen/adr.md](vorlagen/adr.md)).
 - **Passt es zum Rest?** Begriffe, Aufbau, Stil.
 
-Die Checkliste dazu steht in [vorlagen/review-checkliste.md](../vorlagen/review-checkliste.md).
+Die Checkliste dazu steht in [vorlagen/review-checkliste.md](vorlagen/review-checkliste.md).
 
 ### Stufe 4: Security-Review
 

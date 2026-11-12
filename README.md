@@ -1,6 +1,14 @@
 # domain-dev-with-ai
 
-> **Du möchtest selbst Software mitentwickeln, für deinen Verein, deine Feuerwehr oder deinen Betrieb, bist aber kein IT-Experte?** Dieses Repository hilft dir dabei. Lade [tutor/wissen.md](tutor/wissen.md) herunter, öffne ChatGPT, Claude oder einen anderen KI-Assistenten (gern im Sprachmodus), lade die Datei hoch und kopiere den [Lernbegleiter-Prompt](tutor/prompt.md) hinein. Der Assistent fragt dich Schritt für Schritt, wo du stehst, schlägt dir einen Lernpfad vor und erklärt dir alles, was du für deinen ersten Beitrag brauchst: von Git über Pull Requests bis zu Datenschutz und Tests. Abends 20 Minuten im Gespräch statt vor dem Fernseher reichen für den Anfang.
+## Du möchtest selbst Software mitentwickeln?
+
+Für deinen Verein, deine Feuerwehr oder deinen Betrieb, aber du bist kein IT-Experte? Kopiere diesen Text in ChatGPT, Claude oder einen anderen KI-Assistenten, gern im Sprachmodus. Der Assistent holt sich alles Weitere selbst, fragt dich Schritt für Schritt, wo du stehst, und begleitet dich bis zu deinem ersten eigenen Beitrag.
+
+```text
+Ich möchte lernen, wie ich als Fachmann oder Fachfrau ohne IT-Ausbildung zusammen mit IT-Experten und KI-Agenten Software mitentwickle. Sei mein Lernbegleiter. Lies zuerst deine Anweisungen unter https://raw.githubusercontent.com/slauger/domain-dev-with-ai/main/docs/tutor/prompt.md und befolge sie. Die Schulungsinhalte findest du über https://raw.githubusercontent.com/slauger/domain-dev-with-ai/main/llms.txt. Fang dann mit deiner ersten Frage an mich an.
+```
+
+Abends 20 Minuten im Gespräch statt vor dem Fernseher reichen für den Anfang.
 
 Schulung und Arbeitsweise für die **Zusammenarbeit von Domänenexperten und IT-Experten**. Fachleute aus der Praxis entwickeln Software mit KI-Coding-Agenten selbst mit, statt nur Tickets zu eröffnen. IT-Experten (Softwarearchitektur und Sicherheit) hinterfragen, beraten und geben per Review frei.
 
@@ -22,9 +30,10 @@ Domänenexperten tragen die Entwicklung mit und bauen mit Agenten, IT-Experten f
 
 | Bereich | Inhalt |
 | --- | --- |
-| [tutor/](tutor/README.md) | Lernbegleiter-Prompt für ChatGPT, Claude und Co. und alle Inhalte in einer Datei zum Hochladen |
+| [docs/tutor/](docs/tutor/README.md) | Lernbegleiter-Prompt für ChatGPT, Claude und Co. und alle Inhalte in einer Datei zum Hochladen |
 | [docs/](docs/index.md) | Die Schulung als Text: Rollen, Arbeitsablauf, Module, Übungen |
-| [vorlagen/](vorlagen/) | Vorlagen zum Kopieren: Konzept, Prompt für Coding-Agenten, Issue, Pull Request, Architekturentscheidung |
+| [docs/vorlagen/](docs/vorlagen/README.md) | Vorlagen zum Kopieren: Konzept, Prompt für Coding-Agenten, Issue, Pull Request, Architekturentscheidung |
+| [starter/](starter/README.md) | Starter-Bausatz für neue Projekte: Doku-Struktur mit MkDocs, ADRs, Workboard, Regeln für Agenten, Issue-Formulare, CI- und Renovate-Vorlagen |
 | [slides/](slides/) | Foliensatz zur Schulung (Slidev) |
 
 ## Verwandte Standards

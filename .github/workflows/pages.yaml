@@ -1,0 +1,54 @@
+name: Pages
+
+# Checks the content and publishes the website (MkDocs) to GitHub Pages on every push to main.
+# llms.txt and docs/tutor/wissen.md are copied into the site, so assistants find them there too.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check content
+        run: |
+          ./scripts/bundle.sh --check
+          ./scripts/lint.sh
+
+      - name: Build website
+        run: |
+          docker run --rm -v "$PWD:/docs" -u "$(id -u):$(id -g)" \
+            squidfunk/mkdocs-material:9.6.22 build --strict --site-dir /docs/site
+          cp llms.txt site/llms.txt
+          cp docs/tutor/wissen.md site/wissen.md
+
+      - uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          path: site
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

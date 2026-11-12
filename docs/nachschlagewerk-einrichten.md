@@ -19,9 +19,9 @@ Die Dokumentation sagt, was **beschlossen** wurde. Der Code sagt, was **tatsäch
 
 ## Der einfache Weg: Tutor-Prompt und Datei hochladen
 
-1. Vom Maintainer eine Datei mit der Projektdokumentation besorgen (oder selbst erzeugen, wie in [tutor/README.md](../tutor/README.md) beschrieben).
+1. Vom Maintainer eine Datei mit der Projektdokumentation besorgen (oder selbst erzeugen, wie in [tutor/README.md](tutor/README.md) beschrieben).
 2. Im Assistenten ein Projekt anlegen, die Datei als Wissen hinzufügen.
-3. Den [Tutor-Prompt](../tutor/prompt.md) als Projektanweisung eintragen und die Projekt-URL darin ergänzen.
+3. Den [Tutor-Prompt](tutor/prompt.md) als Projektanweisung eintragen und die Projekt-URL darin ergänzen.
 
 Das reicht für viele Fragen. Den Code kennt der Assistent so aber nicht.
 

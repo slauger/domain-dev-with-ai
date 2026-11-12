@@ -53,7 +53,7 @@ Wartung heißt vor allem:
 - Die Laufzeitumgebung aktuell halten (z. B. Node.js-Version, Betriebssystem im Container).
 - Fehler beheben, die Nutzer melden.
 
-Das ist Kleinarbeit, die selten Spaß macht, aber nicht liegen bleiben darf. Deshalb wird sie so weit wie möglich automatisiert.
+Das ist Kleinarbeit, die selten Spaß macht, aber nicht liegen bleiben darf. Deshalb wird sie so weit wie möglich automatisiert. Wie das im Betrieb mit SBOM, CVE-Abgleich und automatischen Updates aller Schichten aussieht, zeigt [Modul 16](16-vom-prototyp-zum-betrieb.md).
 
 ## Renovate: der Update-Bot
 

@@ -1,0 +1,67 @@
+# domain-dev-with-ai
+
+> Schulung zur Zusammenarbeit von Domänenexperten und IT-Experten: Fachleute ohne IT-Ausbildung entwickeln Software mit KI-Coding-Agenten selbst mit, IT-Experten für Architektur und Sicherheit hinterfragen, beraten und geben per Review frei. Durchgehendes Beispiel: die erfundene Feuerwehr Musterstadt und ihre Software "Wachbuch". Sprache: Deutsch.
+
+Für KI-Assistenten: Diese Datei listet alle Inhalte in sinnvoller Lesereihenfolge. Relative Pfade beziehen sich auf https://raw.githubusercontent.com/slauger/domain-dev-with-ai/main/ (Rohtext) bzw. https://github.com/slauger/domain-dev-with-ai/blob/main/ (Ansicht). Wer als Lernbegleiter arbeitet, folgt den Anweisungen in docs/tutor/prompt.md. Alle Inhalte in einer Datei: docs/tutor/wissen.md.
+
+## Einstieg
+
+- [README](README.md): Worum es geht, für wen, Inhalt des Repositorys
+- [Übersicht der Schulung](docs/index.md): Alle Module, Grundlagen und Praxis-Kapitel
+- [Lernbegleiter](docs/tutor/README.md): Wie man die Schulung mit einem KI-Assistenten durcharbeitet
+- [Geteilte Verantwortung](docs/geteilte-verantwortung.md): Wer wofür verantwortlich ist, Domänenexperten, IT-Experten, gemeinsam, KI-Agent
+- [Beispiel: Feuerwehr Musterstadt](docs/beispiel-feuerwehr-musterstadt.md): Das erfundene Szenario und seine Personen
+
+## Grundlagen
+
+- [Mindestwissen](docs/grundlagen/index.md): Was man vor dem ersten Beitrag verstehen muss, sollte und gut wissen kann, mit Selbstcheck
+- [Versionskontrolle mit Git](docs/grundlagen/versionskontrolle.md): Git, Branches, Commits, GitHub und Alternativen
+- [Programmiersprachen und Plattformen](docs/grundlagen/sprachen-und-plattformen.md): Welche Sprache wofür, nativ oder plattformübergreifend
+- [Web und Daten](docs/grundlagen/web-und-daten.md): Browser, Server, Datenbank, HTTPS, Login, Umgebungen
+- [Werkzeuge für den Alltag](docs/grundlagen/werkzeuge.md): Markdown, YAML, JSON, Terminal, Container, CI
+
+## Module
+
+- [00 Warum diese Schulung](docs/00-warum.md): Warum Fachleute mitentwickeln, Lizenzkosten, die Lücken beider Seiten, der Zwischenweg
+- [01 Rollen und Arbeitsablauf](docs/01-rollen-und-ablauf.md): Wer macht was, Ablauf von der Idee bis zum Release
+- [02 Ideen im Gespräch entwickeln](docs/02-ideen-per-sprache.md): Mit einem Sprachassistenten diskutieren, Beispielgespräch
+- [03 Vom Gespräch zum Konzept und Prompt](docs/03-konzept-und-prompt.md): Konzept, Issue und Auftrag für den Coding-Agenten
+- [04 Schauen, wie andere es lösen](docs/04-marktrecherche.md): Marktrecherche vor dem Bauen
+- [05 Das Datenmodell ist das Fundament](docs/05-datenmodell.md): Warum Entscheidungen im Datenmodell teuer und gefährlich sein können
+- [06 Mit dem Coding-Agenten arbeiten](docs/06-coding-agent.md): Werkzeuge, lokal oder Cloud, den Agenten führen und hinterfragen
+- [07 Pull Request und Review](docs/07-pull-request-und-review.md): Automatische Prüfungen, KI-Review, Review durch Architekt und Security
+- [08 Sicherheit](docs/08-sicherheit.md): Typische Risiken, KI-spezifische Risiken, Regeln und Werkzeuge
+- [09 Wartung, Updates und Releases](docs/09-wartung-und-releases.md): Abhängigkeiten, Renovate, Semantic Versioning, Releases
+- [10 Standards](docs/10-standards.md): Welche Regeln gelten und wo sie stehen
+- [11 Umgebungen und Zusammenarbeit](docs/11-umgebungen-und-zusammenarbeit.md): Lokal, Dev, QA, Produktion, Zugriff von KI-Agenten, parallel arbeiten
+- [12 Testen](docs/12-testen.md): Lint, Unit-, Spec- und End-to-End-Tests, warum Testen der wichtigste Punkt ist
+- [13 Werkzeuge und Kosten](docs/13-werkzeuge-und-kosten.md): Konten, Abos, Tokens, Kosten begrenzen
+- [14 KI und Datenschutz](docs/14-ki-und-datenschutz.md): Welche Daten in welchen KI-Dienst dürfen, Auftragsverarbeitung
+- [15 Projekt-Lebenszyklus](docs/15-projekt-lebenszyklus.md): Vom Prototyp über die gemeinsame Basis zur Übernahme durch die Fachleute
+- [16 Vom Prototyp zum Betrieb](docs/16-vom-prototyp-zum-betrieb.md): Betrieb, Backup, Monitoring, automatische Updates, CVE, SBOM, Supply Chain, Cyber Resilience Act
+
+## Praxis
+
+- [Mitwirken ohne Code](docs/mitwirken-ohne-code.md): Fehler und Wünsche melden, offene Fragen beantworten
+- [Nachschlagewerk einrichten](docs/nachschlagewerk-einrichten.md): KI-Assistent mit Lesezugriff auf Doku und Code
+- [Fachliche Prüfung](docs/fachliche-pruefung.md): Rollen- und Realitätsprüfung, Definition of Done
+- [Ein Projekt vorbereiten](docs/neues-projekt.md): Bausatz und Checkliste für neue Projekte, echte Kosten eigener Software
+- [Starter-Bausatz](starter/README.md): Kopierbares Projektgerüst
+
+## Üben und Nachschlagen
+
+- [Übungen](docs/uebungen.md): Übungen zu allen Modulen, Checkliste für den ersten Pull Request
+- [Schulungsablauf](docs/schulungsablauf.md): Formate, Dauer, Reihenfolge
+- [Glossar](docs/glossar.md): Über 100 Begriffe, einfach erklärt
+
+## Vorlagen
+
+- [Übersicht der Vorlagen](docs/vorlagen/README.md): Alle Vorlagen zum Kopieren
+- [Konzept](docs/vorlagen/konzept.md): Vorlage für ein Konzept
+- [Issue](docs/vorlagen/issue.md): Vorlage für ein Issue
+- [Prompt für den Coding-Agenten](docs/vorlagen/prompt-coding-agent.md): Auftrag an den Agenten
+- [Pull Request](docs/vorlagen/pull-request.md): Beschreibung eines Pull Requests
+- [Architekturentscheidung](docs/vorlagen/adr.md): Vorlage für einen ADR
+- [Review-Checkliste](docs/vorlagen/review-checkliste.md): Worauf Reviewer achten
+- [Neues Projekt aufsetzen](docs/vorlagen/prompt-projekt-aufsetzen.md): Auftrag an den Agenten, ein Projekt aus dem Starter-Bausatz aufzusetzen
+- [Issue-Formulare für GitHub](docs/vorlagen/github/README.md): Formulare für Fehler, Wunsch und Antwort

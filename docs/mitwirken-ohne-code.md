@@ -17,7 +17,7 @@ Stufe 4 steht nicht zufällig am Ende: Sie setzt kein Programmieren voraus, aber
 
 ## Stufe 1: Melden
 
-Auf Stufe 1 gibt es drei Wege. Für jeden gibt es ein Formular (ein sogenanntes Issue-Formular): Man klickt auf "Neues Issue", wählt das passende Formular und füllt Felder aus. Man muss weder Git noch Markdown können. Vorlagen für diese Formulare liegen in [vorlagen/github/](../vorlagen/github/README.md).
+Auf Stufe 1 gibt es drei Wege. Für jeden gibt es ein Formular (ein sogenanntes Issue-Formular): Man klickt auf "Neues Issue", wählt das passende Formular und füllt Felder aus. Man muss weder Git noch Markdown können. Vorlagen für diese Formulare liegen in [vorlagen/github/](vorlagen/github/README.md).
 
 ### Einen Fehler melden
 

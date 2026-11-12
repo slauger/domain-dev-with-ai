@@ -124,6 +124,8 @@ CI steht für "Continuous Integration", auf Deutsch etwa "laufendes Zusammenfüh
 
 - abgeschaltet oder umgangen werden, damit ein Pull Request schneller durchkommt
 
+Wie sich die Verantwortung zwischen den Rollen aufteilt, zeigt das [Modell der geteilten Verantwortung](geteilte-verantwortung.md) als Diagramm und Tabelle.
+
 ## Der Arbeitsablauf
 
 So kommt eine Idee in die Software. Die Rauten sind Prüfpunkte: Wenn dort etwas nicht passt, geht es zurück.

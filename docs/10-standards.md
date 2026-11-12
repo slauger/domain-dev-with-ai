@@ -44,13 +44,13 @@ Jedes Projekt hat eine Datei `AGENTS.md` im Hauptordner. Sie ist die wichtigste 
 
 Ein **ADR** (Architecture Decision Record) ist eine kurze Notiz zu einer wichtigen Entscheidung: Was war die Frage, welche Möglichkeiten gab es, wofür haben wir uns entschieden und warum? ADRs werden nummeriert und nicht gelöscht. Wird eine Entscheidung später geändert, entsteht ein neuer ADR, der den alten ablöst.
 
-ADRs beantworten die Frage "Warum ist das so?", die sonst nach zwei Jahren niemand mehr beantworten kann. Für Agenten sind sie wertvoll, weil sie verhindern, dass eine bewusste Entscheidung aus Unwissen wieder umgedreht wird. Vorlage: [vorlagen/adr.md](../vorlagen/adr.md).
+ADRs beantworten die Frage "Warum ist das so?", die sonst nach zwei Jahren niemand mehr beantworten kann. Für Agenten sind sie wertvoll, weil sie verhindern, dass eine bewusste Entscheidung aus Unwissen wieder umgedreht wird. Vorlage: [vorlagen/adr.md](vorlagen/adr.md).
 
 Ein ADR ist fällig bei Änderungen an Struktur, Datenmodell, Sicherheit, Betrieb oder Abhängigkeiten, zum Beispiel bei einer neuen Datenbank, einem neuen externen Dienst oder einem neuen Rollenkonzept.
 
 ### Vorlagen für Pull Requests und Issues
 
-GitHub kann Vorlagen anzeigen, sobald jemand ein Issue oder einen Pull Request anlegt ([Quelle](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates), Stand: 2026-11-12). So vergisst niemand die wichtigen Angaben. Die Vorlagen dieser Schulung liegen im Ordner [vorlagen/](../vorlagen/README.md) und können in Projekte übernommen werden.
+GitHub kann Vorlagen anzeigen, sobald jemand ein Issue oder einen Pull Request anlegt ([Quelle](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates), Stand: 2026-11-12). So vergisst niemand die wichtigen Angaben. Die Vorlagen dieser Schulung liegen im Ordner [vorlagen/](vorlagen/README.md) und können in Projekte übernommen werden.
 
 ## Die wichtigsten allgemeinen Standards in einfachen Worten
 

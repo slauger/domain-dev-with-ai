@@ -95,7 +95,7 @@ Diese Schulung ist bewusst allgemein. Jedes Projekt, das sie einsetzt, ergänzt:
 
 - eine eigene `AGENTS.md` mit den Regeln für Agenten,
 - eine Beitragsanleitung (`CONTRIBUTING.md`) mit dem konkreten Ablauf, den Ansprechpartnern und den Zugängen,
-- die Vorlagen aus [vorlagen/](../vorlagen/README.md), angepasst an das Projekt,
+- die Vorlagen aus [vorlagen/](vorlagen/README.md), angepasst an das Projekt,
 - eine kurze Einführung in das eigene Datenmodell und die wichtigsten ADRs,
 - die Angabe, welcher Coding-Agent und welche Tarife empfohlen werden.
 

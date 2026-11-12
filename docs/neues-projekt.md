@@ -21,7 +21,7 @@ Peter betreut neben dem Wachbuch noch die Buchungs-App der Pension Seeblick und 
 
 | Baustein | Was es ist | Wozu |
 | --- | --- | --- |
-| Issue-Formulare | Formulare für Fehler, Wunsch und Antwort auf eine offene Frage, mit Label `aus-der-praxis` | Meldungen ohne Technikwissen, mit den richtigen Fragen. Vorlagen in [vorlagen/github/](../vorlagen/github/README.md), siehe [Mitwirken ohne Code](mitwirken-ohne-code.md). |
+| Issue-Formulare | Formulare für Fehler, Wunsch und Antwort auf eine offene Frage, mit Label `aus-der-praxis` | Meldungen ohne Technikwissen, mit den richtigen Fragen. Vorlagen in [vorlagen/github/](vorlagen/github/README.md), siehe [Mitwirken ohne Code](mitwirken-ohne-code.md). |
 | Pull-Request-Vorlage | Vorbefüllter Text für jeden PR: was, warum, wie getestet, Bezug zum Issue | Reviews werden schneller, weil jeder PR gleich aufgebaut ist (siehe [Modul 07](07-pull-request-und-review.md)). |
 | Entscheidungsseite | Eine Seite (oder ein Label) mit allen offenen Fragen: Kontext, Optionen, Folgen | Domänenexperten sehen, wo ihre Erfahrung gebraucht wird. |
 | Ordner für ADRs mit Vorlage | z. B. `docs/adr/` mit `0000-vorlage.md`. ADR heißt Architekturentscheidung (Architecture Decision Record): ein kurzes Dokument, warum etwas so entschieden wurde | Später muss niemand raten, auch kein Agent (siehe [Modul 05](05-datenmodell.md)). |
@@ -48,7 +48,7 @@ Eine feste Gliederung hilft Menschen und Agenten gleichermaßen. Vorschlag:
 | Automatisches Review | z. B. GitHub Copilot code review, mit Projektanweisungen in `.github/copilot-instructions.md` | Frühe Hinweise auf jedem PR. Die Anweisungen sagen dem Bot, worauf er in diesem Projekt achten soll ([Quelle](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions), Stand: 2026-11-12). |
 | Renovate | Werkzeug, das automatisch Pull Requests für Updates von Abhängigkeiten öffnet | Updates kommen regelmäßig und klein statt selten und groß (siehe [Modul 09](09-wartung-und-releases.md), [Quelle](https://docs.renovatebot.com/), Stand: 2026-11-12). |
 | Release-Ablauf | Feste Regel, wie aus dem Stand im Repository eine Version wird, z. B. mit semantic-release | Jeder weiß, was in welcher Version steckt und wie man zurückgeht. |
-| Tutor-Paket | Datei mit Schulung plus Projektdokumentation zum Hochladen in einen Assistenten | Grundfragen beantwortet der Assistent, nicht der Maintainer (siehe [tutor/README.md](../tutor/README.md) und [Nachschlagewerk einrichten](nachschlagewerk-einrichten.md)). |
+| Tutor-Paket | Datei mit Schulung plus Projektdokumentation zum Hochladen in einen Assistenten | Grundfragen beantwortet der Assistent, nicht der Maintainer (siehe [tutor/README.md](tutor/README.md) und [Nachschlagewerk einrichten](nachschlagewerk-einrichten.md)). |
 
 ### Sicherheits-Grundausstattung
 
@@ -129,4 +129,4 @@ Der Bausatz in diesem Kapitel senkt dieses Risiko: Ein Projekt mit klaren Regeln
 
 ## Siehe auch
 
-- [starter/](../starter/README.md): Projektgerüst zum Kopieren mit allen Bausteinen aus diesem Kapitel, und [Modul 15](15-projekt-lebenszyklus.md) zum Weg vom Prototyp zur gemeinsamen Entwicklung.
+- [starter/](https://github.com/slauger/domain-dev-with-ai/blob/main/starter/README.md): Projektgerüst zum Kopieren mit allen Bausteinen aus diesem Kapitel, und [Modul 15](15-projekt-lebenszyklus.md) zum Weg vom Prototyp zur gemeinsamen Entwicklung.
