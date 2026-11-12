@@ -44,6 +44,10 @@ Domänenexperten tragen die Entwicklung mit und bauen mit Agenten, IT-Experten f
 | [starter/](starter/README.md) | Starter-Bausatz für neue Projekte: Doku-Struktur mit MkDocs, ADRs, Workboard, Regeln für Agenten, Issue-Formulare, CI- und Renovate-Vorlagen |
 | [slides/](slides/README.md) | Foliensatz zur Schulung (Slidev), auch als [PDF](slides/2026-11-12-schulung.pdf) |
 
+## Stand der Angaben
+
+Angaben zu Werkzeugen, Preisen, Tarifen und Recht ändern sich schnell. Sie tragen ein Stand-Datum und eine Quelle; Stellen mit "bitte prüfen" sind nicht abschließend bestätigt. Vor einer Entscheidung immer die aktuelle Quelle lesen. Die Rechtsthemen sind keine Rechtsberatung.
+
 ## Verwandte Standards
 
 - Coding-Standards: Konventionen für Commits, Releases, CI/CD, Renovate, Security (Repository `coding-standards`)
