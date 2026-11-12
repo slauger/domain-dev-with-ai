@@ -68,7 +68,7 @@ Fehlen in der Cloud einzelne Prüfungen, ist das kein Drama: Die automatischen P
 
 **Starte in der Cloud, im Browser.** Claude Code im Web oder Codex Cloud brauchen keine Installation. Du verbindest GitHub, wählst das Repository, gibst den Auftrag und bekommst einen Branch mit Diff-Ansicht. Das Handy eignet sich zum Anstoßen und für Rückfragen, das Durchsehen des Ergebnisses aber besser am großen Bildschirm.
 
-Welcher Anbieter? Der, für den du schon ein Abo hast. Das Vorgehen ist wichtiger als das Werkzeug. Eine lokale Einrichtung lohnt sich erst, wenn du regelmäßig größere Änderungen machst. Dabei hilft der Architekt beim ersten Mal.
+Welcher Anbieter? Der, für den du schon ein Abo hast. Das Vorgehen ist wichtiger als das Werkzeug. Welches Modell du im Werkzeug für welche Aufgabe einstellst, erklärt [Modul 17](17-ki-modelle.md). Eine lokale Einrichtung lohnt sich erst, wenn du regelmäßig größere Änderungen machst. Dabei hilft der Architekt beim ersten Mal.
 
 Für private Repositories muss der Inhaber dem Agenten einmalig Zugriff geben (z. B. über eine GitHub-App des Anbieters). Wie das im konkreten Projekt geregelt ist, steht in dessen Beitragsanleitung; die genauen Schritte haben sich 2026 bei beiden Anbietern geändert, **bitte prüfen**.
 

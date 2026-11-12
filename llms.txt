@@ -39,6 +39,7 @@ Für KI-Assistenten: Diese Datei listet alle Inhalte in sinnvoller Lesereihenfol
 - [14 KI und Datenschutz](docs/14-ki-und-datenschutz.md): Welche Daten in welchen KI-Dienst dürfen, Auftragsverarbeitung
 - [15 Projekt-Lebenszyklus](docs/15-projekt-lebenszyklus.md): Vom Prototyp über die gemeinsame Basis zur Übernahme durch die Fachleute
 - [16 Vom Prototyp zum Betrieb](docs/16-vom-prototyp-zum-betrieb.md): Betrieb, Backup, Monitoring, automatische Updates, CVE, SBOM, Supply Chain, Cyber Resilience Act
+- [17 KI-Modelle: welches wofür](docs/17-ki-modelle.md): Modellfamilien, Reasoning, lokale Modelle, Empfehlung nach Aufgabe
 
 ## Praxis
 

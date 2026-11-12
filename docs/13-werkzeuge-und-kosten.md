@@ -126,7 +126,7 @@ Die automatischen Prüfungen auf GitHub (GitHub Actions) sind für öffentliche 
 - **Den Agenten nicht im Kreis laufen lassen.** Wenn er denselben Fehler zum dritten Mal behebt: abbrechen ([Modul 06](06-coding-agent.md#den-agenten-steuern-und-hinterfragen)).
 - **Früh stoppen.** Merkst du, dass der Agent in die falsche Richtung läuft, sofort unterbrechen, nicht "mal sehen, was rauskommt".
 - **Neue Sitzung statt endloser Verlauf.** Für die nächste Aufgabe eine frische Sitzung starten.
-- **Das passende Modell wählen.** Für einfache Aufgaben (Texte, kleine Korrekturen) reicht oft ein kleineres, günstigeres Modell.
+- **Das passende Modell wählen.** Für einfache Aufgaben (Texte, kleine Korrekturen) reicht oft ein kleineres, günstigeres Modell. Welches Modell wofür passt, steht in [Modul 17](17-ki-modelle.md).
 
 ## Checkliste
 
