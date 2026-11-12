@@ -14,7 +14,7 @@ Die Schulung ist so geschrieben, dass ein KI-Assistent (ChatGPT, Claude oder äh
 
 | Weg | Wann | Wie |
 | --- | --- | --- |
-| Datei hochladen | immer möglich, auch solange das Repository privat ist | `scripts/bundle.sh` erzeugt `build/wissen.md` mit allen Inhalten in einer Datei. Diese Datei im Chat hochladen oder in einem Projekt als Wissen hinterlegen. |
+| Datei hochladen | immer möglich, auch solange das Repository privat ist | [`wissen.md`](wissen.md) enthält alle Inhalte in einer Datei. Diese Datei herunterladen und im Chat hochladen oder in einem Projekt als Wissen hinterlegen. Sie wird mit `scripts/bundle.sh` aus den Unterlagen erzeugt. |
 | Projekt im Assistenten | für wiederholte Nutzung | In ChatGPT ein Projekt bzw. in Claude ein Projekt anlegen, `wissen.md` als Datei hinzufügen und den Tutor-Prompt als Projektanweisung eintragen. Dann muss man beides nur einmal einrichten. |
 | Link auf das Repository | sobald das Repository öffentlich ist | Im Tutor-Prompt die URL eintragen. Der Assistent liest `llms.txt` und folgt den Links. Das funktioniert nur, wenn der Assistent Webseiten abrufen darf. |
 
