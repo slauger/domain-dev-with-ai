@@ -1,0 +1,72 @@
+# Dokumentation mit MkDocs Material. Bauen mit `make docs`, Vorschau mit `make docs-serve`.
+# Der Build ist streng: kaputte Links und Seiten, die nicht in der nav stehen, lassen ihn scheitern.
+site_name: "[PROJEKT]"
+site_description: "Dokumentation für Mitwirkende, Entwicklung und Betrieb"
+repo_url: https://github.com/[ORG]/[PROJEKT]
+edit_uri: edit/main/docs/
+docs_dir: docs
+strict: true
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn
+
+theme:
+  name: material
+  language: de
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Dunkler Modus
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Heller Modus
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search:
+      lang: de
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.tasklist
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: true
+      # Anker wie auf GitHub (Umlaute bleiben erhalten), damit Links auf GitHub und in der Seite funktionieren.
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+
+nav:
+  - Einstieg: index.md
+  - Umfang (Scope): scope.md
+  - Mitarbeit: mitarbeit/index.md
+  - Workboard:
+      - work/index.md
+      - Offene Entscheidungen: work/entscheidungen.md
+  - Architektur: architektur/index.md
+  - Entscheidungen (ADRs):
+      - adr/index.md
+      - Vorlage: adr/vorlage.md
+      - "0001 Architekturentscheidungen festhalten": adr/0001-architekturentscheidungen-festhalten.md
+  - Datenmodell: datenmodell/index.md
+  - Betrieb: betrieb/index.md
+  - Entwicklung: entwicklung/index.md

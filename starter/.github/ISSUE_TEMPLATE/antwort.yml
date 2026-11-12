@@ -1,0 +1,38 @@
+name: "Antwort auf eine offene Frage"
+description: "Eine offene Frage von der Entscheidungsseite beantworten"
+title: "[Antwort] "
+labels: ["question", "entscheidung-vorschlag", "aus-der-praxis"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Die offenen Fragen stehen auf der Entscheidungsseite des Projekts, jeweils mit Kontext, Optionen und Folgen.
+
+        **Deine Antwort wird nicht automatisch übernommen.** Der Maintainer sieht sie an und trägt sie ein. Das ist kein Misstrauen: Eine Antwort kann an einer Stelle etwas umwerfen, die von hier aus nicht sichtbar ist. Deshalb geht sie durch eine verantwortliche Hand.
+  - type: input
+    id: frage
+    attributes:
+      label: "Um welche Frage geht es?"
+      description: "Titel oder Kennung von der Entscheidungsseite, kopieren genügt."
+      placeholder: "Zählt eine abgebrochene Übung als Dienstzeit?"
+    validations:
+      required: true
+  - type: textarea
+    id: antwort
+    attributes:
+      label: "Deine Antwort"
+      description: "Wenn die Frage Optionen hatte: welche. Wenn keine passt: was stattdessen."
+    validations:
+      required: true
+  - type: textarea
+    id: begruendung
+    attributes:
+      label: "Warum, aus der Praxis gedacht"
+      description: "Der wertvollste Teil: Der Maintainer kennt die Software, du kennst den Alltag."
+    validations:
+      required: true
+  - type: textarea
+    id: sonderfaelle
+    attributes:
+      label: "Gibt es Ausnahmen oder Sonderfälle? (optional)"
+      placeholder: "Bei Einsätzen ist es anders als bei Übungen, weil ..."

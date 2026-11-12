@@ -1,0 +1,45 @@
+name: "Idee oder Wunsch"
+description: "Etwas fehlt oder ist umständlich"
+title: "[Wunsch] "
+labels: ["enhancement", "aus-der-praxis"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Ein Wunsch pro Meldung.**
+
+        Beschreib, was du **erreichen** willst, nicht wie es gebaut werden soll. Wie es gebaut wird, klären Maintainer und Entwicklung. Was die Praxis braucht, weißt nur du.
+
+        **Bitte keine persönlichen Daten** in die Meldung schreiben.
+  - type: textarea
+    id: wunsch
+    attributes:
+      label: "Was möchtest du können?"
+      placeholder: "Ich möchte beim Öffnen sofort sehen, welche Prüfungen diesen Monat fällig sind."
+    validations:
+      required: true
+  - type: textarea
+    id: heute
+    attributes:
+      label: "Wie machst du es heute, und was ist daran mühsam?"
+      description: "Der Umweg von heute zeigt, wie dringend es ist und was die Lösung können muss."
+      placeholder: "Ich führe nebenher eine Tabelle mit den Terminen, weil ich in der Software nicht nach Fälligkeit sortieren kann."
+    validations:
+      required: true
+  - type: dropdown
+    id: haeufigkeit
+    attributes:
+      label: "Wie oft kommt das vor?"
+      options:
+        - "Täglich"
+        - "Mehrmals pro Woche"
+        - "Ab und zu"
+        - "Selten, aber dann wichtig"
+    validations:
+      required: true
+  - type: textarea
+    id: wer
+    attributes:
+      label: "Wer ist noch betroffen? (optional)"
+      description: "Andere Rollen oder Personen, die dasselbe Problem haben oder von einer Änderung betroffen wären."
+      placeholder: "Alle Gruppenführer, und der Kommandant für den Jahresbericht."

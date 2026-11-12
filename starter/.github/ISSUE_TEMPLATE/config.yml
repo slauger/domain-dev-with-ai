@@ -1,0 +1,13 @@
+# Leere Issues erlauben, damit der Maintainer weiterhin frei schreiben kann.
+blank_issues_enabled: true
+# [ORG] und [PROJEKT] ersetzen. Die Adressen passen zu einer Dokumentation auf GitHub Pages; sonst die eigene Adresse eintragen.
+contact_links:
+  - name: "So läuft die Mitarbeit ab"
+    url: "https://[ORG].github.io/[PROJEKT]/mitarbeit/"
+    about: "Kurze Anleitung: was gehört wohin, was passiert danach."
+  - name: "Offene Fragen ansehen"
+    url: "https://[ORG].github.io/[PROJEKT]/work/entscheidungen/"
+    about: "Alles, was gerade auf eine Entscheidung aus der Praxis wartet, mit Kontext und Optionen."
+  - name: "Sicherheitslücke melden (nicht öffentlich)"
+    url: "https://github.com/[ORG]/[PROJEKT]/security/policy"
+    about: "Sicherheitsprobleme bitte nie als öffentliches Issue melden, sondern wie in SECURITY.md beschrieben."

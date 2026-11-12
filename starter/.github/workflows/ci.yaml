@@ -1,0 +1,62 @@
+# VORLAGE: CI für [PROJEKT].
+# Die Jobs "lint" und "test" sind Platzhalter. Der Maintainer trägt die Sprache und die Befehle ein,
+# die er im ADR zum Technik-Stack festgelegt hat. Danach die Jobs als Pflichtprüfungen im Branch-Schutz eintragen.
+#
+# Ablauf:
+# - Pull Request: schnelle Prüfungen (lint, test ohne langsame Tests, docs).
+# - Push auf main oder Start von Hand: alle Prüfungen (inklusive langsamer Tests, z. B. Ende-zu-Ende).
+# Die Versionen der Actions hält Renovate aktuell.
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Ein neuer Push bricht den laufenden Durchlauf desselben Branches ab.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  # "true" auf main und beim Start von Hand, sonst "false".
+  FULL: ${{ github.event_name != 'pull_request' }}
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      # Platzhalter: Werkzeug der Sprache einrichten, z. B.
+      # - uses: actions/setup-node@v5
+      #   with:
+      #     node-version-file: .nvmrc
+      # - uses: actions/setup-python@v6
+      #   with:
+      #     python-version-file: .python-version
+      - name: Lint
+        run: make lint
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      # Platzhalter: Werkzeug der Sprache einrichten, wie im Job "lint".
+      - name: Schnelle Tests
+        run: make test
+      # Langsame Tests nur auf main oder von Hand. Ziel "test-full" im Makefile ergänzen, wenn es sie gibt.
+      # - name: Alle Tests
+      #   if: env.FULL == 'true'
+      #   run: make test-full
+
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Dokumentation streng bauen
+        run: make docs

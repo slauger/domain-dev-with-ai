@@ -1,0 +1,30 @@
+# Betriebssystem und Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Gebaute Dokumentation
+site/
+
+# Lokale Konfiguration und Geheimnisse, nie einchecken
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Abhängigkeiten und Build, je nach Sprache ergänzen
+node_modules/
+.venv/
+__pycache__/
+dist/
+build/
+coverage/
+
+# Lokale Datenbanken und Sicherungen
+*.sqlite
+*.sqlite3
+*.db
+*.dump

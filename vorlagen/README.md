@@ -10,6 +10,7 @@ Vorlagen zum Kopieren und Ausfüllen. Platzhalter stehen in spitzen Klammern, z.
 | [pull-request.md](pull-request.md) | Beschreibung eines Pull Requests | [07](../docs/07-pull-request-und-review.md) |
 | [adr.md](adr.md) | Eine Architekturentscheidung festhalten | [07](../docs/07-pull-request-und-review.md), [10](../docs/10-standards.md) |
 | [review-checkliste.md](review-checkliste.md) | Checkliste für das Review durch Architekt und Security | [07](../docs/07-pull-request-und-review.md), [08](../docs/08-sicherheit.md) |
+| [prompt-projekt-aufsetzen.md](prompt-projekt-aufsetzen.md) | Den Coding-Agenten ein neues Projekt-Repository aus [starter/](../starter/README.md) aufsetzen lassen, ohne dass er den Technik-Stack wählt | [15](../docs/15-projekt-lebenszyklus.md) |
 
 ## In ein Projekt übernehmen
 

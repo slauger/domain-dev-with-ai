@@ -126,3 +126,7 @@ Der Bausatz in diesem Kapitel senkt dieses Risiko: Ein Projekt mit klaren Regeln
 - Einiges ist Pflicht vor dem ersten externen Beitrag, anderes kommt später.
 - Nur mit einheitlichem Bausatz kann ein Maintainer mehrere Projekte betreuen.
 - Eigene Software spart Lizenzen, kostet aber Betrieb, Wartung und Verantwortung. Vorher klären, wer in drei Jahren wartet.
+
+## Siehe auch
+
+- [starter/](../starter/README.md): Projektgerüst zum Kopieren mit allen Bausteinen aus diesem Kapitel, und [Modul 15](15-projekt-lebenszyklus.md) zum Weg vom Prototyp zur gemeinsamen Entwicklung.
