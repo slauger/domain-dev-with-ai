@@ -2,6 +2,10 @@
 
 Im Kern geht es um die Zusammenarbeit von Domänenexperten und IT-Experten: Fachleute aus der Praxis tragen die Entwicklung mit, statt nur Tickets zu eröffnen, und bauen mit KI-Coding-Agenten selbst. IT-Experten für Architektur und Sicherheit hinterfragen, beraten und geben per Review frei. Die Schulung führt Schritt für Schritt durch diese Zusammenarbeit. Jedes Modul ist für sich lesbar; zusammen ergeben sie den kompletten Weg von der Idee bis zur gewarteten Software.
 
+## Folien
+
+Die Schulung gibt es auch als [Foliensatz](https://slauger.github.io/domain-dev-with-ai/slides/) für Vorträge und Workshops.
+
 ## Wer verantwortet was
 
 Wer wofür zuständig ist, zeigt das [Modell der geteilten Verantwortung](geteilte-verantwortung.md): Domänenexperten für das, was in der Software passiert, IT-Experten für die Software selbst, manches gemeinsam.

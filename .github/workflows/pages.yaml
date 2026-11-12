@@ -1,7 +1,8 @@
 name: Pages
 
 # Checks the content and publishes the website (MkDocs) to GitHub Pages on every push to main.
-# llms.txt and docs/tutor/wissen.md are copied into the site, so assistants find them there too.
+# llms.txt and docs/tutor/wissen.md are copied into the site, so assistants find them there too;
+# the slides are built with Slidev into /slides/.
 
 on:
   push:
@@ -33,6 +34,18 @@ jobs:
             squidfunk/mkdocs-material:9.6.22 build --strict --site-dir /docs/site
           cp llms.txt site/llms.txt
           cp docs/tutor/wissen.md site/wissen.md
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Build slides
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
+        run: |
+          npm ci
+          npx slidev build slides/2026-11-12-schulung/slides.md --out "$PWD/site/slides" --base /domain-dev-with-ai/slides/
 
       - uses: actions/upload-pages-artifact@v3
         if: github.ref == 'refs/heads/main'

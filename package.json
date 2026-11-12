@@ -1,0 +1,16 @@
+{
+  "name": "domain-dev-with-ai-slides",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Foliensatz zur Schulung (Slidev)",
+  "scripts": {
+    "dev": "slidev slides/2026-11-12-schulung/slides.md",
+    "build": "slidev build slides/2026-11-12-schulung/slides.md --out ../../build/slides --base /domain-dev-with-ai/slides/",
+    "export": "slidev export slides/2026-11-12-schulung/slides.md --output build/2026-11-12-schulung.pdf --timeout 60000"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^53.0.0",
+    "@slidev/theme-default": "latest",
+    "playwright-chromium": "~1.64.1"
+  }
+}

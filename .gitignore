@@ -2,3 +2,9 @@ node_modules/
 build/
 .DS_Store
 /site/
+npm-debug.log*
+
+# Slidev
+.slidev/
+dist/
+components.d.ts

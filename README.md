@@ -34,7 +34,7 @@ Domänenexperten tragen die Entwicklung mit und bauen mit Agenten, IT-Experten f
 | [docs/](docs/index.md) | Die Schulung als Text: Rollen, Arbeitsablauf, Module, Übungen |
 | [docs/vorlagen/](docs/vorlagen/README.md) | Vorlagen zum Kopieren: Konzept, Prompt für Coding-Agenten, Issue, Pull Request, Architekturentscheidung |
 | [starter/](starter/README.md) | Starter-Bausatz für neue Projekte: Doku-Struktur mit MkDocs, ADRs, Workboard, Regeln für Agenten, Issue-Formulare, CI- und Renovate-Vorlagen |
-| [slides/](slides/) | Foliensatz zur Schulung (Slidev) |
+| [slides/](slides/README.md) | Foliensatz zur Schulung (Slidev), starten und exportieren mit `npm run dev` und `npm run export` |
 
 ## Verwandte Standards
 
