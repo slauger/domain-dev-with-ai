@@ -32,6 +32,8 @@ Keine der beiden Seiten kann es allein. Der Domänenexperte ohne IT-Wissen baut 
 
 ## Der Zwischenweg
 
+Der übliche Weg reicht nicht mehr: Fachleute eröffnen Tickets, IT-Experten setzen um. Bei der Menge an Wünschen und der knappen Zeit der IT-Experten bleibt das meiste liegen, und unterwegs geht Fachwissen verloren. Domänenexperten müssen deshalb mehr Verantwortung für die Entwicklung übernehmen, und dafür brauchen sie mehr Wissen und die richtigen Werkzeuge.
+
 Diese Schulung beschreibt einen Weg dazwischen:
 
 1. **Der Domänenexperte treibt die Entwicklung.** Er beschreibt das Problem, diskutiert Lösungen, lässt einen Coding-Agenten umsetzen und prüft das Ergebnis fachlich. Das Wissen geht nicht verloren, weil es nicht erst übersetzt werden muss.

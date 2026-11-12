@@ -1,6 +1,8 @@
 # domain-dev-with-ai
 
-Schulung und Arbeitsweise für Teams, in denen Fachleute aus der Praxis (Domänenexperten) Software mit KI-Coding-Agenten weiterentwickeln, während Softwarearchitekten und Security-Verantwortliche die Ergebnisse prüfen und freigeben.
+Schulung und Arbeitsweise für die **Zusammenarbeit von Domänenexperten und IT-Experten**. Fachleute aus der Praxis entwickeln Software mit KI-Coding-Agenten selbst mit, statt nur Tickets zu eröffnen. IT-Experten (Softwarearchitektur und Sicherheit) hinterfragen, beraten und geben per Review frei.
+
+Kern ist die Verteilung der Verantwortung: Domänenexperten bekommen mehr Wissen, mehr Werkzeuge und mehr Verantwortung für die Entwicklung, weil IT-Experten allein die Menge an Software nicht mehr bauen können. IT-Experten bleiben verantwortlich für das, was Fachwissen allein nicht abdeckt: Datenmodell, Architektur, Sicherheit, Datenschutz und Wartung.
 
 ## Für wen
 
@@ -12,7 +14,7 @@ Der Bedarf an Software wird so groß, dass IT-Experten ihn allein nicht decken k
 
 ## Die Idee in einem Satz
 
-Domänenexperten beschreiben und bauen mit Agenten, Architekten und Security-Verantwortliche hinterfragen und geben frei, und nichts landet ohne Review in der Software.
+Domänenexperten tragen die Entwicklung mit und bauen mit Agenten, IT-Experten für Architektur und Sicherheit hinterfragen und geben frei, und nichts landet ohne Review in der Software.
 
 ## Inhalt
 
