@@ -2,6 +2,10 @@
 
 Im Kern geht es um die Zusammenarbeit von Domänenexperten und IT-Experten: Fachleute aus der Praxis tragen die Entwicklung mit, statt nur Tickets zu eröffnen, und bauen mit KI-Coding-Agenten selbst. IT-Experten für Architektur und Sicherheit hinterfragen, beraten und geben per Review frei. Die Schulung führt Schritt für Schritt durch diese Zusammenarbeit. Jedes Modul ist für sich lesbar; zusammen ergeben sie den kompletten Weg von der Idee bis zur gewarteten Software.
 
+## Das Beispiel
+
+Durch alle Module zieht sich ein erfundenes Beispiel: die [Feuerwehr Musterstadt](beispiel-feuerwehr-musterstadt.md) und ihre Software "Wachbuch".
+
 ## Grundlagen
 
 | Thema | Worum es geht |
@@ -23,6 +27,11 @@ Im Kern geht es um die Zusammenarbeit von Domänenexperten und IT-Experten: Fach
 | 08 | [Sicherheit](08-sicherheit.md) | Warum jede Änderung sicherheitskritisch geprüft wird, und worauf es ankommt |
 | 09 | [Wartung, Updates und Releases](09-wartung-und-releases.md) | Abhängigkeiten, Updates, Renovate, Semantic Release, Release-Konzepte |
 | 10 | [Standards](10-standards.md) | Welche Regeln gelten und wo sie stehen |
+| 11 | [Umgebungen und Zusammenarbeit](11-umgebungen-und-zusammenarbeit.md) | Lokal, Dev, Vorschau pro Entwickler, QA, Produktion; wo KI-Agenten Zugriff haben; parallel arbeiten ohne Konflikte |
+| 12 | [Testen](12-testen.md) | Der wichtigste Punkt in der KI-Entwicklung: Lint, Unit-, Spec- und End-to-End-Tests |
+| 13 | [Werkzeuge und Kosten](13-werkzeuge-und-kosten.md) | Welche Konten und Werkzeuge man braucht, was sie kosten, warum Tokens Geld kosten |
+| 14 | [KI und Datenschutz](14-ki-und-datenschutz.md) | Welche Daten in welchen KI-Dienst dürfen, Auftragsverarbeitung, Testdaten |
+| 15 | [Projekt-Lebenszyklus](15-projekt-lebenszyklus.md) | Vom Prototyp über die gemeinsame Basis bis zur Übernahme durch die Fachleute |
 | | [Übungen](uebungen.md) | Übungen zu den Modulen und eine Checkliste für den ersten eigenen Pull Request |
 | | [Schulungsablauf](schulungsablauf.md) | Wie die Schulung durchgeführt wird: Formate, Dauer, Reihenfolge |
 | | [Glossar](glossar.md) | Begriffe von Abhängigkeit bis Pull Request, einfach erklärt |
