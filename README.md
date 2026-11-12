@@ -1,5 +1,7 @@
 # domain-dev-with-ai
 
+**Website:** https://slauger.github.io/domain-dev-with-ai/ · **Folien:** [online](https://slauger.github.io/domain-dev-with-ai/slides/) und als [PDF](slides/2026-11-12-schulung.pdf)
+
 ## Du möchtest selbst Software mitentwickeln?
 
 Für deinen Verein, deine Feuerwehr oder deinen Betrieb, aber du bist kein IT-Experte? Kopiere diesen Text in ChatGPT, Claude oder einen anderen KI-Assistenten, gern im Sprachmodus. Der Assistent holt sich alles Weitere selbst, fragt dich Schritt für Schritt, wo du stehst, und begleitet dich bis zu deinem ersten eigenen Beitrag.
