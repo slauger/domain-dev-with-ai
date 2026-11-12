@@ -40,6 +40,8 @@ Für KI-Assistenten: Diese Datei listet alle Inhalte in sinnvoller Lesereihenfol
 - [15 Projekt-Lebenszyklus](docs/15-projekt-lebenszyklus.md): Vom Prototyp über die gemeinsame Basis zur Übernahme durch die Fachleute
 - [16 Vom Prototyp zum Betrieb](docs/16-vom-prototyp-zum-betrieb.md): Betrieb, Backup, Monitoring, automatische Updates, CVE, SBOM, Supply Chain, Cyber Resilience Act
 - [17 KI-Modelle: welches wofür](docs/17-ki-modelle.md): Modellfamilien, Reasoning, lokale Modelle, Empfehlung nach Aufgabe
+- [18 Lizenzen, Forks und Recht](docs/18-lizenzen-und-recht.md): Open-Source- und Creative-Commons-Lizenzen, Forks, Abhängigkeiten, KI-Code, Haftung
+- [19 Gut zusammenarbeiten](docs/19-gut-zusammenarbeiten.md): Gute Fragen, Reviews, Verhaltensregeln, Einarbeitung, Ehrenamt
 
 ## Praxis
 

@@ -48,4 +48,4 @@ Copyright Simon Lauger. Das Repository hat zwei Lizenzen:
 | Was | Lizenz | Bedeutet |
 | --- | --- | --- |
 | Schulungsinhalte: alles in `docs/` außer `docs/vorlagen/`, dazu Folien in `slides/` | [CC BY-NC-SA 4.0](LICENSE) | Nutzen, weitergeben und anpassen ist erlaubt, wenn der Urheber genannt wird, die Nutzung nicht kommerziell ist und Bearbeitungen unter derselben Lizenz stehen. Für eine kommerzielle Nutzung bitte vorher fragen. |
-| Zum Kopieren in Projekte: `starter/`, `docs/vorlagen/`, `scripts/` | [Apache-2.0](LICENSE-CODE) | Frei verwendbar, auch in kommerziellen und Open-Source-Projekten, mit Erhalt des Lizenzhinweises. |
+| Zum Kopieren in Projekte: `starter/`, `docs/vorlagen/`, `scripts/` | [MIT](LICENSE-CODE) | Frei verwendbar, auch in kommerziellen und Open-Source-Projekten, mit Erhalt des Lizenzhinweises. |

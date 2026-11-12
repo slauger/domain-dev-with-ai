@@ -33,3 +33,7 @@ Ausführlich: [docs/mitarbeit/](docs/mitarbeit/index.md).
 ## Sicherheitslücken
 
 Nie als öffentliches Issue melden. Der Weg steht in [SECURITY.md](SECURITY.md).
+
+## Miteinander
+
+Für alle, die mitarbeiten, gelten die Verhaltensregeln in [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).

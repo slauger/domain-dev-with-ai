@@ -56,7 +56,7 @@ Copyright Simon Lauger. Das Repository hat zwei Lizenzen:
 | Was | Lizenz | Bedeutet |
 | --- | --- | --- |
 | Schulungsinhalte: alles in `docs/` außer `docs/vorlagen/`, dazu Folien in `slides/` | [CC BY-NC-SA 4.0](LICENSE) | Nutzen, weitergeben und anpassen ist erlaubt, wenn der Urheber genannt wird, die Nutzung nicht kommerziell ist und Bearbeitungen unter derselben Lizenz stehen. Für eine kommerzielle Nutzung bitte vorher fragen. |
-| Zum Kopieren in Projekte: `starter/`, `docs/vorlagen/`, `scripts/` | [Apache-2.0](LICENSE-CODE) | Frei verwendbar, auch in kommerziellen und Open-Source-Projekten, mit Erhalt des Lizenzhinweises. |
+| Zum Kopieren in Projekte: `starter/`, `docs/vorlagen/`, `scripts/` | [MIT](LICENSE-CODE) | Frei verwendbar, auch in kommerziellen und Open-Source-Projekten, mit Erhalt des Lizenzhinweises. |
 
 ---
 
@@ -102,6 +102,8 @@ Durch alle Module zieht sich ein erfundenes Beispiel: die [Feuerwehr Musterstadt
 | 15 | [Projekt-Lebenszyklus](15-projekt-lebenszyklus.md) | Vom Prototyp über die gemeinsame Basis bis zur Übernahme durch die Fachleute |
 | 16 | [Vom Prototyp zum Betrieb](16-vom-prototyp-zum-betrieb.md) | Warum ein Prototyp in einer Stunde steht, der Betrieb aber Backup, Monitoring, automatische Updates, CVEs und SBOMs braucht |
 | 17 | [KI-Modelle: welches wofür](17-ki-modelle.md) | Modellfamilien, Reasoning oder schnell, warum kleine lokale Modelle für Entwicklung selten reichen, Empfehlung nach Aufgabe |
+| 18 | [Lizenzen, Forks und Recht](18-lizenzen-und-recht.md) | Welche Lizenzen es gibt, warum man Autoren nicht entfernen darf, was Veröffentlichen bedeutet, Forks, KI-Code, Haftung im Verein |
+| 19 | [Gut zusammenarbeiten](19-gut-zusammenarbeiten.md) | Gute Fragen stellen, Reviews geben und annehmen, Verhaltensregeln, neue Leute einarbeiten, Zeit im Ehrenamt |
 | | [Übungen](uebungen.md) | Übungen zu den Modulen und eine Checkliste für den ersten eigenen Pull Request |
 | | [Schulungsablauf](schulungsablauf.md) | Wie die Schulung durchgeführt wird: Formate, Dauer, Reihenfolge |
 | | [Glossar](glossar.md) | Begriffe von Abhängigkeit bis Pull Request, einfach erklärt |
@@ -366,7 +368,7 @@ Wer mit einem Coding-Agenten an einer Software mitbaut, muss kein Programmierer 
 
 Nicht alles muss am ersten Tag sitzen. Die Tabelle unten teilt das Wissen in drei Stufen. Alles ist beschrieben, damit du nachschlagen kannst, wenn du es brauchst.
 
-Tipp: Diese Seiten eignen sich auch als Grundlage für einen KI-Assistenten (z. B. ChatGPT oder Claude) als Nachhilfelehrer. Gib ihm eine Seite und bitte ihn: "Erkläre mir das am Beispiel einer Feuerwehr-Software und stelle mir danach drei Fragen, ob ich es verstanden habe."
+Tipp: Diese Seiten eignen sich auch als Grundlage für einen KI-Assistenten (z. B. ChatGPT oder Claude) als Nachhilfelehrer. Gib ihm eine Seite und bitte ihn: "Erkläre mir das am Beispiel einer Feuerwehr-Software und stelle mir danach drei Fragen, ob ich es verstanden habe." Noch einfacher geht es mit dem [Lernbegleiter](../tutor/README.md), der die ganze Schulung kennt und auch im Sprachmodus funktioniert.
 
 ## Die drei Stufen
 
@@ -387,18 +389,28 @@ Tipp: Diese Seiten eignen sich auch als Grundlage für einen KI-Assistenten (z. 
 | Grundbegriffe Web (Browser, Server, HTTP, HTTPS) | Muss ich verstehen | Wie eine Web-Anwendung funktioniert und warum HTTPS Pflicht ist | [Web und Daten](web-und-daten.md) |
 | Datenbank und Datenmodell | Muss ich verstehen | Wo die Daten liegen und warum das Datenmodell das Fundament ist | [Web und Daten](web-und-daten.md#wo-die-daten-liegen), [Modul 05](../05-datenmodell.md) |
 | Rechte und Datenschutz | Muss ich verstehen | Wer was sehen und ändern darf, welche Daten besonders geschützt sind | [Web und Daten](web-und-daten.md#anmeldung-sitzung-und-rechte), [Modul 08](../08-sicherheit.md) |
+| Geteilte Verantwortung | Muss ich verstehen | Wer wofür zuständig ist: Domänenexperten für das, was in der Software passiert, IT-Experten für die Software selbst; der KI-Agent trägt keine Verantwortung | [Geteilte Verantwortung](../geteilte-verantwortung.md) |
+| Umgebungen und KI-Zugriff | Muss ich verstehen | Lokal, Preview, Dev/Test, QA, Produktion; warum man nicht in der echten Software ausprobiert und wo echte Daten sind, keine KI arbeitet | [Web und Daten](web-und-daten.md#umgebungen-entwicklung-test-produktion), [Modul 11](../11-umgebungen-und-zusammenarbeit.md) |
+| Testen | Muss ich verstehen | Warum Tests bei Agenten das wichtigste Sicherheitsnetz sind, wie man Sonderfälle in eigenen Worten beschreibt, was ein roter Test bedeutet | [Modul 12](../12-testen.md) |
+| KI und Datenschutz | Muss ich verstehen | Welche Daten in welchen KI-Dienst dürfen, warum nie personenbezogene Daten in Verbraucher-Apps | [Modul 14](../14-ki-und-datenschutz.md) |
+| Zusammenarbeit und gute Fragen | Muss ich verstehen | Fragen so stellen, dass andere sie beantworten können, mit Kritik im Review umgehen, Umgangsregeln im Projekt | [Modul 19](../19-gut-zusammenarbeiten.md) |
 | Abhängigkeiten und Updates | Sollte ich kennen | Fremde Bausteine im Code, warum sie aktuell bleiben müssen | [Modul 09](../09-wartung-und-releases.md) |
+| Kosten | Sollte ich kennen | Was Werkzeuge kosten, warum Tokens Geld kosten und lange Sitzungen teurer sind, wer bezahlt | [Modul 13](../13-werkzeuge-und-kosten.md) |
+| Modellwahl | Sollte ich kennen | Modell und App unterscheiden, den Modell-Standard des Projekts kennen, wann sich ein stärkeres Modell lohnt | [Modul 17](../17-ki-modelle.md) |
+| Lizenzen und Forks | Sollte ich kennen | Warum man fremden Code nicht einfach kopiert, was eine Lizenz erlaubt, was ein Fork ist | [Modul 18](../18-lizenzen-und-recht.md) |
+| Betrieb, Updates, CVE, SBOM | Sollte ich kennen (verstehen, nicht selbst machen) | Warum ein Prototyp kein Betrieb ist, warum Updates täglich laufen, was CVE und SBOM bedeuten; einrichten tun es die IT-Experten | [Modul 16](../16-vom-prototyp-zum-betrieb.md), [Modul 15](../15-projekt-lebenszyklus.md) |
 | Programmiersprachen und Plattformen | Sollte ich kennen | Welche Sprache wofür, warum ein Projekt bei seinem Werkzeugkasten bleibt | [Sprachen und Plattformen](sprachen-und-plattformen.md) |
 | Terminal | Sollte ich kennen | Was die Befehlszeile ist und wie man liest, was der Agent dort ausführt | [Werkzeuge](werkzeuge.md#terminal) |
 | CI (automatische Prüfungen) | Sollte ich kennen | Was bei jedem Pull Request automatisch geprüft wird und wie man ein rotes Ergebnis liest | [Werkzeuge](werkzeuge.md#ci-automatische-prüfungen), [Modul 07](../07-pull-request-und-review.md) |
 | YAML und JSON | Gut zu wissen | Konfigurations- und Datenformate lesen können | [Werkzeuge](werkzeuge.md#yaml-und-json) |
 | Container | Gut zu wissen | Wie Software verpackt und überall gleich gestartet wird | [Werkzeuge](werkzeuge.md#container) |
-| Umgebungen (Entwicklung, Test, Produktion) | Gut zu wissen | Warum man nicht in der echten Software ausprobiert | [Web und Daten](web-und-daten.md#umgebungen-entwicklung-test-produktion) |
 | Editor, Entwicklungsumgebung, Browser-Entwicklerwerkzeuge | Gut zu wissen | Werkzeuge, mit denen Entwickler arbeiten | [Werkzeuge](werkzeuge.md#editor-und-entwicklungsumgebung) |
 
 ## Selbstcheck vor dem ersten Pull Request
 
 Gehe die Liste ehrlich durch. Wo du nicht sicher bist, lies die verlinkte Seite oder frage einen KI-Assistenten als Nachhilfe. Wo es dann noch hakt, frage den Architekten. Das ist kein Zeichen von Schwäche, sondern genau seine Aufgabe.
+
+### Vor dem ersten Pull Request
 
 Kann ich in eigenen Worten erklären, ...
 
@@ -415,12 +427,26 @@ Kann ich in eigenen Worten erklären, ...
 - [ ] warum die Prüfung von Rechten auf dem Server passieren muss und nicht nur im Browser?
 - [ ] welche Daten in meinem Projekt personenbezogen oder besonders sensibel sind?
 - [ ] warum ich nie echte Daten zum Ausprobieren verwende?
+- [ ] wer in meinem Projekt wofür verantwortlich ist, und warum "der Agent hat das so gebaut" keine Begründung ist?
+- [ ] in welchen Umgebungen ein KI-Agent arbeiten darf, und warum nie in QA mit echten Daten oder in der Produktion?
+- [ ] warum Tests bei der Arbeit mit Agenten so wichtig sind, und wie ich erwartetes Verhalten und Sonderfälle in eigenen Worten aufschreibe?
+- [ ] was ein rotes Kreuz bei den automatischen Prüfungen im Pull Request bedeutet, und warum ein roter Test repariert und nicht gelöscht wird?
+- [ ] welche Daten ich in welchen KI-Dienst eingeben darf, und warum Screenshots und Fehlermeldungen aus der echten Software nicht in einen KI-Chat gehören?
+- [ ] wie ich eine Frage so stelle, dass andere sie ohne Rückfrage beantworten können, und wie ich auf harte Kritik im Review reagiere?
+
+### In den ersten Monaten
+
+Kann ich in eigenen Worten erklären, ...
+
 - [ ] was eine Abhängigkeit ist und warum Updates wichtig sind?
 - [ ] welche Programmiersprache mein Projekt nutzt und warum der Agent nicht einfach eine neue einführen darf?
 - [ ] dass der Agent Befehle im Terminal ausführt, und dass ich lesen sollte, was er ausführt?
-- [ ] was ein rotes Kreuz bei den automatischen Prüfungen im Pull Request bedeutet?
+- [ ] was mein Werkzeug kostet, wer es bezahlt, und warum lange, ziellose Agenten-Sitzungen mehr kosten?
+- [ ] welches Modell mein Projekt als Standard nutzt, und wann sich ein stärkeres Modell oder mehr Nachdenken lohnt?
+- [ ] warum ich keinen fremden Code ohne passende Lizenz übernehme, und was ein Fork ist?
+- [ ] warum mein Prototyp nicht einfach in Betrieb gehen darf, und was CVE und SBOM grob bedeuten, auch wenn ich sie nicht selbst einrichte?
 
-Wenn du die ersten zwölf Punkte mit Ja beantworten kannst, bist du bereit für deinen ersten Pull Request. Die übrigen kommen mit der Zeit.
+Wenn du alle Punkte im ersten Teil mit Ja beantworten kannst, bist du bereit für deinen ersten Pull Request. Der zweite Teil kommt mit der Zeit. Wie du die Module dazu am besten durcharbeitest, steht im [Schulungsablauf](../schulungsablauf.md#pfad-für-das-selbststudium).
 
 ## Seiten in diesem Abschnitt
 
@@ -3919,6 +3945,420 @@ Alle abgerufen am 2026-11-12. Modelle und Preise ändern sich, **bitte prüfen**
 
 ---
 
+<!-- Datei: docs/18-lizenzen-und-recht.md -->
+
+# Modul 18: Lizenzen, Forks und Recht
+
+Wer Software baut, arbeitet ständig mit Werken anderer: Bibliotheken, Code-Schnipsel aus dem Internet, Texte, Bilder, Vorschläge des KI-Agenten. Und wer selbst etwas veröffentlicht, gibt anderen Rechte daran. In diesem Modul lernst du, was Lizenzen sind, welche Arten es gibt, was ein Fork ist, was bei KI-erzeugtem Code zu beachten ist und wer im Verein am Ende verantwortlich ist.
+
+**Wichtig:** Dieses Modul ist **keine Rechtsberatung**. Es gibt einen vereinfachten Überblick, damit du Risiken erkennst und die richtigen Fragen stellst. Für echte Entscheidungen (Lizenz wählen, fremden Code übernehmen, Streit mit einem Fork) entscheiden der Vorstand und, wenn nötig, eine rechtliche Beratung.
+
+**Stand: 2026-11-12.** Bedingungen von Plattformen und KI-Anbietern ändern sich, und die Rechtslage zu KI ist noch in Bewegung. Alle Angaben mit Quelle, unsichere Punkte sind mit **bitte prüfen** markiert.
+
+## Das Beispiel
+
+Jonas, der junge Feuerwehrmann, will im Wachbuch eine Kalenderansicht für die Prüftermine. Er findet auf GitHub ein passendes Projekt, kopiert 400 Zeilen, löscht den Kopf mit dem Namen des Autors ("braucht doch keiner") und öffnet einen Pull Request. Peter, der externe Softwarearchitekt, stoppt ihn im Review: "Woher kommt der Code? Welche Lizenz hat er?" Jonas: "Der war öffentlich, also frei." Genau dieser Satz ist falsch. Dieses Modul erklärt, warum.
+
+## Warum das wichtig ist
+
+- **Urheberrecht entsteht automatisch.** Wer Code, Texte oder Bilder schafft, hat daran das Urheberrecht, ohne Anmeldung und ohne Copyright-Zeichen. Computerprogramme sind in Deutschland ausdrücklich geschützt ([§ 2 UrhG](https://www.gesetze-im-internet.de/urhg/__2.html), [§ 69a UrhG](https://www.gesetze-im-internet.de/urhg/__69a.html)).
+- **Öffentlich heißt nicht frei.** Dass ein Projekt auf GitHub für alle sichtbar ist, erlaubt nur, es anzusehen und auf GitHub zu forken. Das regeln die Nutzungsbedingungen von GitHub ([GitHub Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service), Abschnitt D.5). Kopieren, ändern und in eigene Software einbauen darfst du nur, wenn eine Lizenz es erlaubt.
+- **Keine Lizenz heißt: alle Rechte vorbehalten.** Ohne Lizenz gilt das normale Urheberrecht, der Autor behält alle Rechte ([GitHub Docs: Licensing a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository), [choosealicense.com: No License](https://choosealicense.com/no-permission/)). Code ohne Lizenz ist für das eigene Projekt tabu, außer der Autor erlaubt es schriftlich.
+
+Eine **Lizenz** ist eine Erlaubnis des Urhebers: Du darfst das Werk unter bestimmten Bedingungen nutzen. Hältst du die Bedingungen nicht ein, hast du keine Erlaubnis.
+
+## Die wichtigsten Lizenzarten
+
+**Open Source** heißt: Der Quellcode ist offen und die Lizenz erlaubt Nutzung, Änderung und Weitergabe für jeden Zweck. Die Open Source Initiative pflegt dafür eine Definition und eine Liste geprüfter Lizenzen ([opensource.org/osd](https://opensource.org/osd), [opensource.org/licenses](https://opensource.org/licenses)). **Copyleft** heißt: Wer das Werk verändert weitergibt, muss es unter derselben Lizenz weitergeben.
+
+| Art | Beispiele | Was erlaubt ist | Was das für dein Projekt heißt |
+| --- | --- | --- | --- |
+| **Freizügig** (permissive) | MIT, Apache-2.0, BSD | fast alles: nutzen, ändern, weitergeben, verkaufen, auch in geschlossener Software | Einbauen ist meist unproblematisch. Copyright-Hinweis und Lizenztext müssen erhalten bleiben. Apache-2.0 regelt zusätzlich Patente und verlangt, Änderungen zu kennzeichnen. |
+| **Schwaches Copyleft** | LGPL, MPL-2.0 | nutzen und einbinden auch in Software mit anderer Lizenz | Änderungen **an der Bibliothek selbst** müssen unter derselben Lizenz offengelegt werden, dein eigener Code nicht. Details unterscheiden sich, **bitte prüfen**. |
+| **Starkes Copyleft** | GPL-2.0, GPL-3.0 | nutzen, ändern, weitergeben | Gibst du Software weiter, die GPL-Code enthält, muss das **Gesamtwerk** unter der GPL stehen und der Quellcode mitgeliefert werden. |
+| **Netzwerk-Copyleft** | AGPL-3.0 | wie GPL | Wie GPL, aber die Pflicht zur Offenlegung gilt auch, wenn Nutzer die Software nur **über das Netz** benutzen, z. B. als Web-Anwendung ([gnu.org: License list](https://www.gnu.org/licenses/license-list.html)). Für ein Web-Werkzeug wie das Wachbuch besonders wichtig. |
+| **Creative Commons** | CC BY, BY-SA, BY-NC, BY-ND und Kombinationen wie BY-NC-SA | Texte, Bilder, Folien nutzen je nach Bausteinen | BY: Urheber nennen. SA: Bearbeitungen unter gleicher Lizenz. NC: nicht kommerziell. ND: keine Bearbeitungen. **Nicht für Code gedacht**, das empfiehlt Creative Commons selbst ([CC FAQ](https://creativecommons.org/faq/), [CC-Lizenzen](https://creativecommons.org/share-your-work/cclicenses/)). |
+| **Gemeinfrei / CC0** | CC0, Unlicense | alles, ohne Bedingungen | Frei nutzbar. Ein völliger Verzicht auf das Urheberrecht ist in Deutschland so nicht möglich; CC0 hat dafür eine Ersatzregel ([CC0](https://creativecommons.org/publicdomain/zero/1.0/)). |
+
+Achtung bei **NC** (nicht kommerziell): Eine solche Lizenz ist **keine Open-Source-Lizenz**, weil die Open-Source-Definition verbietet, bestimmte Einsatzbereiche wie kommerzielle Nutzung auszuschließen ([opensource.org/osd](https://opensource.org/osd), Kriterium 6). Was genau "kommerziell" ist, ist oft unklar, z. B. bei einem Verein, der Eintritt für ein Fest nimmt (**bitte prüfen**).
+
+Eine gute, verständliche Übersicht mit Rechten und Pflichten jeder Lizenz bietet [choosealicense.com](https://choosealicense.com/licenses/), einen Vergleich in Tabellenform der [Anhang](https://choosealicense.com/appendix/). Deutschsprachige Informationen zu Open-Source-Recht sammelt das [ifrOSS](https://www.ifross.org/) (Institut für Rechtsfragen der Freien und Open Source Software).
+
+## Man darf die Autoren nicht einfach entfernen
+
+Fast jede Lizenz, auch die freizügigste, verlangt: **Der Copyright-Hinweis und der Lizenztext bleiben erhalten.** Das ist der Preis für die Nutzung. Nicht erlaubt ist zum Beispiel:
+
+- Einen Code-Schnipsel aus einem Blog oder einem GitHub-Projekt **ohne Lizenz** in das Wachbuch kopieren.
+- Den **Kopf einer Datei** mit Autor und Lizenz löschen, wie Jonas es getan hat.
+- Ein fremdes Projekt herunterladen, umbenennen und **unter eigenem Namen** neu veröffentlichen.
+- Eine GPL-Bibliothek einbauen und den Quellcode trotzdem nicht herausgeben, obwohl die Software weitergegeben wird.
+
+Richtig geht es so: Lizenz prüfen, Hinweise stehen lassen, Herkunft im Pull Request nennen ("Kalender-Logik übernommen aus Projekt X, MIT-Lizenz, Hinweis in `NOTICE` ergänzt"). Bei Unklarheit fragt man Peter, bevor der Code im Repository landet. Für Jonas heißt das: Das Kalender-Projekt steht unter MIT, also darf er es nutzen, aber nur mit dem Hinweis auf den Autor. Noch besser: Er bindet es als Abhängigkeit ein, statt Code zu kopieren (siehe unten).
+
+## Die andere Seite: Wer veröffentlicht, gibt Rechte ab
+
+Wenn der Verein das Wachbuch unter einer Lizenz veröffentlicht, gilt diese Lizenz auch für ihn. Er muss damit leben:
+
+- **Andere dürfen nutzen, ändern und forken.** Bei freizügigen Lizenzen dürfen sie das Wachbuch sogar **verkaufen** oder in ein kommerzielles Produkt einbauen, solange der Hinweis bleibt.
+- **Eine Lizenz lässt sich für bereits veröffentlichte Versionen nicht zurückholen.** Wer Version 1.0 unter MIT bekommen hat, darf sie weiter nutzen, auch wenn Version 2.0 eine andere Lizenz bekommt.
+- **Später wechseln ist schwer**, sobald andere mitgeschrieben haben. Jeder Beitragende ist Urheber seines Teils. Für einen Lizenzwechsel müssten alle zustimmen, oder ihr Code wird ersetzt.
+- **Ideen und Namen schützt eine Lizenz nicht.** Jemand darf die Idee "digitales Wachbuch" frei nachbauen. Namen und Logos schützt das **Markenrecht**, nicht das Urheberrecht. Ob sich eine Marke lohnt, ist eine eigene Frage (**bitte prüfen**).
+
+### Welche Lizenz für die eigene Vereinssoftware?
+
+| Ziel des Vereins | Passende Richtung |
+| --- | --- |
+| Andere Wehren sollen es möglichst einfach nutzen dürfen, auch Firmen | freizügig (MIT oder Apache-2.0) |
+| Verbesserungen sollen zurück an die Allgemeinheit fließen, auch bei Web-Betrieb | Copyleft (GPL oder, für Web-Anwendungen, AGPL) |
+| Niemand soll damit Geld verdienen | Creative Commons NC passt nicht gut zu Code und ist keine Open-Source-Lizenz; hier ist rechtliche Beratung nötig |
+
+### Ein echtes Beispiel: die zwei Lizenzen dieser Schulung
+
+Diese Schulung selbst nutzt zwei Lizenzen (siehe [README](https://github.com/slauger/domain-dev-with-ai#lizenz)):
+
+- **Schulungsinhalte** (Texte in `docs/`, Folien) stehen unter **CC BY-NC-SA 4.0**: Jeder darf sie nutzen, weitergeben und anpassen, wenn der Urheber genannt wird, die Nutzung nicht kommerziell ist und Bearbeitungen unter derselben Lizenz stehen. Für kommerzielle Nutzung muss man vorher fragen.
+- **Vorlagen und Skripte zum Kopieren** (`starter/`, `docs/vorlagen/`, `scripts/`) stehen unter der **MIT-Lizenz**: Sie sollen in echten Projekten landen, auch kommerziellen und Open-Source-Projekten.
+
+Warum zwei? Die Texte sind das eigentliche Werk, das nicht einfach als kostenpflichtiger Kurs weiterverkauft werden soll. Die Vorlagen dagegen sind nur nützlich, wenn man sie ohne Bedenken in jedes Projekt kopieren darf. Eine NC-Lizenz auf Vorlagen würde jedes Projekt, das Geld verdient, sofort in rechtliche Unsicherheit bringen. Und CC ist für Code nicht gedacht, MIT schon.
+
+## Forks
+
+Ein **Fork** ist eine eigene Kopie eines fremden Repositories auf der Plattform ([Glossar](glossar.md), [GitHub Docs: Fork a repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)). Das Original heißt **Upstream**. Im Fork kann man frei arbeiten und Änderungen per **Pull Request aus dem Fork** an das Original vorschlagen. Grundlagen zu Pull Requests stehen in [Modul 07](07-pull-request-und-review.md).
+
+**Forks sind normal und gut.** In der Open-Source-Welt ist der Fork der übliche Weg, bei fremden Projekten mitzumachen. Eine Wehr im Nachbarlandkreis kann das Wachbuch forken, an ihre Abläufe anpassen und gute Verbesserungen zurückschicken. Genau das will Open Source.
+
+**Forks aktuell halten:** Ein Fork bleibt nicht automatisch auf dem Stand des Originals. Man holt die Änderungen aus dem Upstream regelmäßig nach, auf GitHub z. B. per Knopf "Sync fork" ([GitHub Docs: Syncing a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)). Je länger man wartet, desto mehr Konflikte entstehen.
+
+**Forks privater Repositories** folgen eigenen Regeln ([GitHub Docs: Permissions and visibility of forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-permissions-and-visibility-of-forks)):
+
+- Forks privater Repositories sind ebenfalls privat. Die Sichtbarkeit lässt sich nicht einzeln ändern.
+- Organisationen und Repository-Admins können das Forken privater Repositories verbieten.
+- Die Besitzer des Upstreams können alle Forks im Netzwerk lesen.
+- Verliert jemand den Zugriff auf das private Repository, werden seine privaten Forks gelöscht. **Lokale Kopien auf seinem Rechner bleiben aber bestehen.** Wer ausscheidet, hat den Code also womöglich noch.
+- Wird ein privates Repository gelöscht, werden seine privaten Forks mitgelöscht.
+
+**Öffentlich bleibt öffentlich:** Wird ein öffentliches Repository später privat gemacht, bleiben bestehende Forks und Kopien anderer bestehen ([GitHub Docs: Licensing a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)). Was einmal mit Lizenz veröffentlicht war, ist draußen.
+
+**"Feindliche" Forks:** Manchmal ist jemand mit der Richtung eines Projekts unzufrieden und führt einen Fork als eigenes Konkurrenzprojekt weiter. Das ist ärgerlich, aber erlaubt, wenn die Lizenz es erlaubt, und bei jeder Open-Source-Lizenz tut sie das. Der Fork muss die Lizenzbedingungen einhalten (Hinweise behalten, bei Copyleft den Quellcode offenlegen). Er darf aber **nicht den Namen und das Logo** so verwenden, dass er wie das Original wirkt, wenn diese geschützt sind (**bitte prüfen**).
+
+## Abhängigkeiten
+
+Jede Bibliothek, die das Wachbuch nutzt ([Modul 09](09-wartung-und-releases.md#was-sind-abhängigkeiten)), hat eine eigene Lizenz, und die transitiven Abhängigkeiten auch. Die Lizenzen müssen **zueinander passen** (Lizenzkompatibilität). Beispiele:
+
+- MIT- oder Apache-2.0-Bibliothek in einem GPL-Projekt: in der Regel kein Problem. Achtung: Apache-2.0 ist mit GPL-3.0 vereinbar, laut Free Software Foundation aber **nicht mit GPL-2.0** ([gnu.org: License list](https://www.gnu.org/licenses/license-list.html)).
+- GPL-Bibliothek in einem Apache-2.0-Projekt: problematisch. Wird die Software weitergegeben, müsste das Gesamtwerk unter die GPL.
+- AGPL-Bibliothek in einer Web-Anwendung: Die Offenlegungspflicht greift schon bei Nutzung über das Netz.
+
+**Automatisch prüfen lassen:** Niemand liest hunderte Lizenzen von Hand.
+
+- **SBOM** (Software-Stückliste, [Modul 16](16-vom-prototyp-zum-betrieb.md#sbom-die-zutatenliste-der-software)) enthält auch die Lizenz jedes Pakets, meist als SPDX-Kennung wie `MIT` oder `GPL-3.0-only` ([SPDX License List](https://spdx.org/licenses/)).
+- **Lizenz-Scanner** in der CI vergleichen die Lizenzen mit einer erlaubten Liste und schlagen Alarm.
+- **GitHub Dependency Review** zeigt in Pull Requests Lizenzinformationen neuer Abhängigkeiten. Die zugehörige Action kann mit einer Erlaubt- oder Verboten-Liste von Lizenzen arbeiten; für öffentliche Repositories ist sie verfügbar, für private nur mit kostenpflichtigen Sicherheitsfunktionen ([GitHub Docs: About dependency review](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review), **bitte prüfen** für den eigenen Tarif).
+
+**Wer entscheidet:** Neue Abhängigkeiten entscheidet der Architekt, bei größeren Fragen als ADR ([Modul 10](10-standards.md#adrs-architekturentscheidungen)). Darin steht auch die Lizenz und warum sie passt. Der Agent darf nicht einfach Pakete hinzufügen ([Modul 08](08-sicherheit.md#unbekannte-pakete-und-typosquatting)).
+
+## KI-erzeugter Code und Texte
+
+**Wem gehört, was die KI erzeugt?** Nach deutschem Recht ist nur eine "persönliche geistige Schöpfung" geschützt ([§ 2 Abs. 2 UrhG](https://www.gesetze-im-internet.de/urhg/__2.html)). Rein KI-erzeugte Ergebnisse sind daher **nach überwiegender Auffassung nicht urheberrechtlich geschützt**. Wo ein Mensch prägend mitwirkt, auswählt, umarbeitet und zusammenfügt, kann für diesen Anteil Schutz entstehen. Eine höchstrichterliche Klärung gibt es bisher nicht, die Abgrenzung ist im Einzelfall schwierig ([IHK Braunschweig: KI-Nutzung im Unternehmen und Urheberrecht](https://www.ihk.de/braunschweig/beratung-und-service/rechtsthemen/wirtschaftsrecht-von-a-bis-z/ki-nutzung-im-unternehmen-und-urheberrecht-6234898), **bitte prüfen**). Für das Wachbuch heißt das praktisch: Der Verein kann KI-Code nutzen, aber er kann nicht sicher sein, an jedem Teil ein eigenes Urheberrecht zu haben.
+
+**Was die Anbieter sagen:** Anthropic überträgt in den kommerziellen Bedingungen seine Rechte an den Ausgaben (soweit vorhanden) an den Kunden und sagt unter Bedingungen Schutz bei Ansprüchen Dritter wegen Verletzung geistigen Eigentums zu ([Anthropic Commercial Terms](https://www.anthropic.com/legal/commercial-terms)). OpenAI überträgt in seinen Nutzungsbedingungen ebenfalls seine Rechte am Output an den Nutzer ([OpenAI Terms of Use](https://openai.com/policies/terms-of-use/)). Wichtig: Der Anbieter kann nur Rechte übertragen, die er hat. Ob am Output überhaupt ein Urheberrecht besteht und ob er fremde Rechte verletzt, klärt das nicht. Bedingungen ändern sich, **bitte prüfen**.
+
+**Das Risiko: wörtlich kopierter Code.** Ein Modell kann bekannten, lizenzierten Code nahezu wörtlich wiedergeben, z. B. eine bekannte Funktion aus einem GPL-Projekt, ohne Hinweis auf Herkunft und Lizenz. GitHub Copilot bietet dafür einen Filter, der Vorschläge mit Übereinstimmungen zu öffentlichem Code blockiert, oder einen Hinweis mit Fundstelle und Lizenz ("Code Referencing") ([GitHub Blog: Code referencing](https://github.blog/news-insights/product-news/code-referencing-now-generally-available-in-github-copilot-and-with-microsoft-azure-ai), **bitte prüfen**, was das eigene Werkzeug bietet).
+
+**Was du tust:**
+
+- Jeden KI-Vorschlag im Review lesen, wie jeden anderen Code ([Modul 07](07-pull-request-und-review.md)).
+- Lizenz-Scanner und Duplikat-Filter nutzen, wo es sie gibt.
+- **Keinen großen, unbekannten Code** in den Agenten kopieren mit "bau das ins Wachbuch ein". Herkunft und Lizenz kommen nicht mit.
+- Wird ein Ergebnis auffällig lang und fertig, z. B. eine komplette Bibliothek: nachfragen, ob es sie schon als Paket gibt, und die nehmen.
+
+## Beiträge: wem gehört der beigesteuerte Code?
+
+Wer zum Wachbuch beiträgt, bleibt Urheber seines Teils und stellt ihn unter die Lizenz des Projekts. Damit das klar ist, nutzen Projekte eine von zwei Methoden:
+
+- **DCO** (Developer Certificate of Origin): Mit der Zeile `Signed-off-by: Name <E-Mail>` im Commit bestätigt der Beitragende, dass er den Beitrag selbst erstellt hat oder ihn weitergeben darf und ihn unter der Projektlizenz einreicht. Git setzt die Zeile mit `git commit --signoff` ([developercertificate.org](https://developercertificate.org/)).
+- **CLA** (Contributor License Agreement): ein eigener Vertrag, den man vor dem ersten Beitrag unterschreibt. Oft räumt man darin dem Projektträger weitere Rechte ein, z. B. für einen späteren Lizenzwechsel. Mehr Aufwand, für ein Vereinsprojekt meist überdimensioniert (**bitte prüfen**).
+
+Deshalb stehen Lizenz und Beitragsregeln **von Anfang an** im Repository: `LICENSE` und `CONTRIBUTING.md` ([Modul 10](10-standards.md#dokumentation)). Wer beiträgt, weiß dann vorher, worauf er sich einlässt, und das Projekt muss später niemanden nachträglich fragen.
+
+## Haftung und Verantwortung im Verein
+
+- **Wer verantwortlich ist:** Betreibt der Verein das Wachbuch mit echten Mitgliederdaten, ist **der Verein** Verantwortlicher im Sinne der DSGVO ([Modul 08](08-sicherheit.md#die-dsgvo-in-kurzform), [Modul 14](14-ki-und-datenschutz.md)). Für ihn handelt der **Vorstand**. Ob der Träger der Feuerwehr (die Gemeinde) oder der Förderverein betreibt, muss klar festgelegt sein (**bitte prüfen**).
+- **Ehrenamtliche Vorstände** haften dem Verein gegenüber nur bei Vorsatz oder grober Fahrlässigkeit, wenn sie unentgeltlich oder für höchstens 3.300 Euro im Jahr tätig sind ([§ 31a BGB](https://www.gesetze-im-internet.de/bgb/__31a.html)). Gegenüber Dritten gelten andere Regeln (**bitte prüfen**).
+- **"Ohne Gewähr" in Lizenzen:** Fast alle Open-Source-Lizenzen enthalten einen Gewährleistungs- und Haftungsausschluss ("AS IS"). Wie weit er in Deutschland wirkt, ist begrenzt, etwa bei Vorsatz (**bitte prüfen**). Für den Verein heißt das: Fremde Bibliotheken kommen ohne Garantie, und das eigene Wachbuch, das andere Wehren nutzen, auch.
+- **Versicherung:** Ob die Vereinshaftpflicht oder eine D&O- bzw. Vermögensschadenversicherung Schäden durch Software, Datenpannen oder Urheberrechtsverletzungen abdeckt, klärt der Vorstand mit dem Versicherer (**bitte prüfen**). Die Kassiererin des Fördervereins kennt die bestehenden Verträge.
+
+Für echte Entscheidungen gilt: **rechtlich prüfen lassen.** Der Kommandant entscheidet nicht allein, Karl als Domänenexperte nicht, und der Agent schon gar nicht.
+
+## Checkliste
+
+- [ ] Ich übernehme keinen fremden Code ohne geprüfte Lizenz, auch nicht "nur ein paar Zeilen".
+- [ ] Copyright-Hinweise und Lizenztexte bleiben stehen, die Herkunft steht im Pull Request.
+- [ ] Neue Abhängigkeiten schlage ich vor, der Architekt entscheidet (mit Lizenz im ADR).
+- [ ] Ich achte besonders auf GPL und AGPL, wenn das Projekt eine andere Lizenz hat.
+- [ ] CC-Lizenzen nutze ich für Texte und Bilder, nicht für Code.
+- [ ] KI-Vorschläge prüfe ich im Review, lange fertige Code-Blöcke hinterfrage ich.
+- [ ] Ich kopiere keinen großen unbekannten Code in den Agenten.
+- [ ] Unser Projekt hat `LICENSE` und `CONTRIBUTING.md`, Beiträge sind per DCO oder CLA geregelt.
+- [ ] Ich weiß: Was mit Lizenz veröffentlicht ist, lässt sich nicht zurückholen.
+- [ ] Wer verantwortlich ist und ob eine Versicherung greift, hat der Vorstand geklärt.
+- [ ] Bei echten Rechtsfragen holt der Verein rechtlichen Rat ein.
+
+## Zusammenfassung
+
+- Urheberrecht entsteht automatisch. Öffentlich ist nicht frei, ohne Lizenz ist alles verboten.
+- Freizügig (MIT, Apache, BSD), schwaches Copyleft (LGPL, MPL), starkes Copyleft (GPL), Netzwerk-Copyleft (AGPL), Creative Commons für Texte, CC0 für fast alles.
+- Hinweise auf Autoren und Lizenzen bleiben immer stehen.
+- Wer veröffentlicht, gibt Rechte ab und kann sie nicht zurückholen. Forks sind normal.
+- Lizenzen der Abhängigkeiten müssen passen, Werkzeuge prüfen das automatisch.
+- Rein KI-erzeugter Code ist nach überwiegender Auffassung nicht geschützt, kann aber fremden Code enthalten.
+- Dieses Modul ist keine Rechtsberatung.
+
+## Quellen
+
+Alle abgerufen am 2026-11-12. Bedingungen und Rechtslage ändern sich, **bitte prüfen**.
+
+- [choosealicense.com: Lizenzen](https://choosealicense.com/licenses/), [Anhang](https://choosealicense.com/appendix/), [No License](https://choosealicense.com/no-permission/)
+- [Open Source Initiative: Open Source Definition](https://opensource.org/osd) und [Lizenzliste](https://opensource.org/licenses)
+- [Creative Commons: Lizenzen](https://creativecommons.org/share-your-work/cclicenses/), [FAQ](https://creativecommons.org/faq/), [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
+- [GNU: Various Licenses and Comments about Them](https://www.gnu.org/licenses/license-list.html)
+- [SPDX License List](https://spdx.org/licenses/)
+- [ifrOSS: Institut für Rechtsfragen der Freien und Open Source Software](https://www.ifross.org/)
+- GitHub Docs: [Licensing a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository), [Fork a repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo), [Syncing a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork), [Permissions and visibility of forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-permissions-and-visibility-of-forks), [About dependency review](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review), [Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)
+- [GitHub Blog: Code referencing in GitHub Copilot](https://github.blog/news-insights/product-news/code-referencing-now-generally-available-in-github-copilot-and-with-microsoft-azure-ai)
+- [Anthropic: Commercial Terms](https://www.anthropic.com/legal/commercial-terms), [OpenAI: Terms of Use](https://openai.com/policies/terms-of-use/)
+- [Developer Certificate of Origin](https://developercertificate.org/)
+- [IHK Braunschweig: KI-Nutzung im Unternehmen und Urheberrecht](https://www.ihk.de/braunschweig/beratung-und-service/rechtsthemen/wirtschaftsrecht-von-a-bis-z/ki-nutzung-im-unternehmen-und-urheberrecht-6234898)
+- Gesetze: [§ 2 UrhG](https://www.gesetze-im-internet.de/urhg/__2.html), [§ 69a UrhG](https://www.gesetze-im-internet.de/urhg/__69a.html), [§ 31a BGB](https://www.gesetze-im-internet.de/bgb/__31a.html)
+
+---
+
+<!-- Datei: docs/19-gut-zusammenarbeiten.md -->
+
+# Modul 19: Gut zusammenarbeiten
+
+Software entsteht nicht nur aus Code, sondern aus vielen kleinen Gesprächen: Fragen, Antworten, Kommentare, Entscheidungen. In diesem Modul geht es darum, wie diese Gespräche gut laufen. Du lernst, wie man gute Fragen stellt, asynchron arbeitet, Feedback gibt und annimmt, Neue einarbeitet und mit Meinungsverschiedenheiten umgeht.
+
+## Warum das im Ehrenamt besonders wichtig ist
+
+Im Ehrenamt ist der Engpass selten der Code. Der Coding-Agent schreibt Code schnell. Knapp ist etwas anderes:
+
+- **Wenig Zeit:** Alle arbeiten neben Familie, Beruf und Dienst in der Wehr am Wachbuch. Oft bleibt eine halbe Stunde am Abend.
+- **Unterschiedliche Hintergründe:** Karl kennt den Atemschutz, Peter die Architektur, Jonas die KI-Werkzeuge. Jeder benutzt andere Wörter für dieselbe Sache.
+- **Meist asynchron:** Asynchron heißt: nicht gleichzeitig. Man schreibt in ein Issue, einen Kommentar oder einen Chat, und die Antwort kommt Stunden oder Tage später. Treffen, bei denen alle gleichzeitig da sind, sind selten.
+- **Der IT-Experte ist geteilt:** Peter betreut neben dem Wachbuch noch andere Projekte. Jede unklare Frage kostet ihn Zeit, die anderswo fehlt.
+
+Deshalb gilt: **Die Kommunikation ist der Flaschenhals, nicht der Code.** Eine gut gestellte Frage spart allen eine Runde Hin und Her. Bei Antworten, die nur einmal pro Woche kommen, ist eine gesparte Runde eine gesparte Woche.
+
+## Gute Fragen stellen
+
+### Bevor du fragst
+
+Viele Fragen beantworten sich in wenigen Minuten selbst. Das schont die Zeit der anderen und du kommst schneller weiter:
+
+1. **In der Dokumentation suchen:** Projektdokumentation, Issues und geschlossene Pull Requests. Vielleicht hatte jemand dasselbe Problem schon.
+2. **Den Lernbegleiter oder das Nachschlagewerk fragen:** Ein KI-Assistent, der die Schulung oder das Projekt kennt, erklärt Begriffe und Abläufe ([Lernbegleiter](tutor/README.md), [Nachschlagewerk einrichten](nachschlagewerk-einrichten.md)).
+3. **Im [Glossar](glossar.md) nachschlagen:** Viele Fragen sind eigentlich Fragen nach einem Begriff.
+
+Das heißt nicht, dass du nicht fragen darfst. Fragen ist erwünscht. Aber eine Frage, die zeigt, was du schon versucht hast, bekommt schneller eine gute Antwort.
+
+### So ist eine gute Frage aufgebaut
+
+| Teil | Was hineingehört | Beispiel aus dem Wachbuch |
+| --- | --- | --- |
+| Ziel | Was willst du erreichen? | "Ich will, dass das nächste Prüfdatum automatisch berechnet wird." |
+| Kontext | Wo bist du, woran arbeitest du? | "Issue #57, Branch `feat/pruefdatum`, lokal auf meinem Rechner." |
+| Was du versucht hast | Schritte, Prompts, Dokumentation | "Ich habe den Agenten gebeten, einen Test zu schreiben, und die Doku zum Datenmodell gelesen." |
+| Was passiert ist | Was du gesehen hast, statt was du erwartet hast | "Der Test schlägt fehl, das Datum ist einen Tag zu früh." |
+| Genaue Fehlermeldung | Wörtlich kopiert, als Text, nicht abgetippt | `AssertionError: expected 2027-03-01, got 2027-02-28` |
+| Bildschirmfoto | Nur wenn es hilft, ohne persönliche Daten | Ausschnitt aus der Test-Umgebung mit erfundenen Daten |
+| Link | Zum Issue, Pull Request oder CI-Lauf | "Siehe CI-Lauf im PR #61." |
+| Was du brauchst | Entscheidung, Hinweis oder Review? | "Ich brauche einen Hinweis, wo ich suchen soll." |
+
+Der letzte Punkt wird oft vergessen, ist aber der wichtigste. Peter kann in zwei Minuten einen Hinweis geben. Für ein Review braucht er eine halbe Stunde. Für eine Entscheidung muss er vielleicht erst mit dem Kommandanten sprechen. Wenn er weiß, was du brauchst, kann er seine Zeit richtig einplanen.
+
+### Vorher und nachher
+
+Jonas schreibt abends in den Projekt-Chat:
+
+> Hilfe, geht nicht. Der Agent hat das kaputt gemacht. Kann mal jemand schauen?
+
+Peter weiß nicht, was "das" ist, wo es kaputt ist und was Jonas schon probiert hat. Er muss zurückfragen, und die Antwort kommt am nächsten Abend. Zwei Tage sind weg.
+
+Dieselbe Frage, gut gestellt, als Kommentar im Pull Request:
+
+> - **Ziel:** Fahrzeugcheck soll den Kilometerstand speichern (Issue #43).
+> - **Problem:** Nach dem Speichern ist das Feld wieder leer. Der Test `test_fahrzeugcheck_kilometerstand` ist rot.
+> - **Fehlermeldung:** `IntegrityError: NOT NULL constraint failed: fahrzeugcheck.kilometerstand`
+> - **Versucht:** Den Agenten gefragt, er hat das Feld im Formular ergänzt, aber der Fehler bleibt. Die Migration habe ich nicht angefasst.
+> - **Ich brauche:** einen Hinweis, ob mir eine Migration fehlt. Kein Review nötig, eilt nicht.
+
+Peter liest das in einer Minute und antwortet: "Ja, die Migration fehlt. Lass den Agenten eine erzeugen und schau dir an, was sie tut." Fertig.
+
+### Wo fragen?
+
+| Ort | Wofür | Nicht für |
+| --- | --- | --- |
+| Issue | Fragen zum Thema des Issues, fachliche Klärungen, Entscheidungen | Plaudern, Fragen ohne Bezug |
+| Kommentar im Pull Request | Fragen zu einer bestimmten Stelle im Code oder zu einem Review-Kommentar | Grundsatzfragen, die das ganze Vorhaben betreffen (die gehören ins Issue) |
+| Chat | kurze, schnelle Absprachen, "bist du gerade da?" | Entscheidungen und Ergebnisse, die man später wiederfinden muss |
+| Privater Meldeweg | **Sicherheitslücken**, nie öffentlich (siehe `SECURITY.md` im Projekt und [Modul 08](08-sicherheit.md)) | alles andere |
+
+Zwei Regeln dazu:
+
+- **Ein Thema pro Frage.** Wer drei Fragen in eine Nachricht packt, bekommt meist nur auf die erste eine Antwort.
+- **Antworten zurücktragen.** Wenn im Chat oder am Telefon etwas geklärt wurde, schreib es kurz ins Issue oder in die Dokumentation: "Geklärt mit Peter: Die Migration fehlte, ist jetzt im PR." Sonst stellt der Nächste dieselbe Frage, und das Wissen steckt nur in einem Chatverlauf, den niemand findet.
+
+## Asynchron arbeiten
+
+Asynchron arbeiten heißt: Jeder arbeitet, wenn er Zeit hat, und das Gespräch läuft schriftlich weiter. Damit das funktioniert:
+
+- **Schreib so, dass man in zwei Minuten antworten kann.** Alles, was der andere braucht, steht in der Nachricht: Ziel, Link, konkrete Frage. Keine Rätsel, kein "siehe oben im Chat".
+- **Erwähne Menschen gezielt.** Mit `@name` bekommt jemand eine Benachrichtigung. Nutze das bewusst: `@peter` bei einer Architekturfrage, `@karl` bei einer Atemschutzfrage. Nicht alle auf einmal erwähnen, sonst fühlt sich keiner zuständig.
+- **Keine sofortige Antwort erwarten.** Ein Tag ist im Ehrenamt schnell. Wer dringend eine Antwort braucht, schreibt das dazu und sagt, warum.
+- **Antwortzeiten vereinbaren.** Das Team legt gemeinsam fest, was normal ist, z. B.: "Fragen in Issues werden innerhalb von drei Tagen beantwortet, Reviews innerhalb einer Woche." Dann weiß jeder, wann Nachfragen angebracht ist.
+- **Status im Issue aktuell halten.** Ein kurzer Satz reicht: "Bin dran, Test ist grün, PR kommt am Wochenende." Oder: "Komme diese Woche nicht dazu." So muss niemand nachfragen.
+
+## Reviews: Feedback geben
+
+Ein Review-Kommentar wird oft Tage später gelesen, ohne Tonfall und ohne Gesicht. Was beim Sprechen freundlich gemeint ist, kann geschrieben hart wirken. Deshalb:
+
+- **Freundlich:** Der andere hat seine Freizeit investiert. Sag auch, was gut ist.
+- **Konkret:** Nicht "das ist unschön", sondern "in Zeile 42 wird das Datum ohne Zeitzone gespeichert".
+- **Begründen:** Sag, **warum** etwas geändert werden soll. Wer den Grund versteht, macht den Fehler nicht noch einmal und kann den Agenten richtig anleiten.
+- **Gewicht kennzeichnen:** Unterscheide, was geändert werden muss und was nur ein Vorschlag ist. Bewährt haben sich Präfixe am Anfang des Kommentars (angelehnt an [Conventional Comments](https://conventionalcomments.org/), Stand: 2026-11-12):
+
+| Präfix | Bedeutung | Beispiel |
+| --- | --- | --- |
+| `Muss:` | Ohne diese Änderung kein Merge | "Muss: Die Rechteprüfung fehlt auf dem Server. Sonst kann jeder die Prüfdaten ändern." |
+| `Vorschlag:` | Wäre besser, entscheidet der Autor | "Vorschlag: Die Funktion könnte `naechste_pruefung` heißen, dann ist klarer, was sie tut." |
+| `Frage:` | Der Reviewer will etwas verstehen, keine Kritik | "Frage: Warum 12 Monate? Steht das so in der Vorschrift?" |
+| `Kleinigkeit:` | Tippfehler, Formulierung, unwichtig | "Kleinigkeit: Tippfehler in der Überschrift." |
+| `Lob:` | Was gut gelungen ist | "Lob: Die Testfälle mit abgebrochener Übung sind sehr gut." |
+
+### Ein harter Kommentar, freundlich umgeschrieben
+
+So nicht:
+
+> Das ist Quatsch. Warum speicherst du das Untersuchungsergebnis? Hast du Modul 14 nicht gelesen?
+
+So besser:
+
+> Muss: Hier wird das Ergebnis der Untersuchung gespeichert. Das ist ein Gesundheitsdatum und besonders geschützt (Art. 9 DSGVO, siehe [Modul 14](14-ki-und-datenschutz.md)). Für die Einsatzplanung reicht "gültig bis". Kannst du das Feld entfernen und nur das Datum speichern? Wenn du magst, schauen wir es uns am Donnerstag kurz gemeinsam an.
+
+Der Inhalt ist derselbe, und die Änderung ist genauso verbindlich. Aber Karl versteht, warum, und weiß, was er tun soll.
+
+## Reviews: Feedback annehmen
+
+- **Es geht um den Code, nicht um dich.** Ein Kommentar sagt "diese Stelle hat ein Problem", nicht "du bist schlecht".
+- **Nachfragen ist normal.** Wenn du einen Kommentar nicht verstehst, frag. Niemand erwartet, dass Karl weiß, was eine Migration ist.
+- **Mehrere Runden sind normal.** Auch erfahrene Entwickler brauchen oft zwei oder drei Runden, bis ein Pull Request passt. Das ist kein Scheitern, sondern der Ablauf.
+- **Der Agent hilft beim Umsetzen, aber du musst es verstehen.** Du kannst dem Coding-Agenten den Kommentar geben und um eine Erklärung und einen Vorschlag bitten (siehe [Modul 07](07-pull-request-und-review.md#auf-review-kommentare-antworten)). Bevor du die Änderung einreichst, musst du erklären können, was sich geändert hat und warum.
+- **Der Architekt darf Nein sagen und erklärt warum.** Peter trägt die Verantwortung für die Software als Ganzes. Ein Nein ist kein Misstrauen. Umgekehrt gehört zu jedem Nein eine Begründung und, wo möglich, ein Weg, wie es doch geht.
+
+Jonas lernt das gerade: Sein erster großer Pull Request kam mit zwölf Kommentaren zurück. Er war kurz frustriert und wollte den Agenten einfach "alle Kommentare umsetzen" lassen. Peter hat ihn gebeten, zu jedem Kommentar in einem Satz zu antworten, was er geändert hat. Beim dritten Kommentar hat Jonas gemerkt, dass der Agent eine Prüfung einfach gelöscht hatte, statt den Fehler zu beheben.
+
+## Der Verhaltenskodex
+
+Ein **Verhaltenskodex** (englisch Code of Conduct) ist eine kurze Vereinbarung, wie man im Projekt miteinander umgeht. Man braucht ihn nicht, solange alles gut läuft. Man braucht ihn, wenn es einmal nicht gut läuft, und dann ist es zu spät, ihn erst zu schreiben.
+
+Ein Verhaltenskodex regelt typischerweise:
+
+- **Respekt:** freundlicher Umgang, auch bei Meinungsverschiedenheiten, Kritik an der Sache statt an Personen.
+- **Was nicht geht:** Beleidigungen, Belästigung, Bloßstellen, das Veröffentlichen privater Daten anderer.
+- **Wie man meldet:** an wen man sich wenden kann, vertraulich, wenn etwas vorgefallen ist.
+- **Was dann passiert:** abgestufte Folgen, von einem Hinweis bis zum Ausschluss aus dem Projekt.
+
+Viele Open-Source-Projekte nutzen den [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/) als Vorlage (Stand: 2026-11-12). GitHub zeigt eine Datei `CODE_OF_CONDUCT.md` im Repository automatisch als Verhaltenskodex an ([Quelle](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-code-of-conduct-to-your-project), Stand: 2026-11-12). Eine kurze deutsche Fassung zum Übernehmen liegt im Starter-Bausatz: [starter/CODE_OF_CONDUCT.md](https://github.com/slauger/domain-dev-with-ai/blob/main/starter/CODE_OF_CONDUCT.md).
+
+In einer Feuerwehr gibt es schon Regeln für den Umgang miteinander. Der Verhaltenskodex ersetzt sie nicht, sondern gilt zusätzlich für die Orte des Projekts: Issues, Pull Requests, Chat. Das ist wichtig, weil dort auch Menschen mitarbeiten, die nicht Mitglied der Wehr sind, wie Peter.
+
+## Neue Mitwirkende einarbeiten
+
+Wer neu dazukommt, weiß nicht, wo er anfangen soll, und traut sich oft nicht zu fragen. Was hilft:
+
+- **Ein fester Ansprechpartner (Buddy oder Mentor):** Eine Person, die man alles fragen darf, auch "dumme" Fragen. Das muss nicht Peter sein. Karl kann Buddy für den Gerätewart sein, sobald er selbst ein paar Pull Requests gemacht hat.
+- **Ein kleines erstes Issue:** Issues mit dem Label `good first issue` sind klein, gut beschrieben und haben keine Abhängigkeiten. GitHub hebt sie für Neue hervor ([Quelle](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/encouraging-helpful-contributions-to-your-project-with-labels), Stand: 2026-11-12). Beispiel: "Tippfehler in der Fahrzeugübersicht korrigieren" oder "Beschriftung des Feldes Tankfüllstand verständlicher machen".
+- **Eine gemeinsame Sitzung (Pairing):** Eine Stunde zusammen am Bildschirm, vor Ort oder per Video. Der Neue steuert, der Buddy schaut zu und erklärt. Danach kennt der Neue den ganzen Weg von Issue bis Pull Request.
+- **Den ersten Merge feiern:** Ein kurzes "Willkommen, dein erster Beitrag ist drin!" im Pull Request oder im Chat. Das kostet nichts und motiviert sehr.
+- **Aufschreiben, was unklar war:** Neue sehen Lücken in der Dokumentation, die alle anderen nicht mehr sehen. Bitte sie, diese Lücken zu melden oder gleich selbst zu ergänzen. Das ist oft der beste zweite Beitrag.
+
+Der Jugendwart kommt neu ins Projekt. Karl wird sein Buddy. Sein erstes Issue ist klein: Die Überschrift "JF-Dienst" soll "Übungsabend Jugendfeuerwehr" heißen. Beim gemeinsamen Termin merkt er, dass in der Dokumentation nicht steht, wie man an die Test-Umgebung kommt. Das wird sein zweiter Beitrag.
+
+## Entscheidungen und Meinungsverschiedenheiten
+
+Meinungsverschiedenheiten sind normal und oft nützlich: Sie zeigen, dass jemand mitdenkt. Damit sie nicht liegen bleiben oder eskalieren:
+
+- **Klar ist, wer was entscheidet.** Fachliche Fragen entscheiden die Domänenexperten, Fragen zur Software selbst die IT-Experten, manches gemeinsam ([Geteilte Verantwortung](geteilte-verantwortung.md)). Prioritäten legt der Kommandant fest.
+- **Im Issue diskutieren, nicht im Flur.** Die Argumente stehen dann dort, wo man sie später findet. Wer nicht dabei war, kann nachlesen.
+- **Entscheidungen aufschreiben.** Größere Entscheidungen als ADR (Architekturentscheidung, Vorlage: [vorlagen/adr.md](vorlagen/adr.md)), fachliche Fragen auf der Entscheidungsseite des Projekts ([Mitwirken ohne Code](mitwirken-ohne-code.md#eine-offene-frage-beantworten)). Ein Satz wie "Entschieden am 12.11., weil ..." spart später lange Diskussionen.
+- **Eskalieren, wenn es festhängt.** Wenn zwei sich nach einer Runde Argumente nicht einig werden, entscheidet der Maintainer (bei Fragen zur Software) oder der Kommandant (bei Prioritäten und Zuständigkeiten). Eskalieren ist kein Petzen, sondern ein geregelter Weg.
+- **Widersprechen, dann mittragen** (englisch "disagree and commit"): Du darfst anderer Meinung sein und das sagen. Wenn aber entschieden ist, trägst du die Entscheidung mit und arbeitest nicht dagegen. Neue Erkenntnisse sind ein Grund, die Frage wieder zu öffnen, alter Ärger nicht.
+
+Beispiel: Der Gerätewart will den Fahrzeugcheck mit 20 Pflichtfeldern, Jonas will nur drei, weil es am Handy schnell gehen soll. Beide schreiben ihre Gründe ins Issue. Der Kommandant entscheidet: fünf Pflichtfelder, der Rest optional. Peter schreibt die Entscheidung ins Issue. Jonas hätte es lieber schlanker gehabt, baut es aber so.
+
+## Zeit und Motivation im Ehrenamt
+
+- **Kleine Aufgaben:** Ein Issue, das in einem Abend fertig wird, wird eher fertig als eines für drei Wochenenden. Große Vorhaben in kleine Issues teilen.
+- **Abgeben und Pausieren ist in Ordnung.** Einsatz, Lehrgang, Familie, Urlaub: Jeder hat Phasen ohne Zeit. Wichtig ist nur, es zu sagen: "Ich komme die nächsten vier Wochen nicht dazu. Wer mag, kann übernehmen, mein Stand ist im Branch." Ein stilles Liegenlassen blockiert andere.
+- **Kein Wissen nur in einem Kopf.** Wenn nur Karl weiß, wie die Prüffristen berechnet werden, steht das Projekt still, wenn Karl ausfällt. Deshalb: aufschreiben, in Pull Requests erklären, ab und zu zu zweit arbeiten.
+- **Anerkennung zeigen:** Danke sagen, im Pull Request und bei der Dienstversammlung. Mitwirkende in den Release-Notizen nennen ([Modul 09](09-wartung-und-releases.md)), z. B. "Danke an Karl und den Gerätewart für den neuen Fahrzeugcheck". Auch wer nur Fehler gemeldet hat, verdient den Dank.
+
+Die Kassiererin des Fördervereins arbeitet nur einmal im Quartal am Wachbuch mit, vor der Kassenprüfung. Das ist in Ordnung. Ihre Issues sind so klein geschnitten, dass sie an einem Abend fertig werden, und ihr Wissen über Beiträge steht in der Dokumentation, nicht nur in ihrem Kopf.
+
+## Mit KI im Team arbeiten
+
+KI-Werkzeuge verändern auch die Kommunikation. Ein paar Regeln:
+
+- **Sag, wenn Text oder Code von der KI stammt, wo es wichtig ist.** Zum Beispiel: "Die Erklärung hat der Agent geschrieben, ich habe sie geprüft." Dann weiß der Leser, wie er sie einordnen soll. Für jede Zeile einzeln muss man das nicht kennzeichnen. Verantwortlich bist in jedem Fall du ([Geteilte Verantwortung](geteilte-verantwortung.md)).
+- **Keine langen, ungeprüften KI-Antworten in Diskussionen kopieren.** Drei Seiten KI-Text in einem Issue kosten Peter zehn Minuten Lesezeit und enthalten vielleicht Fehler, die du selbst nicht bemerkt hast.
+- **Zusammenfassen statt weiterleiten.** Lies die Antwort, prüfe sie und schreib in zwei, drei eigenen Sätzen, was du daraus mitnimmst. Wenn nötig, häng die lange Fassung als Datei an.
+- **Die KI ersetzt nicht das Gespräch.** Ob eine Funktion für die Wehr sinnvoll ist, beantwortet keine KI. Das klärt man mit den Kameraden.
+
+Jonas hatte im Issue zur Dienstzeiten-Auswertung eine lange Antwort eines Chatbots gepostet: fünf Absätze, zwei Tabellen, ein Datenbankschema. Peter hat freundlich zurückgefragt: "Was davon schlägst du vor, und hast du es geprüft?" Seitdem schreibt Jonas zuerst drei eigene Sätze und hängt die KI-Antwort nur bei Bedarf an.
+
+## Checkliste
+
+- [ ] Vor dem Fragen: Doku, Issues, Lernbegleiter und Glossar geprüft.
+- [ ] Frage enthält Ziel, Kontext, Versuche, genaue Fehlermeldung, Link und was ich brauche.
+- [ ] Bildschirmfotos ohne persönliche Daten.
+- [ ] Ein Thema pro Frage, am richtigen Ort gestellt; Sicherheitslücken nur über den privaten Meldeweg.
+- [ ] Antworten aus Chat oder Telefon ins Issue oder die Doku zurückgetragen.
+- [ ] Menschen gezielt mit `@` erwähnt, Antwortzeiten respektiert, Status im Issue aktuell.
+- [ ] Review-Kommentare freundlich, konkret, begründet und mit `Muss:`, `Vorschlag:` oder `Frage:` gekennzeichnet.
+- [ ] Jeden Review-Kommentar verstanden und beantwortet, auch mit Hilfe des Agenten.
+- [ ] Verhaltenskodex im Projekt vorhanden, Meldeweg eingetragen.
+- [ ] Neue haben einen Buddy und ein `good first issue`.
+- [ ] Entscheidungen im Issue diskutiert und schriftlich festgehalten.
+- [ ] Pausen und Übergaben im Issue angekündigt.
+- [ ] Mitwirkenden gedankt, in den Release-Notizen genannt.
+- [ ] KI-Antworten geprüft und zusammengefasst, nicht ungeprüft eingefügt.
+
+## Kurz zusammengefasst
+
+- Im Ehrenamt ist Kommunikation der Engpass, nicht der Code.
+- Gute Fragen sagen, was du willst, was du versucht hast und was du brauchst.
+- Asynchron arbeiten heißt: vollständig schreiben, gezielt erwähnen, Geduld haben, Status pflegen.
+- Feedback ist freundlich, konkret, begründet und zeigt, was Pflicht und was Vorschlag ist.
+- Ein Verhaltenskodex regelt den Umgang und den Meldeweg, bevor es Ärger gibt.
+- Neue brauchen einen Buddy, ein kleines erstes Issue und Anerkennung.
+- Entscheidungen werden diskutiert, aufgeschrieben und dann mitgetragen.
+
+## Quellen
+
+Stand 2026-11-12.
+
+- [Contributor Covenant, Version 2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)
+- [GitHub Docs: Adding a code of conduct to your project](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-code-of-conduct-to-your-project)
+- [GitHub Docs: Encouraging helpful contributions to your project with labels](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/encouraging-helpful-contributions-to-your-project-with-labels)
+- [Open Source Guides: Your Code of Conduct](https://opensource.guide/code-of-conduct/)
+- [Open Source Guides: Building Welcoming Communities](https://opensource.guide/building-community/)
+- [Stack Overflow: How do I ask a good question?](https://stackoverflow.com/help/how-to-ask)
+- [Eric S. Raymond: How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html)
+- [Conventional Comments](https://conventionalcomments.org/)
+
+---
+
 <!-- Datei: docs/mitwirken-ohne-code.md -->
 
 # Mitwirken ohne Code
@@ -4517,6 +4957,7 @@ Dieser Ordner ist ein leeres Projektgerüst für neue Projekte, die so arbeiten 
 | `AGENTS.md` | Regeln für Coding-Agenten, mit Platzhaltern für die Befehle |
 | `CONTRIBUTING.md` | Kurze Anleitung für Menschen, verweist auf `docs/mitarbeit/` |
 | `SECURITY.md` | Nicht-öffentlicher Meldeweg für Sicherheitslücken |
+| `CODE_OF_CONDUCT.md` | Verhaltenskodex nach dem Contributor Covenant 2.1, Platzhalter `[KONTAKT]` für den Meldeweg |
 | `Makefile` | `make help`, `make docs`, `make docs-serve`, Platzhalter für `lint` und `test` |
 | `mkdocs.yml` | Dokumentationsseite mit MkDocs Material, Deutsch, strenger Build, Mermaid |
 | `docs/` | Gliederung der Dokumentation: Einstieg, Scope, Mitarbeit, Architektur, ADRs, Datenmodell, Betrieb, Entwicklung, Workboard |
@@ -4573,7 +5014,7 @@ Die Checklisten in [Ein Projekt vorbereiten](../docs/neues-projekt.md#checkliste
 
 ## Lizenz
 
-Der Starter-Bausatz steht unter der Lizenz Apache-2.0 und darf frei in eigene Projekte übernommen werden, auch in kommerzielle und Open-Source-Projekte.
+Der Starter-Bausatz steht unter der MIT-Lizenz und darf frei in eigene Projekte übernommen werden, auch in kommerzielle und Open-Source-Projekte.
 
 ---
 
@@ -4581,7 +5022,7 @@ Der Starter-Bausatz steht unter der Lizenz Apache-2.0 und darf frei in eigene Pr
 
 # Übungen
 
-Zu jedem Modul gibt es eine oder mehrere Übungen. Sie lassen sich allein im Selbststudium oder in der Gruppe im Workshop machen. Lösungshinweise stehen jeweils darunter. Für alle Übungen gilt: nur erfundene Daten verwenden.
+Zu jedem Modul gibt es eine oder mehrere Übungen. Sie lassen sich allein im Selbststudium oder in der Gruppe im Workshop machen. Lösungshinweise stehen jeweils darunter. Für alle Übungen gilt: nur erfundene Daten verwenden. Wer allein übt, kann die Übungen auch mit dem [Lernbegleiter](tutor/README.md) durchgehen: Er stellt die Aufgabe, wartet auf deine Antwort und gibt Rückmeldung.
 
 ## Modul 00 und 01: Rollen und Arbeitsablauf
 
@@ -4711,21 +5152,135 @@ Lösungshinweis: `1.5.0`, weil ein `feat` dabei ist.
 
 Lösungshinweise: `fix: falsche fälligkeit bei geräteprüfung korrigieren`, `feat: fahrzeugübersicht hinzufügen`, `chore(deps): abhängigkeiten aktualisieren`.
 
+## Modul 11: Umgebungen und Zusammenarbeit
+
+**Übung 11.1: Umgebungen einordnen.** Ordne jede Situation einer Umgebung zu (lokal, Preview, Dev/Test, QA, Produktion) und entscheide: Darf ein KI-Agent oder KI-Chat hier zugreifen?
+
+1. Karl klickt im Pull Request auf einen Link und probiert seine neue Prüfübersicht mit "Atemschutzgerät 7" aus.
+2. Der Kommandant trägt am Montag die echte Anwesenheit vom Übungsabend ein.
+3. Peter prüft ein Release auf einer Installation, die mit einer Kopie der echten Mitgliederliste arbeitet.
+4. Nach dem Merge testen alle gemeinsam mit "Max Mustermann" und "HLF 20 Musterstadt", ob die neuen Funktionen zusammenpassen.
+5. Jonas möchte dem Agenten eine Fehlermeldung aus Nummer 2 geben, "damit er den Fehler schneller findet".
+
+Lösungshinweise: 1 Preview, Agent ja. 2 Produktion, KI nie. 3 QA mit echten Daten, KI nein. 4 Dev/Test, Agent ja. 5 Nein: Die Meldung stammt aus der Produktion und enthält wahrscheinlich Daten. Den Fehler mit erfundenen Daten in Dev/Test nachstellen und die Meldung dem Maintainer geben. Faustregel: Wo echte Daten sind, ist keine KI.
+
+**Übung 11.2: Konflikte vermeiden.** Karl will in der Fahrzeugliste eine Spalte umbenennen, der Gerätewart fügt in derselben Liste eine Spalte hinzu, und Jonas' Agent schlägt vor, "nebenbei" die ganze Fahrzeugverwaltung umzubauen. Was sprecht ihr ab?
+
+Lösungshinweise: Kurz im Issue schreiben, wer woran arbeitet, und klären, wer zuerst mergt. Beide Pull Requests klein halten, den zweiten danach per Rebase aktualisieren. Der Umbau ist ein Refactor: nur nach Absprache mit dem Maintainer, als eigener Pull Request und vorher angekündigt.
+
+## Modul 12: Testen
+
+**Übung 12.1: Testfälle in eigenen Worten.** Das Wachbuch soll beim Fahrzeugcheck den Kilometerstand erfassen. Schreibe in einfachen Worten auf, was passieren soll, und mindestens fünf Sonderfälle. Formuliere einen davon als "Gegeben, Wenn, Dann".
+
+Lösungshinweise (Beispiele): Kilometerstand ist eine ganze Zahl; kleiner als der letzte Eintrag wird abgelehnt mit verständlicher Meldung; Tippfehler mit Komma oder Punkt; sehr großer Sprung (z. B. mehr als 2.000 km seit dem letzten Check) wird zur Bestätigung nachgefragt; erstes Erfassen bei einem neuen Fahrzeug ohne Vorwert; Tachotausch in der Werkstatt; zwei Personen tragen gleichzeitig ein. Als Spezifikation: "Gegeben das HLF 20 Musterstadt mit letztem Kilometerstand 48.213, wenn der Gerätewart 48.100 einträgt, dann wird der Eintrag abgelehnt und die Meldung nennt den letzten Stand."
+
+**Übung 12.2: Der Agent will einen Test abschalten.** Der Agent schreibt: "Ein Test zur Fälligkeit schlägt fehl. Ich habe ihn übersprungen, jetzt ist alles grün." Wie antwortest du?
+
+Lösungshinweis: Stopp. Der Test wird nicht übersprungen, sondern der Agent soll erklären, warum er fehlschlägt: Ist der Code falsch oder hat sich das gewünschte Verhalten bewusst geändert? Im zweiten Fall wird der Test begründet angepasst und das im Pull Request erklärt. Ein wackelnder Test (flaky) wird als Issue gemeldet.
+
+## Modul 13: Werkzeuge und Kosten
+
+**Übung 13.1: Monatskosten schätzen.** Im Wachbuch-Projekt arbeiten zwei Personen regelmäßig mit dem Coding-Agenten, fünf melden nur Fehler und prüfen fachlich, Peter reviewt. Die Anwendung läuft bei einem Hoster in der EU. Schätze die monatlichen Kosten grob mit den Zahlen aus [Modul 13](13-werkzeuge-und-kosten.md) und notiere, wer was bezahlt.
+
+Lösungshinweise: Zwei Team-Plätze zu je rund 25 $ (Stand: 2026-11-12, bitte prüfen), also etwa 50 $. Die fünf Fachprüfer brauchen kein Abo, nur ein kostenloses GitHub-Konto. Hosting mit Datenbank und Backup-Speicher einige Euro bis einige zehn Euro, dazu Domain und eventuell CI-Minuten bei einem privaten Repository. Die größte Position ist die Zeit für Wartung. Die Organisation beschließt, wer zahlt, und setzt bei nutzungsbasierter Abrechnung ein Budget mit Warnungen.
+
+## Modul 14: KI und Datenschutz
+
+**Übung 14.1: Was darf wohin?** Entscheide für jede Eingabe: Verbraucher-App (z. B. Free oder Plus), Business-Tarif mit AVV, oder gar nicht?
+
+1. Die öffentliche Dokumentation des Projekts, um eine Frage zu stellen.
+2. Eine erfundene Liste mit 20 Mitgliedern als Testdaten.
+3. Die echte Liste, wer wann zur Atemschutz-Untersuchung muss.
+4. Ein Screenshot aus dem echten Wachbuch für ein Issue.
+5. Die Frage "Wie trage ich ein, dass ein Mitglied nicht mehr atemschutztauglich ist?"
+6. Das Passwort des Mail-Kontos, "damit der Agent die Erinnerungsmails testen kann".
+7. Die Anwesenheitsliste der Jugendfeuerwehr.
+
+Lösungshinweise: 1, 2 und 5 überall. 3 nirgends ohne Freigabe der Organisation, Datenschutzbeauftragten und in der Regel DSFA, nie in eine Verbraucher-App (Gesundheitsbezug). 4 nein, nur Screenshots aus der Testumgebung. 6 nie, in keinen Dienst. 7 nein: Daten Minderjähriger, besonders schützenswert. Im Zweifel nicht eingeben, sondern Maintainer oder Security fragen.
+
+## Modul 15 und 16: Lebenszyklus und Betrieb
+
+**Übung 15.1: Welche Phase?** Ordne zu, in welcher Phase aus [Modul 15](15-projekt-lebenszyklus.md) das Projekt steht: (a) Karl und Peter klären, was eine "Prüfung" genau ist und wer sie sehen darf. (b) Karl baut an zwei Abenden eine klickbare Übersicht mit einem App-Builder. (c) Peter legt Datenmodell, Anmeldung und CI an. (d) Karls Pull Requests kommen fast ohne Korrekturen durch, Peter reviewt nur noch Eskalationsthemen.
+
+Lösungshinweis: (a) Phase 2, (b) Phase 1, (c) Phase 3, (d) Phase 5.
+
+**Übung 16.1: "Können wir das ab Montag alle nutzen?"** Karl zeigt seinen Prototyp, der auf seinem Laptop läuft. Liste mindestens acht Dinge auf, die fehlen, bevor die Wehr täglich damit arbeiten kann.
+
+Lösungshinweise: geeignetes Hosting statt Laptop; Domain und HTTPS mit automatisch erneuertem Zertifikat; Anmeldung und Rechteprüfung auf dem Server; Security-Review; Backups nach 3-2-1-Regel mit geübter Wiederherstellung; Monitoring und Alerting; automatische Updates von Betriebssystem, Images und Abhängigkeiten; SBOM und Abgleich mit CVEs; benannte Verantwortliche mit Vertretung; Betriebshandbuch; Plan für Störungen mit Papier-Ersatz; geklärte laufende Kosten. Ergebnis: Die Idee ja, dieser Stand nein. Der Prototyp wird nicht in Betrieb genommen.
+
+**Übung 16.2: Einen Scanner-Bericht verstehen.** Im Pull Request steht: "CVE-2026-XXXX in Bibliothek X, CVSS 9.8, in KEV gelistet, behoben in Version 2.4.1." Was bedeutet das, und wer tut was?
+
+Lösungshinweise: Eine bekannte, sehr schwere Lücke (ab 9,0 kritisch), die laut KEV bereits aktiv angegriffen wird. Höchste Eile. Der Maintainer spielt das Update sofort ein, ein Update-Pull-Request hat Vorrang vor neuen Funktionen. Du musst das nicht selbst beheben, aber verstehen, warum dein Feature-Pull-Request jetzt warten muss.
+
+## Modul 17: KI-Modelle
+
+**Übung 17.1: Modell pro Aufgabe.** Welche Art von Modell (schnell und günstig, starkes Coding-Modell, stärkstes Modell mit hoher Nachdenk-Stufe, klein und sehr günstig) passt?
+
+1. Auf der Heimfahrt eine Idee per Sprache durchsprechen.
+2. Mit dem Coding-Agenten ein neues Feld im Formular umsetzen.
+3. Ein fertiges Konzept mit neuer Tabelle auf Lücken bei Datenmodell und Rechten prüfen.
+4. 300 erfundene Testdatensätze erzeugen.
+5. Ein Fehler, den der Agent schon zweimal nicht beheben konnte.
+
+Lösungshinweise: 1 schnell und günstig. 2 das Coding-Modell, das im Projekt Standard ist. 3 stärkstes Modell mit hoher Nachdenk-Stufe, sparsam. 4 klein und günstig. 5 erst abbrechen und den Auftrag verkleinern, dann ein stärkeres Modell oder eine höhere Stufe. Ein billiges oder lokales Kleinmodell ist für 2 und 5 meist zu schwach.
+
+## Modul 18: Lizenzen und Recht
+
+**Übung 18.1: Lizenzprobleme erkennen.** Was ist in den Szenarien problematisch? Dies ist eine Übung, keine Rechtsberatung; Details stehen in [Modul 18](18-lizenzen-und-recht.md).
+
+1. Jonas kopiert eine praktische Funktion aus einem fremden Repository ins Wachbuch. Das Repository hat keine Lizenzdatei, der Kopfkommentar mit dem Namen des Autors wird gelöscht.
+2. Der Agent schlägt für das Wachbuch, das unter MIT steht, eine Bibliothek unter GPL vor.
+3. Das Wachbuch wird unter MIT veröffentlicht. Eine Firma forkt es, baut es um und verkauft es ohne Quellcode an andere Feuerwehren. Der Förderverein ist empört.
+4. Der Agent erzeugt eine lange Funktion, die fast wörtlich einer bekannten Bibliothek gleicht, aber ohne deren Lizenzhinweis.
+
+Lösungshinweise: 1 Code ohne Lizenz darf grundsätzlich nicht verwendet werden, und ein vorhandener Urheberhinweis darf nie entfernt werden. Entfernen und sauber neu schreiben lassen oder den Autor fragen. 2 Lizenzkompatibilität: Eine GPL-Abhängigkeit kann verlangen, dass das ganze Projekt unter GPL weitergegeben wird. Neue Abhängigkeiten gehen ohnehin an den Architekten, der auch die Lizenz prüft. 3 Das ist bei MIT erlaubt, solange der Urheber- und Lizenzhinweis erhalten bleibt. Wer das nicht will, muss vor der Veröffentlichung eine andere Lizenz (z. B. mit Copyleft) wählen. 4 Möglicherweise übernommener fremder Code: den Agenten fragen, woher das stammt, im Pull Request erwähnen und lieber die Bibliothek ordentlich als Abhängigkeit einbinden oder neu schreiben lassen.
+
+## Modul 19: Gut zusammenarbeiten
+
+**Übung 19.1: Eine gute Frage stellen.** Schreibe diese Frage im Issue so um, dass Peter sie ohne Rückfrage beantworten kann: "Geht nicht. Hab alles probiert. Was mach ich falsch??"
+
+Lösungshinweise: Eine gute Frage nennt, was du erreichen wolltest, was du getan hast, was passiert ist (Fehlermeldung als Text, ohne echte Daten), was du erwartet hast und was du schon versucht hast. Beispiel: "Ich möchte in der Preview meines Pull Requests #42 einen Fahrzeugcheck speichern. Nach Klick auf Speichern erscheint 'Fehler 500', der Eintrag fehlt in der Liste. Erwartet hätte ich die Meldung 'Fahrzeugcheck gespeichert'. Die CI ist grün. Ich habe die Seite neu geladen und es mit einem anderen Fahrzeug probiert. Wo sollte ich weitersuchen?"
+
+**Übung 19.2: Freundlich auf ein hartes Review antworten.** Im Review steht: "Das ist so nicht brauchbar. Rechteprüfung fehlt komplett, Tests auch. Bitte erst die Grundlagen lesen." Formuliere eine Antwort, die sachlich bleibt, und überlege, was du daraus mitnimmst.
+
+Lösungshinweise: Nicht verteidigen, nicht zurückschießen. Danken, die Punkte bestätigen und einen nächsten Schritt nennen, z. B.: "Danke für den Hinweis. Du hast recht, die Prüfung fehlt auf dem Server, und Tests für die Rollen fehlen auch. Ich lasse den Agenten beides ergänzen und melde mich, wenn die CI grün ist. Kannst du mir sagen, welcher Abschnitt in den Grundlagen am wichtigsten ist?" Die Kritik gilt dem Code, nicht dir. Wenn der Ton dauerhaft verletzend ist, hilft der Code of Conduct des Projekts.
+
+## Geteilte Verantwortung
+
+**Übung GV.1: Aufgaben einordnen.** Ordne die Aufgaben dem [Modell der geteilten Verantwortung](geteilte-verantwortung.md) zu: Domänenexperten, gemeinsam oder IT-Experten. Gibt es etwas, das der KI-Agent verantwortet?
+
+1. Beschreiben, was beim Stornieren eines Einsatzes mit den Atemschutzzeiten passieren soll.
+2. Festlegen, wer die Untersuchungsfristen sehen darf.
+3. Die Rechteprüfung auf dem Server umsetzen und prüfen.
+4. Das Datenmodell für Einsatzzeiten entwerfen.
+5. Monitoring und Alarmierung einrichten.
+6. Die neue Funktion auf der Testumgebung ausprobieren und abnehmen.
+7. Kritische Sicherheitsupdates einspielen.
+8. Die Kameraden in die neue Funktion einweisen.
+
+Lösungshinweise: Domänenexperten 1, 6, 8. Gemeinsam 2 (Rollenmodell festlegen) und 4. IT-Experten 3, 5, 7. Der KI-Agent verantwortet nichts. Er setzt um, verantwortlich ist, wer den Auftrag gibt und den Pull Request einreicht oder freigibt.
+
 ## Checkliste: Bereit für den ersten eigenen Pull Request
 
 - [ ] Ich kenne die Rollen im Projekt und weiß, wer meine Pull Requests prüft.
+- [ ] Ich kenne das Modell der geteilten Verantwortung und weiß, dass "der Agent hat das so gebaut" keine Begründung ist.
 - [ ] Ich habe die `AGENTS.md` und die Beitragsanleitung des Projekts gelesen.
 - [ ] Ich habe ein Konto bei GitHub und Zugriff auf das Repository.
-- [ ] Ich habe Zugang zu einem Coding-Agenten und habe ihn mit GitHub verbunden.
+- [ ] Ich habe Zugang zu einem Coding-Agenten, weiß, wer ihn bezahlt, und kenne den Modell-Standard des Projekts.
 - [ ] Ich habe ein Issue, das klein genug ist und vom Architekten freigegeben wurde.
 - [ ] Mein Konzept beschreibt Daten, Rechte und Grenzen.
-- [ ] Mein Prompt verlangt: erst Plan, Projektregeln beachten, Prüfungen ausführen, nicht raten.
-- [ ] Ich verwende ausschließlich erfundene Testdaten und keine Secrets.
+- [ ] Das erwartete Verhalten und die Sonderfälle stehen in einfachen Worten im Issue.
+- [ ] Mein Prompt verlangt: erst Plan, Projektregeln beachten, Prüfungen und Tests ausführen, nicht raten.
+- [ ] Ich verwende ausschließlich erfundene Testdaten und keine Secrets, und ich gebe nur Daten in KI-Dienste, die für diese Datenklasse freigegeben sind.
+- [ ] Mein Agent arbeitet nur in Umgebungen mit erfundenen Daten, nie in QA mit echten Daten oder in Produktion.
+- [ ] Für jedes neue Verhalten gibt es Tests, und ich habe gesehen, dass die CI wirklich grün ist.
+- [ ] Ich habe keinen fremden Code ohne Lizenz übernommen, neue Abhängigkeiten sind begründet und vom Architekten freigegeben.
 - [ ] Ich kann in drei Sätzen erklären, was mein Pull Request ändert und warum.
 - [ ] Die Pull-Request-Beschreibung ist nach der Vorlage ausgefüllt, das Issue ist verlinkt.
 - [ ] Der Titel folgt den Conventional Commits.
-- [ ] Ich weiß, wie ich auf Review-Kommentare reagiere, und dass ein Nein kein Scheitern ist.
-- [ ] Ich weiß, wo ich die Änderung nach dem Merge in der Testumgebung ausprobieren kann.
+- [ ] Ich weiß, wie ich eine gute Frage stelle und auf Review-Kommentare reagiere, und dass ein Nein kein Scheitern ist.
+- [ ] Ich weiß, wo ich die Änderung in der Preview oder nach dem Merge in der Testumgebung ausprobieren kann.
+- [ ] Ich weiß, dass ein Prototyp nie ohne den IT-Experten in Betrieb geht.
 
 ---
 
@@ -4733,63 +5288,152 @@ Lösungshinweise: `fix: falsche fälligkeit bei geräteprüfung korrigieren`, `f
 
 # Schulungsablauf
 
-Diese Seite beschreibt, wie die Schulung durchgeführt werden kann: in welchen Formaten, in welcher Reihenfolge, mit welchen Voraussetzungen und wie es danach weitergeht.
+Diese Seite beschreibt, wie die Schulung durchgeführt werden kann: in welchen Formaten, in welcher Reihenfolge, mit welchen Voraussetzungen und wie es danach weitergeht. Alle Zeiten sind Richtwerte und hängen von der Gruppe ab.
 
 ## Einstieg
 
 Jede Durchführung beginnt mit [Modul 00: Warum diese Schulung](00-warum.md). Es erklärt, warum Domänenexperten heute mitbauen sollen, warum sie dabei Dinge wie TLS, Passwörter, Rechte, Datenschutz und Updates nicht kennen müssen, und warum deshalb der Ablauf mit Reviews diese Lücken auffangen muss. Ohne dieses Verständnis wirken die späteren Regeln wie Bürokratie.
 
+Direkt danach kommen zwei kurze Seiten: das [Beispiel Feuerwehr Musterstadt](beispiel-feuerwehr-musterstadt.md), das sich durch alle Module zieht, und das [Modell der geteilten Verantwortung](geteilte-verantwortung.md). Es zeigt auf einer Seite, wer wofür zuständig ist, und ist der rote Faden für alle Regeln, die später kommen.
+
+## Pflicht für den ersten Beitrag, Rest später
+
+Nicht alles muss vor dem ersten eigenen Pull Request sitzen. Die Module sind deshalb in zwei Gruppen geteilt.
+
+| Gruppe | Module | Warum |
+| --- | --- | --- |
+| **Pflicht vor dem ersten Beitrag** | [Grundlagen](grundlagen/index.md) mit Selbstcheck, 00, [Geteilte Verantwortung](geteilte-verantwortung.md), 01, 03, 05, 06, 07, 08, 10, 11, 12, 14, 19 | Ohne dieses Wissen kann man nicht beurteilen, was man abgibt: Ablauf, Konzept, Datenmodell, Agent, Review, Sicherheit, Umgebungen, Tests, Datenschutz und der Umgang miteinander |
+| **Später oder bei Bedarf** | 02, 04, 09, 13, 15, 16, 17, 18 | Wichtig, aber für den ersten kleinen Pull Request reicht eine Grundregel: Werkzeug und Modell gibt das Projekt vor (13, 17), kein fremder Code ohne Lizenz (18), ein Prototyp geht nie allein in Betrieb (15, 16), Updates haben Vorrang (09) |
+
+Wer nur mitdiskutieren, Fehler melden oder fachlich prüfen will, braucht noch weniger: 00, 01, die geteilte Verantwortung, [Mitwirken ohne Code](mitwirken-ohne-code.md), [Fachliche Prüfung](fachliche-pruefung.md), 14 und 19.
+
 ## Formate
 
 | Format | Für wen | Dauer | Inhalt |
 | --- | --- | --- | --- |
-| Selbststudium | Einzelne, die zeitlich flexibel sein müssen | etwa 6 bis 8 Stunden, verteilt | alle Module lesen, Übungen allein machen, danach ein Gespräch mit dem Architekten |
-| Workshop halbtags | Teams mit wenig Zeit, als Einstieg | etwa 4 Stunden | Module 00, 01, 03, 06, 07, 08 im Überblick, eine praktische Übung |
-| Workshop ganztags | Teams, die direkt loslegen wollen | etwa 7 Stunden plus Pausen | alle Module, mehrere Übungen, erster Pull Request im Übungs-Repository |
-| Mentoring | nach dem Workshop oder Selbststudium | einige Wochen begleitend | erstes echtes Issue mit Begleitung durch den Architekten |
+| Selbststudium | Einzelne, die zeitlich flexibel sein müssen | Pflichtteil etwa 10 Stunden, alles etwa 14 bis 15 Stunden, verteilt | Pfad unten, Übungen allein, danach ein Gespräch mit dem Architekten |
+| Selbststudium mit Lernbegleiter | Einzelne, die lieber fragen als lesen | wie Selbststudium, in Etappen von 20 bis 45 Minuten | derselbe Pfad, erklärt und abgefragt von einem KI-Assistenten, auch im Sprachmodus |
+| Workshop halbtags | Teams mit wenig Zeit, als Einstieg | etwa 4 Stunden | Kern der Pflichtmodule im Überblick, wenige Übungen, Rest im Selbststudium |
+| Workshop ganztags | Teams, die direkt loslegen wollen | etwa 7 Stunden plus Pausen | alle Pflichtmodule mit Übungen, Ausblick auf die übrigen |
+| Zwei Abende | Ehrenamtliche, die tagsüber arbeiten | zweimal etwa 3 Stunden, im Abstand von ein bis zwei Wochen | Abend 1 von der Idee zum Auftrag, Abend 2 vom Auftrag zum Pull Request, dazwischen Selbststudium |
+| Mentoring | nach Workshop oder Selbststudium | einige Wochen begleitend | erstes echtes Issue mit Begleitung durch den Architekten |
 
-Bewährt hat sich: Workshop (halb- oder ganztags) plus Mentoring beim ersten echten Issue.
+Bewährt hat sich: Workshop (halbtags, ganztags oder zwei Abende) plus Lernbegleiter für die Lücken plus Mentoring beim ersten echten Issue.
+
+## Der Lernbegleiter
+
+Die Schulung ist so geschrieben, dass ein KI-Assistent sie lesen und daraus erklären kann. Der einfachste Weg: den kurzen Einstiegs-Prompt aus dem [README des Repositorys](https://github.com/slauger/domain-dev-with-ai#du-möchtest-selbst-software-mitentwickeln) in ChatGPT, Claude oder einen anderen Assistenten kopieren. Der Assistent liest seine Anweisungen und die Inhalte selbst, fragt, wo man steht, erklärt Schritt für Schritt und stellt Kontrollfragen. Andere Wege (Datei hochladen, Projekt im Assistenten) beschreibt der [Tutor-Bereich](tutor/README.md).
+
+- **Im Sprachmodus** eignen sich vor allem die erklärenden Teile: Modul 00, 01, 02, 15, 16 und 19, die geteilte Verantwortung und der Grundlagen-Selbstcheck. Zum Beispiel unterwegs, im Auto nur mit Freisprecheinrichtung und wenn die Verkehrslage es zulässt ([Modul 02](02-ideen-per-sprache.md)).
+- **Am Bildschirm** besser: Übungen mit Code, Tabellen oder Pull Requests (Module 05, 06, 07, 09, 12).
+- **Grenzen:** Der Lernbegleiter ersetzt kein Review und keine Entscheidung des Architekten. Niemals echte personenbezogene Daten, Passwörter oder Schlüssel in den Chat geben ([Modul 14](14-ki-und-datenschutz.md)).
+
+Den Funktionsumfang der Assistenten (Sprachmodus, Webzugriff, Datei-Upload) vor der Schulung prüfen, er ändert sich häufig. Stand: 2026-11-12.
+
+## Pfad für das Selbststudium
+
+Mit oder ohne Lernbegleiter. Die Übungen stehen in [Übungen](uebungen.md).
+
+| Schritt | Dauer | Inhalt | Pflicht? |
+| --- | --- | --- | --- |
+| 1 | 45 min | [00 Warum](00-warum.md), [Beispiel](beispiel-feuerwehr-musterstadt.md), [Geteilte Verantwortung](geteilte-verantwortung.md), Übung GV.1 | ja |
+| 2 | 90 min | [Grundlagen](grundlagen/index.md) mit Selbstcheck, gut mit Lernbegleiter | ja |
+| 3 | 30 min | [01 Rollen und Ablauf](01-rollen-und-ablauf.md), Übung 1.1 | ja |
+| 4 | 60 min | [03 Konzept und Prompt](03-konzept-und-prompt.md), Übungen 3.1 bis 3.3 | ja |
+| 5 | 40 min | [05 Datenmodell](05-datenmodell.md), Übung 5.1 | ja |
+| 6 | 45 min | [14 KI und Datenschutz](14-ki-und-datenschutz.md), Übung 14.1 | ja |
+| 7 | 60 min | [06 Coding-Agent](06-coding-agent.md), Übungen 6.1 und 6.2 | ja |
+| 8 | 30 min | [11 Umgebungen und Zusammenarbeit](11-umgebungen-und-zusammenarbeit.md), Übungen 11.1 und 11.2 | ja |
+| 9 | 45 min | [12 Testen](12-testen.md), Übungen 12.1 und 12.2 | ja |
+| 10 | 40 min | [07 Pull Request und Review](07-pull-request-und-review.md), Übungen 7.1 und 7.2 | ja |
+| 11 | 45 min | [08 Sicherheit](08-sicherheit.md), Übung 8.1 | ja |
+| 12 | 45 min | [10 Standards](10-standards.md) und [19 Gut zusammenarbeiten](19-gut-zusammenarbeiten.md), Übungen 10.1, 19.1, 19.2 | ja |
+| 13 | 15 min | Checkliste "Bereit für den ersten eigenen Pull Request" | ja |
+| 14 | 45 min | [02 Ideen im Gespräch](02-ideen-per-sprache.md), Übung 2.1 im Sprachmodus | später |
+| 15 | 25 min | [04 Marktrecherche](04-marktrecherche.md), Übung 4.1 | später |
+| 16 | 40 min | [09 Wartung und Releases](09-wartung-und-releases.md), Übungen 9.1 und 9.2 | später |
+| 17 | 30 min | [13 Werkzeuge und Kosten](13-werkzeuge-und-kosten.md), Übung 13.1 | später |
+| 18 | 30 min | [17 KI-Modelle](17-ki-modelle.md), Übung 17.1 | später |
+| 19 | 75 min | [15 Projekt-Lebenszyklus](15-projekt-lebenszyklus.md) und [16 Vom Prototyp zum Betrieb](16-vom-prototyp-zum-betrieb.md), Übungen 15.1, 16.1, 16.2 | später |
+| 20 | 40 min | [18 Lizenzen und Recht](18-lizenzen-und-recht.md), Übung 18.1 | später |
+
+Pflichtteil (Schritte 1 bis 13): etwa 10 Stunden. Alles: etwa 14 bis 15 Stunden.
 
 ## Vorschlag: Ganztägiger Workshop
 
 | Zeit | Dauer | Inhalt |
 | --- | --- | --- |
-| 09:00 | 30 min | Begrüßung, Erwartungen, [Modul 00: Warum](00-warum.md) |
-| 09:30 | 30 min | [Modul 01: Rollen und Ablauf](01-rollen-und-ablauf.md), Übung 1.1 |
-| 10:00 | 30 min | [Modul 02: Ideen im Gespräch](02-ideen-per-sprache.md), Beispielgespräch vorspielen |
-| 10:30 | 15 min | Pause |
-| 10:45 | 45 min | [Modul 03: Konzept und Prompt](03-konzept-und-prompt.md), Übungen 3.1 und 3.2 |
-| 11:30 | 20 min | [Modul 04: Marktrecherche](04-marktrecherche.md) |
-| 11:50 | 40 min | [Modul 05: Datenmodell](05-datenmodell.md), Übung 5.1 in Gruppen |
-| 12:30 | 60 min | Mittagspause, wer mag: Übung 2.1 (Sprachgespräch) beim Spaziergang |
-| 13:30 | 60 min | [Modul 06: Coding-Agent](06-coding-agent.md), Live-Vorführung, Übung 6.1 |
-| 14:30 | 45 min | [Modul 07: Pull Request und Review](07-pull-request-und-review.md), Übung 7.1 |
-| 15:15 | 15 min | Pause |
-| 15:30 | 45 min | [Modul 08: Sicherheit](08-sicherheit.md), Übung 8.1 in Gruppen |
-| 16:15 | 25 min | [Modul 09: Wartung und Releases](09-wartung-und-releases.md), Übung 9.1 |
-| 16:40 | 10 min | [Modul 10: Standards](10-standards.md) |
-| 16:50 | 10 min | Checkliste "Bereit für den ersten Pull Request", nächste Schritte |
+| 09:00 | 30 min | Begrüßung, Erwartungen, [Modul 00](00-warum.md), [Beispiel Musterstadt](beispiel-feuerwehr-musterstadt.md) |
+| 09:30 | 30 min | [Modul 01](01-rollen-und-ablauf.md) und [Geteilte Verantwortung](geteilte-verantwortung.md), Übung GV.1 |
+| 10:00 | 40 min | [Modul 03: Konzept und Prompt](03-konzept-und-prompt.md), Übung 3.2 |
+| 10:40 | 15 min | Pause |
+| 10:55 | 35 min | [Modul 05: Datenmodell](05-datenmodell.md), Übung 5.1 in Gruppen |
+| 11:30 | 30 min | [Modul 14: KI und Datenschutz](14-ki-und-datenschutz.md), Übung 14.1 |
+| 12:00 | 60 min | Mittagspause, wer mag: Übung 2.1 im Sprachmodus beim Spaziergang |
+| 13:00 | 60 min | [Modul 06: Coding-Agent](06-coding-agent.md), Live-Vorführung, Übung 6.1, kurz der Modell-Standard des Projekts ([Modul 17](17-ki-modelle.md)) |
+| 14:00 | 30 min | [Modul 11: Umgebungen](11-umgebungen-und-zusammenarbeit.md), Übung 11.1 |
+| 14:30 | 40 min | [Modul 12: Testen](12-testen.md), Übung 12.1 in Gruppen |
+| 15:10 | 15 min | Pause |
+| 15:25 | 40 min | [Modul 07: Pull Request und Review](07-pull-request-und-review.md) und [Modul 19](19-gut-zusammenarbeiten.md), Übungen 7.1 und 19.2 |
+| 16:05 | 35 min | [Modul 08: Sicherheit](08-sicherheit.md), Übung 8.1 in Gruppen |
+| 16:40 | 20 min | Ausblick: [09](09-wartung-und-releases.md), [13](13-werkzeuge-und-kosten.md), [15](15-projekt-lebenszyklus.md), [16](16-vom-prototyp-zum-betrieb.md), [18](18-lizenzen-und-recht.md) mit je einer Grundregel |
+| 17:00 | 15 min | [Modul 10: Standards](10-standards.md), Checkliste, Lernbegleiter einrichten, nächste Schritte |
+
+Modul 02 und 04 sowie die ausführlichen Teile von 09, 13, 15 bis 18 folgen im Selbststudium.
 
 ## Vorschlag: Halbtägiger Workshop
 
 | Dauer | Inhalt |
 | --- | --- |
-| 20 min | Modul 00 und 01 |
-| 40 min | Modul 03 mit Übung 3.2 (Issue schreiben) |
+| 20 min | Modul 00, Beispiel und geteilte Verantwortung |
+| 30 min | Modul 03 mit Übung 3.2 (Issue schreiben) |
 | 15 min | Modul 05 im Überblick, Übung 5.1 gemeinsam |
+| 20 min | Modul 14 mit Übung 14.1 |
 | 15 min | Pause |
-| 50 min | Modul 06 mit Live-Vorführung |
-| 30 min | Modul 07 mit Übung 7.1 |
-| 40 min | Modul 08 mit Übung 8.1 |
-| 10 min | Ausblick auf Module 02, 04, 09, 10 zum Selbststudium, nächste Schritte |
+| 45 min | Modul 06 mit Live-Vorführung |
+| 20 min | Modul 11 und 12 im Überblick: Wo echte Daten sind, ist keine KI; Sonderfälle als Testfälle |
+| 30 min | Modul 07 mit Übung 7.1, Modul 19 kurz (gute Fragen, freundliche Reviews) |
+| 35 min | Modul 08 mit Übung 8.1 |
+| 10 min | Selbststudium-Pfad und Lernbegleiter zeigen, nächste Schritte |
+
+Danach im Selbststudium: Grundlagen-Selbstcheck, Module 01, 10 und die ausführlichen Teile von 11, 12 und 19 (Pflicht), dann die übrigen Module.
+
+## Vorschlag: Zwei Abende
+
+**Abend 1: Von der Idee zum Auftrag**
+
+| Zeit | Dauer | Inhalt |
+| --- | --- | --- |
+| 18:30 | 20 min | Begrüßung, Modul 00, Beispiel Musterstadt |
+| 18:50 | 25 min | Modul 01 und geteilte Verantwortung, Übung GV.1 |
+| 19:15 | 40 min | Modul 03 mit Übung 3.2, dazu Sonderfälle in eigenen Worten (Übung 12.1) |
+| 19:55 | 10 min | Pause |
+| 20:05 | 30 min | Modul 05 mit Übung 5.1 |
+| 20:35 | 30 min | Modul 14 mit Übung 14.1 |
+| 21:05 | 15 min | Hausaufgaben und Lernbegleiter einrichten |
+
+Hausaufgaben bis Abend 2 (etwa 3 Stunden): Grundlagen-Selbstcheck mit dem Lernbegleiter, Übung 2.1 im Sprachmodus, Konzept zur eigenen Idee (Übung 3.1), Modul 10 lesen.
+
+**Abend 2: Vom Auftrag zum Pull Request**
+
+| Zeit | Dauer | Inhalt |
+| --- | --- | --- |
+| 18:30 | 15 min | Rückblick, Fragen aus den Hausaufgaben |
+| 18:45 | 40 min | Modul 06 mit Live-Vorführung, Modell-Standard des Projekts (Modul 17) |
+| 19:25 | 20 min | Modul 11 mit Übung 11.1 |
+| 19:45 | 25 min | Modul 12 mit Übung 12.2 |
+| 20:10 | 10 min | Pause |
+| 20:20 | 35 min | Modul 07 und 19 mit Übungen 7.1 und 19.2 |
+| 20:55 | 30 min | Modul 08 mit Übung 8.1 |
+| 21:25 | 15 min | Ausblick auf 09, 13, 15, 16, 18; Checkliste; nächste Schritte |
 
 ## Voraussetzungen
 
 **Für Teilnehmende:**
 
 - ein Konto bei GitHub,
-- Zugang zu einem Sprach- oder Chat-Assistenten (z. B. ChatGPT oder Claude, jeweils mit Sprachmodus),
-- Zugang zu einem Coding-Agenten (z. B. Claude Code oder OpenAI Codex, siehe [Modul 06](06-coding-agent.md)). Dafür ist in der Regel ein bezahlter Tarif nötig (Stand: 2026-11-12, **bitte prüfen**),
+- Zugang zu einem Sprach- oder Chat-Assistenten (z. B. ChatGPT oder Claude, jeweils mit Sprachmodus), auch für den Lernbegleiter,
+- Zugang zu einem Coding-Agenten (z. B. Claude Code oder OpenAI Codex, siehe [Modul 06](06-coding-agent.md)). Dafür ist in der Regel ein bezahlter Tarif nötig, Preise in [Modul 13](13-werkzeuge-und-kosten.md) (Stand: 2026-11-12, **bitte prüfen**). Vorher klären, wer bezahlt,
 - ein Laptop mit aktuellem Browser; ein Smartphone für die Übung zum Sprachgespräch,
 - eine eigene Idee aus dem Alltag, an der gearbeitet werden kann.
 
@@ -4797,15 +5441,16 @@ Programmierkenntnisse sind nicht nötig. Eine lokale Installation von Entwicklun
 
 **Für den Trainer:**
 
-- ein Übungs-Repository mit einer kleinen Beispielanwendung, einer `AGENTS.md`, CI und Vorlagen für Issues und Pull Requests,
+- ein Übungs-Repository mit einer kleinen Beispielanwendung, einer `AGENTS.md`, CI mit Tests und Vorlagen für Issues und Pull Requests, idealerweise mit Preview-Umgebung pro Pull Request,
 - Zugriff der Teilnehmenden auf dieses Repository, eingerichtet vor dem Termin,
 - erfundene Testdaten im Übungs-Repository,
-- vorbereitete Beispiele: ein guter und ein schlechter Pull Request, ein Renovate-Pull-Request.
+- vorbereitete Beispiele: ein guter und ein schlechter Pull Request, ein Renovate-Pull-Request, ein Scanner-Bericht mit CVE,
+- die Angaben des Projekts zu Tarif, Modell-Standard, freigegebenen KI-Diensten und Lizenz.
 
 ## Rollen in der Schulung
 
 - **Trainer:** führt durch die Module, macht die Live-Vorführungen, moderiert die Übungen. Idealerweise ist das der Architekt des Projekts, in dem die Teilnehmenden später mitarbeiten.
-- **Co-Trainer (optional):** jemand aus der Security- oder Datenschutzrolle für Modul 08.
+- **Co-Trainer (optional):** jemand aus der Security- oder Datenschutzrolle für Modul 08 und 14.
 - **Teilnehmende:** bringen ihr Fachwissen und eine eigene Idee mit.
 
 Tipp für Trainer: Fachliche Beispiele aus der Gruppe sind wertvoller als das Wachbuch. Das Wachbuch ist nur der rote Faden.
@@ -4815,22 +5460,25 @@ Tipp für Trainer: Fachliche Beispiele aus der Gruppe sind wertvoller als das Wa
 Die Schulung ist nur der Anfang. Der eigentliche Lernschritt ist das erste echte Issue:
 
 1. Der Architekt sucht mit jedem Teilnehmenden ein kleines, gut abgegrenztes Issue aus (z. B. ein zusätzliches Feld, eine Textänderung, eine kleine Auswertung).
-2. Der Teilnehmende schreibt das Konzept, der Architekt gibt Rückmeldung.
-3. Der Teilnehmende arbeitet mit dem Agenten, der Architekt ist für Fragen erreichbar.
-4. Pull Request, Review, Merge, Test in der Testumgebung.
+2. Der Teilnehmende schreibt das Konzept mit Sonderfällen in eigenen Worten, der Architekt gibt Rückmeldung.
+3. Der Teilnehmende arbeitet mit dem Agenten, der Architekt ist für Fragen erreichbar. Grundlagenfragen klärt der Lernbegleiter.
+4. Pull Request, Review, Merge, Test in der Preview oder Testumgebung.
 5. Kurzes Rückblick-Gespräch: Was war schwierig, was hat geholfen?
 
-Ab dem zweiten oder dritten Pull Request läuft es meist ohne enge Begleitung. Das Review bleibt aber immer.
+Ab dem zweiten oder dritten Pull Request läuft es meist ohne enge Begleitung. Das Review bleibt aber immer. In dieser Zeit lohnt es sich, die Module der Gruppe "später" durchzuarbeiten, vor allem 15 und 16, sobald es um eigene Projektideen oder den Betrieb geht, und 18, bevor fremder Code oder neue Abhängigkeiten ins Spiel kommen.
 
 ## Anpassung an ein Projekt
 
 Diese Schulung ist bewusst allgemein. Jedes Projekt, das sie einsetzt, ergänzt:
 
-- eine eigene `AGENTS.md` mit den Regeln für Agenten,
+- eine eigene `AGENTS.md` mit den Regeln für Agenten, auch zu Tests,
 - eine Beitragsanleitung (`CONTRIBUTING.md`) mit dem konkreten Ablauf, den Ansprechpartnern und den Zugängen,
+- einen Code of Conduct ([Modul 19](19-gut-zusammenarbeiten.md)) und die Lizenz des Projekts ([Modul 18](18-lizenzen-und-recht.md)),
 - die Vorlagen aus [vorlagen/](vorlagen/README.md), angepasst an das Projekt,
 - eine kurze Einführung in das eigene Datenmodell und die wichtigsten ADRs,
-- die Angabe, welcher Coding-Agent und welche Tarife empfohlen werden.
+- die Liste der Umgebungen und wo KI-Agenten Zugriff haben ([Modul 11](11-umgebungen-und-zusammenarbeit.md)),
+- welche KI-Dienste für welche Daten freigegeben sind ([Modul 14](14-ki-und-datenschutz.md)),
+- welcher Coding-Agent, welcher Tarif und welcher Modell-Standard empfohlen werden und wer bezahlt ([Modul 13](13-werkzeuge-und-kosten.md), [Modul 17](17-ki-modelle.md)).
 
 ## Rückmeldung
 
@@ -4842,15 +5490,21 @@ Nach jeder Durchführung kurz festhalten, welche Module zu lang, zu kurz oder un
 
 # Glossar
 
-Die wichtigsten Begriffe rund um Software, KI-Agenten, Review, Sicherheit und Wartung, alphabetisch und in einfachen Worten. Das Glossar ist auch als Wissensgrundlage für Assistenten gedacht: Wer eine Einsteigerfrage hat, kann es einem Assistenten (z. B. ChatGPT oder Claude) geben und sich Begriffe daraus erklären lassen. Die Verweise "Siehe" führen zum Modul, in dem der Begriff ausführlich vorkommt.
+Die wichtigsten Begriffe rund um Software, KI-Agenten, Review, Sicherheit, Betrieb, Recht und Zusammenarbeit, alphabetisch und in einfachen Worten. Das Glossar ist auch als Wissensgrundlage für Assistenten gedacht: Wer eine Einsteigerfrage hat, kann es einem Assistenten (z. B. ChatGPT oder Claude) geben und sich Begriffe daraus erklären lassen, oder gleich den [Lernbegleiter](tutor/README.md) nutzen. Die Verweise "Siehe" führen zum Modul, in dem der Begriff ausführlich vorkommt.
+
+Rechtliche Begriffe (Datenschutz, Lizenzen, Haftung) sind vereinfacht erklärt. Das ist keine Rechtsberatung.
 
 **Abhängigkeit (Dependency):** Ein fertiger Baustein von anderen Entwicklern, den die eigene Software verwendet, z. B. für Datumsberechnungen. Eine Anwendung hat oft hunderte davon, auch indirekte, und alle müssen regelmäßig aktualisiert werden. Siehe: [Modul 09](09-wartung-und-releases.md).
 
 **Abnahmekriterium:** Eine prüfbare Bedingung, die erfüllt sein muss, damit eine Aufgabe als erledigt gilt. Gute Abnahmekriterien lassen sich mit Ja oder Nein beantworten. Siehe: [Modul 03](03-konzept-und-prompt.md).
 
-**ADR (Architecture Decision Record):** Eine kurze schriftliche Notiz zu einer wichtigen technischen Entscheidung: Frage, Möglichkeiten, Entscheidung, Begründung. ADRs erklären später, warum etwas so gebaut wurde. Siehe: [Modul 10](10-standards.md).
+**ADR (Architecture Decision Record):** Eine kurze schriftliche Notiz zu einer wichtigen technischen Entscheidung: Frage, Möglichkeiten, Entscheidung, Begründung. ADRs erklären später, warum etwas so gebaut wurde. Siehe: [Modul 10](10-standards.md), [Vorlage](vorlagen/adr.md).
 
 **AGENTS.md:** Eine Datei im Repository mit den Regeln für Coding-Agenten. Viele Agenten, z. B. Claude Code und Codex, lesen sie automatisch. Siehe: [Modul 06](06-coding-agent.md), [Modul 10](10-standards.md).
+
+**Alerting (Alarmierung):** Der Teil des Monitorings, der bei einem Problem eine zuständige Person benachrichtigt, z. B. per Nachricht aufs Handy. Ein Alarm muss bei jemandem ankommen, der ihn auch bearbeiten kann, nicht in einem Postfach, das niemand liest. Siehe: [Modul 16](16-vom-prototyp-zum-betrieb.md).
+
+**Anonymisierung:** Daten so verändern, dass sie sich keiner echten Person mehr zuordnen lassen, z. B. indem Namen, Adressen und Gesundheitsangaben ersetzt werden. Nur Nachnamen wegzulassen reicht nicht. Ob eine Anonymisierung ausreicht, entscheiden Architekt und Datenschutzbeauftragter. Siehe: [Modul 11](11-umgebungen-und-zusammenarbeit.md), [Modul 14](14-ki-und-datenschutz.md).
 
 **API (Schnittstelle):** Eine festgelegte Art, wie Programme miteinander sprechen. Die Oberfläche des Wachbuchs fragt z. B. über eine API beim Server die Liste der Fahrzeuge ab. Jede API-Anfrage muss auf dem Server auf Rechte geprüft werden. Siehe: [grundlagen/web-und-daten.md](grundlagen/web-und-daten.md).
 
@@ -4858,13 +5512,19 @@ Die wichtigsten Begriffe rund um Software, KI-Agenten, Review, Sicherheit und Wa
 
 **Assistent (Chat- oder Sprachassistent):** Ein KI-Programm, mit dem man schreibt oder spricht, z. B. ChatGPT oder Claude. Anders als ein Coding-Agent arbeitet er nicht selbst im Repository. Siehe: [Modul 02](02-ideen-per-sprache.md).
 
+**Auftragsverarbeitung (AVV):** Ein Dienstleister verarbeitet personenbezogene Daten im Auftrag und nach Weisung einer Organisation, z. B. ein KI-Anbieter oder ein Hoster. Dafür braucht es einen Auftragsverarbeitungsvertrag (AVV, englisch DPA) nach Art. 28 DSGVO. Verbraucher-Apps haben keinen AVV, deshalb dürfen dort keine personenbezogenen Daten hinein. Siehe: [Modul 14](14-ki-und-datenschutz.md).
+
 **Authentifizierung:** Die Prüfung, wer jemand ist, z. B. durch Benutzername und Passwort. Sie beantwortet die Frage "Wer bist du?". Siehe: [Modul 08](08-sicherheit.md).
 
 **Autorisierung:** Die Prüfung, was jemand darf, nachdem klar ist, wer er ist. Sie beantwortet die Frage "Darfst du das?" und muss immer auf dem Server stattfinden. Siehe: [Modul 08](08-sicherheit.md).
 
+**AVV:** Abkürzung für Auftragsverarbeitungsvertrag, siehe Auftragsverarbeitung.
+
 **Backend:** Der Teil einer Anwendung, der auf dem Server läuft: Er speichert Daten, prüft Rechte und rechnet. Nutzer sehen ihn nicht direkt. Siehe: [grundlagen/sprachen-und-plattformen.md](grundlagen/sprachen-und-plattformen.md).
 
-**Backup (Sicherung):** Eine Kopie der Daten, mit der man sie nach einem Fehler oder Angriff wiederherstellen kann. Ein Backup ist nur etwas wert, wenn die Wiederherstellung ausprobiert wurde.
+**Backup (Sicherung):** Eine Kopie der Daten, mit der man sie nach einem Fehler oder Angriff wiederherstellen kann. Für den Betrieb gilt die 3-2-1-Regel: drei Kopien, zwei verschiedene Speicher, eine an einem anderen Ort. Ein Backup ist nur etwas wert, wenn die Wiederherstellung ausprobiert wurde. Siehe: [grundlagen/web-und-daten.md](grundlagen/web-und-daten.md), [Modul 16](16-vom-prototyp-zum-betrieb.md).
+
+**Backup-Test:** Siehe Wiederherstellungstest.
 
 **Bibliothek:** Eine Sammlung fertiger Funktionen, die man in die eigene Software einbindet, z. B. zum Rechnen mit Datumsangaben. Bibliotheken werden meist als Pakete installiert. Siehe: [grundlagen/sprachen-und-plattformen.md](grundlagen/sprachen-und-plattformen.md).
 
@@ -4876,9 +5536,13 @@ Die wichtigsten Begriffe rund um Software, KI-Agenten, Review, Sicherheit und Wa
 
 **Browser:** Das Programm, mit dem man Webseiten und Web-Apps öffnet, z. B. Firefox, Chrome, Safari oder Edge. Siehe: [grundlagen/web-und-daten.md](grundlagen/web-und-daten.md).
 
+**Budget (Ausgabegrenze):** Ein fester Höchstbetrag pro Monat für nutzungsbasiert abgerechnete Dienste wie eine KI-API oder CI-Minuten. Ist er erreicht, stoppt die Nutzung. Immer zuerst Budget und Warnungen einrichten, dann loslegen. Siehe: [Modul 13](13-werkzeuge-und-kosten.md).
+
+**Bus-Faktor:** Wie viele Personen ausfallen müssten, damit niemand mehr die Software versteht oder betreiben kann. Ist die Antwort "eine", ist das Projekt gefährdet. Siehe: [Modul 15](15-projekt-lebenszyklus.md).
+
 **Changelog:** Eine Liste aller Änderungen je Version. Sie kann automatisch aus Commit-Nachrichten erzeugt werden. Siehe: [Modul 09](09-wartung-und-releases.md).
 
-**CI/CD:** CI (Continuous Integration) heißt: Bei jedem Pull Request laufen automatisch Prüfungen wie Tests und Sicherheitsscans. CD (Continuous Delivery oder Deployment) heißt: Geprüfte Stände werden automatisch ausgeliefert, z. B. in die Testumgebung. Siehe: [Modul 07](07-pull-request-und-review.md).
+**CI/CD:** CI (Continuous Integration) heißt: Bei jedem Pull Request laufen automatisch Prüfungen wie Tests und Sicherheitsscans. CD (Continuous Delivery oder Deployment) heißt: Geprüfte Stände werden automatisch ausgeliefert, z. B. in die Testumgebung. Siehe: [Modul 07](07-pull-request-und-review.md), [Modul 11](11-umgebungen-und-zusammenarbeit.md).
 
 **Client:** Das Programm, das bei einem Server etwas anfragt, z. B. der Browser oder eine App auf dem Handy. Siehe: [grundlagen/web-und-daten.md](grundlagen/web-und-daten.md).
 
@@ -4886,27 +5550,47 @@ Die wichtigsten Begriffe rund um Software, KI-Agenten, Review, Sicherheit und Wa
 
 **Cloud-Sandbox:** Ein abgeschotteter Rechner beim Anbieter, auf dem ein Agent arbeitet, ohne den eigenen Rechner zu berühren. Für Einsteiger der einfachste Weg. Siehe: [Modul 06](06-coding-agent.md).
 
+**Code of Conduct (Verhaltenskodex):** Eine Datei im Repository (oft `CODE_OF_CONDUCT.md`), die beschreibt, wie man im Projekt miteinander umgeht und was passiert, wenn sich jemand nicht daran hält. Sie gilt für Issues, Reviews und alle anderen Gespräche im Projekt. Siehe: [Modul 19](19-gut-zusammenarbeiten.md).
+
 **Coding-Agent:** Ein KI-Werkzeug, das selbständig in einem Repository arbeitet: Dateien liest und ändert, Befehle ausführt und Pull Requests vorbereitet. Beispiele sind Claude Code und OpenAI Codex. Siehe: [Modul 06](06-coding-agent.md).
 
 **Commit:** Ein gespeicherter Arbeitsschritt im Repository mit einer kurzen Nachricht, was geändert wurde. Siehe: [Modul 07](07-pull-request-und-review.md), [grundlagen/versionskontrolle.md](grundlagen/versionskontrolle.md).
 
 **Container:** Ein verpacktes Programm samt allem, was es zum Laufen braucht. Container laufen überall gleich, egal auf welchem Server. Siehe: [grundlagen/werkzeuge.md](grundlagen/werkzeuge.md).
 
+**Context Window:** Englisch für Kontextfenster, siehe dort.
+
 **Conventional Commits:** Ein festes Muster für Commit-Nachrichten, z. B. `feat: neue funktion` oder `fix: fehler behoben`. Daraus können Maschinen Versionen und Changelogs ableiten. Siehe: [Modul 09](09-wartung-und-releases.md).
 
 **Cookie:** Eine kleine Datei, die eine Webseite im Browser speichert, z. B. um sich zu merken, dass man angemeldet ist. Siehe: [grundlagen/web-und-daten.md](grundlagen/web-und-daten.md).
 
+**Copyleft:** Eine Eigenschaft mancher Open-Source-Lizenzen, z. B. der GPL: Wer die Software verändert und weitergibt, muss auch seine Änderungen unter derselben Lizenz und mit Quellcode weitergeben. Das schützt die Offenheit, kann aber mit anderen Lizenzen im eigenen Projekt kollidieren. Siehe: [Modul 18](18-lizenzen-und-recht.md).
+
+**CRA (Cyber Resilience Act):** Ein EU-Gesetz (Verordnung (EU) 2024/2847), das Herstellern von Software und Geräten Pflichten zur Sicherheit auferlegt, z. B. Sicherheitsupdates, eine SBOM und die Meldung ausgenutzter Lücken. Nicht kommerzielle Vereinssoftware fällt voraussichtlich nicht unter die Herstellerpflichten (bitte prüfen). Siehe: [Modul 16](16-vom-prototyp-zum-betrieb.md).
+
 **Cross-Platform:** Eine App, die mit einem gemeinsamen Code auf mehreren Systemen läuft, z. B. iPhone und Android. Siehe: [grundlagen/sprachen-und-plattformen.md](grundlagen/sprachen-und-plattformen.md).
 
-**CVE:** Eine weltweit eindeutige Nummer für eine bekannte Sicherheitslücke, z. B. CVE-2024-3094. Siehe: [Modul 09](09-wartung-und-releases.md).
+**CVE (Common Vulnerabilities and Exposures):** Eine weltweit eindeutige Nummer für eine bekannte Sicherheitslücke, z. B. CVE-2024-3094. So reden alle über dieselbe Lücke. Jeden Tag kommen über hundert neue hinzu. Siehe: [Modul 09](09-wartung-und-releases.md), [Modul 16](16-vom-prototyp-zum-betrieb.md).
+
+**CVSS (Common Vulnerability Scoring System):** Eine Punktzahl von 0 bis 10 für die Schwere einer Sicherheitslücke. Ab 9,0 gilt sie als kritisch. Siehe: [Modul 16](16-vom-prototyp-zum-betrieb.md).
+
+**CycloneDX:** Eines der zwei verbreiteten, maschinenlesbaren Formate für eine SBOM. Das andere ist SPDX. Siehe: [Modul 16](16-vom-prototyp-zum-betrieb.md).
+
+**Cypress:** Ein Werkzeug für End-to-End-Tests, das die Anwendung im Browser bedient und prüft, was auf dem Bildschirm erscheint. Ähnlich wie Playwright. Siehe: [Modul 12](12-testen.md).
 
 **Datenbank:** Ein Programm, das Daten geordnet speichert und schnell wiederfindet. Das Wachbuch speichert dort Mitglieder, Fahrzeuge und Prüfungen. Siehe: [Modul 05](05-datenmodell.md), [grundlagen/web-und-daten.md](grundlagen/web-und-daten.md).
+
+**Datenklasse:** Eine Einteilung von Daten nach Schutzbedarf: öffentlich, intern, personenbezogen und besondere Kategorien wie Gesundheitsdaten. Die Datenklasse entscheidet, in welchen KI-Dienst und in welche Umgebung Daten dürfen. Siehe: [Modul 14](14-ki-und-datenschutz.md).
+
+**Datenminimierung:** Nur die Daten erheben, speichern und weitergeben, die für den Zweck wirklich nötig sind. Im Wachbuch z. B. "Untersuchung gültig bis" statt eines Befunds. Siehe: [Modul 14](14-ki-und-datenschutz.md).
 
 **Datenmodell:** Die Beschreibung, welche Daten eine Software speichert und wie sie zusammenhängen. Fehler im Datenmodell sind später teuer zu korrigieren. Siehe: [Modul 05](05-datenmodell.md).
 
 **Dependency:** Englisch für Abhängigkeit, siehe dort.
 
-**Deployment:** Das Ausliefern einer Software-Version auf einen Server, z. B. in die Testumgebung oder in die Produktion. Siehe: [Modul 09](09-wartung-und-releases.md).
+**Dependency-Track:** Ein freies Werkzeug von OWASP, das die SBOMs aller Systeme sammelt und laufend mit neuen CVEs abgleicht. So ist die Frage "Sind wir betroffen?" in Minuten beantwortet. Siehe: [Modul 16](16-vom-prototyp-zum-betrieb.md).
+
+**Deployment:** Das Ausliefern einer Software-Version auf einen Server, z. B. in die Testumgebung oder in die Produktion. Siehe: [Modul 09](09-wartung-und-releases.md), [Modul 11](11-umgebungen-und-zusammenarbeit.md).
 
 **Diff:** Die Gegenüberstellung von altem und neuem Stand. Im Pull Request zeigt der Diff, welche Zeilen hinzugekommen oder weggefallen sind. Siehe: [Modul 07](07-pull-request-und-review.md).
 
@@ -4918,15 +5602,23 @@ Die wichtigsten Begriffe rund um Software, KI-Agenten, Review, Sicherheit und Wa
 
 **Domänenexperte:** Eine Person, die ein Fachgebiet aus der Praxis sehr gut kennt, z. B. Karl als Feuerwehrmann. In dieser Schulung treibt sie die Entwicklung mit Hilfe von Agenten. Siehe: [Modul 00](00-warum.md), [Modul 01](01-rollen-und-ablauf.md).
 
-**DSGVO:** Die Datenschutz-Grundverordnung der EU. Sie regelt, wie personenbezogene Daten verarbeitet werden dürfen, auch in Vereinen und Feuerwehren. Siehe: [Modul 08](08-sicherheit.md).
+**DSFA (Datenschutz-Folgenabschätzung):** Eine Prüfung der Risiken, bevor eine Verarbeitung mit hohem Risiko beginnt, z. B. wenn Gesundheitsdaten in großem Umfang verarbeitet werden (Art. 35 DSGVO). Ob sie nötig ist, klärt der Datenschutzbeauftragte. Siehe: [Modul 14](14-ki-und-datenschutz.md).
+
+**DSGVO:** Die Datenschutz-Grundverordnung der EU. Sie regelt, wie personenbezogene Daten verarbeitet werden dürfen, auch in Vereinen und Feuerwehren. Siehe: [Modul 08](08-sicherheit.md), [Modul 14](14-ki-und-datenschutz.md).
+
+**Effort (Reasoning-Stufe, Nachdenk-Stufe):** Eine Einstellung, wie viel ein KI-Modell vor der Antwort nachdenken soll, z. B. niedrig, mittel oder hoch. Mehr Nachdenken bringt bei schweren Aufgaben bessere Ergebnisse, kostet aber Zeit und mehr Token. Siehe: [Modul 17](17-ki-modelle.md).
 
 **Egress:** Verbindungen, die eine Anwendung nach außen ins Internet aufbaut. Aus Sicherheitsgründen werden sie so weit wie möglich beschränkt. Siehe: [Modul 08](08-sicherheit.md).
 
-**End-to-End-Test:** Ein Test, der die Anwendung wie ein Nutzer bedient, z. B. im Browser anmelden, Formular ausfüllen, Ergebnis prüfen. Er ist langsamer als ein Unit-Test, prüft aber das Zusammenspiel aller Teile.
+**End-to-End-Test (E2E):** Ein Test, der die Anwendung wie ein Nutzer bedient, z. B. im Browser anmelden, Formular ausfüllen, Ergebnis prüfen. Er ist langsamer als ein Unit-Test, prüft aber das Zusammenspiel aller Teile. Siehe: [Modul 12](12-testen.md).
 
-**Fork:** Eine eigene Kopie eines fremden Repositories auf der Plattform, z. B. auf GitHub. Aus einem Fork kann man Pull Requests an das Original stellen. Siehe: [grundlagen/versionskontrolle.md](grundlagen/versionskontrolle.md).
+**EPSS (Exploit Prediction Scoring System):** Eine Schätzung, wie wahrscheinlich eine Sicherheitslücke in den nächsten 30 Tagen tatsächlich ausgenutzt wird. Hilft zu entscheiden, welche Lücke zuerst geschlossen wird. Siehe: [Modul 16](16-vom-prototyp-zum-betrieb.md).
 
-**Formatierung:** Das einheitliche Aussehen von Code: Einrückung, Leerzeichen, Zeilenlänge. Ein Formatierer macht das automatisch, damit Diffs nur echte Änderungen zeigen.
+**Flaky Test (wackelnder Test):** Ein Test, der mal grün und mal rot ist, ohne dass sich etwas geändert hat, oft wegen Zeitabhängigkeiten. Er ist gefährlich, weil man sich angewöhnt, rote Ergebnisse zu ignorieren, und wird deshalb als Issue gemeldet und repariert. Siehe: [Modul 12](12-testen.md).
+
+**Fork:** Eine eigene Kopie eines fremden Repositories, z. B. auf GitHub. Aus einem Fork kann man Pull Requests an das Original stellen oder ein eigenständiges Projekt weiterentwickeln. Was man mit einem Fork tun darf, regelt die Lizenz des Originals. Siehe: [grundlagen/versionskontrolle.md](grundlagen/versionskontrolle.md), [Modul 18](18-lizenzen-und-recht.md).
+
+**Formatierung:** Das einheitliche Aussehen von Code: Einrückung, Leerzeichen, Zeilenlänge. Ein Formatierer macht das automatisch, damit Diffs nur echte Änderungen zeigen. Siehe: [Modul 12](12-testen.md).
 
 **Framework:** Ein Grundgerüst für eine Anwendung, das vieles vorgibt und erledigt, z. B. wie Seiten aufgebaut und Anfragen verarbeitet werden. Siehe: [grundlagen/sprachen-und-plattformen.md](grundlagen/sprachen-und-plattformen.md).
 
@@ -4936,6 +5628,8 @@ Die wichtigsten Begriffe rund um Software, KI-Agenten, Review, Sicherheit und Wa
 
 **Full-Stack:** Frontend und Backend zusammen. Eine Full-Stack-Anwendung oder ein Full-Stack-Entwickler deckt beides ab. Siehe: [grundlagen/sprachen-und-plattformen.md](grundlagen/sprachen-und-plattformen.md).
 
+**Geteilte Verantwortung:** Das Modell dieser Schulung, wer wofür zuständig ist: Domänenexperten für das, was in der Software passiert (Abläufe, Regeln, fachliche Prüfung), IT-Experten für die Software selbst (Architektur, Sicherheit, Betrieb), manches wie das Datenmodell gemeinsam. Der KI-Agent trägt keine Verantwortung. Siehe: [Geteilte Verantwortung](geteilte-verantwortung.md).
+
 **Git:** Das verbreitetste Werkzeug zur Versionskontrolle. Es speichert jede Änderung mit Autor, Zeit und Nachricht. Siehe: [grundlagen/versionskontrolle.md](grundlagen/versionskontrolle.md).
 
 **Gitea:** Eine schlanke Plattform für Git-Repositories, die man selbst betreiben kann. Siehe: [grundlagen/versionskontrolle.md](grundlagen/versionskontrolle.md).
@@ -4944,7 +5638,11 @@ Die wichtigsten Begriffe rund um Software, KI-Agenten, Review, Sicherheit und Wa
 
 **GitLab:** Eine Plattform für Git-Repositories mit ähnlichen Funktionen wie GitHub, auch zum Selbstbetrieb. Pull Requests heißen dort Merge Requests. Siehe: [grundlagen/versionskontrolle.md](grundlagen/versionskontrolle.md).
 
-**Halluzination:** Wenn ein KI-Modell etwas Falsches erfindet und es überzeugend darstellt, z. B. ein Paket oder eine Funktion, die es nicht gibt. Deshalb wird alles geprüft. Siehe: [Modul 06](06-coding-agent.md).
+**GPL (GNU General Public License):** Eine verbreitete Open-Source-Lizenz mit Copyleft. Wer GPL-Code in seine Software einbaut und diese weitergibt, muss in der Regel die ganze Software unter der GPL mit Quellcode weitergeben. Siehe: [Modul 18](18-lizenzen-und-recht.md).
+
+**Haftung:** Die Pflicht, für einen Schaden einzustehen, z. B. wenn durch einen Softwarefehler Daten verloren gehen. Open-Source-Lizenzen schließen die Haftung so weit wie gesetzlich möglich aus, ganz ausschließen lässt sie sich nach deutschem Recht aber nicht (bitte prüfen). Wer Software für andere betreibt, sollte klären, wer im Schadensfall verantwortlich ist. Siehe: [Modul 18](18-lizenzen-und-recht.md).
+
+**Halluzination:** Wenn ein KI-Modell etwas Falsches erfindet und es überzeugend darstellt, z. B. ein Paket oder eine Funktion, die es nicht gibt. Deshalb wird alles geprüft. Siehe: [Modul 06](06-coding-agent.md), [Modul 17](17-ki-modelle.md).
 
 **Hash:** Ein "Fingerabdruck" einer Information, der sich nicht zurückrechnen lässt. Gleiche Eingabe ergibt immer denselben Hash.
 
@@ -4954,27 +5652,37 @@ Die wichtigsten Begriffe rund um Software, KI-Agenten, Review, Sicherheit und Wa
 
 **IDE (Entwicklungsumgebung):** Ein Programm zum Schreiben von Code mit vielen Hilfen, z. B. VS Code. Viele Coding-Agenten gibt es auch als Erweiterung für eine IDE. Siehe: [grundlagen/werkzeuge.md](grundlagen/werkzeuge.md).
 
-**Issue:** Ein Eintrag im Repository, der eine Aufgabe, einen Fehler oder einen Wunsch beschreibt. Jeder Pull Request sollte ein Issue lösen. Siehe: [Modul 03](03-konzept-und-prompt.md).
+**Incident (Störung):** Alles, was den Betrieb beeinträchtigt: Ausfall, Datenfehler, Angriff. Vorher wird festgelegt, wer informiert wird, wer entscheidet und was die Organisation macht, solange die Software nicht geht. Siehe: [Modul 16](16-vom-prototyp-zum-betrieb.md).
+
+**Integrationstest:** Ein Test, der mehrere Teile zusammen prüft, z. B. ob eine gespeicherte Prüfung danach wirklich in der Testdatenbank steht. Siehe: [Modul 12](12-testen.md).
+
+**Issue:** Ein Eintrag im Repository, der eine Aufgabe, einen Fehler oder einen Wunsch beschreibt. Jeder Pull Request sollte ein Issue lösen. Siehe: [Modul 03](03-konzept-und-prompt.md), [Vorlage](vorlagen/issue.md).
 
 **JSON:** Ein einfaches Textformat für strukturierte Daten, z. B. `{"name": "HLF 20"}`. Viele APIs und Konfigurationsdateien nutzen es. Siehe: [grundlagen/web-und-daten.md](grundlagen/web-und-daten.md).
 
-**Kontextfenster:** Die Menge an Text, die ein KI-Modell auf einmal "im Kopf" haben kann. Lange Sitzungen können es überschreiten; dann vergisst der Agent frühere Anweisungen. Eine neue Sitzung mit klarem Auftrag hilft.
+**KEV (Known Exploited Vulnerabilities):** Ein Katalog der US-Behörde CISA mit Sicherheitslücken, die nachweislich bereits angegriffen werden. Steht eine Lücke dort, ist höchste Eile geboten. Siehe: [Modul 16](16-vom-prototyp-zum-betrieb.md).
 
-**Konflikt (Merge-Konflikt):** Entsteht, wenn zwei Branches dieselbe Stelle unterschiedlich geändert haben. Git kann dann nicht selbst entscheiden, ein Mensch oder Agent muss den Konflikt auflösen. Siehe: [grundlagen/versionskontrolle.md](grundlagen/versionskontrolle.md).
+**Konflikt (Merge-Konflikt):** Entsteht, wenn zwei Branches dieselbe Stelle unterschiedlich geändert haben. Git kann dann nicht selbst entscheiden, ein Mensch oder Agent muss den Konflikt auflösen und dabei prüfen, dass keine fremde Änderung verloren geht. Kleine, kurzlebige Pull Requests vermeiden Konflikte. Siehe: [Modul 11](11-umgebungen-und-zusammenarbeit.md), [grundlagen/versionskontrolle.md](grundlagen/versionskontrolle.md).
+
+**Kontextfenster (Context Window):** Die Menge an Text (gemessen in Token), die ein KI-Modell auf einmal "im Kopf" haben kann: Auftrag, Projektregeln, geöffnete Dateien und der bisherige Verlauf. Bei sehr vollem Kontext übersieht der Agent eher frühere Anweisungen, und jeder Schritt kostet mehr. Eine neue Sitzung mit klarem Auftrag hilft. Siehe: [Modul 17](17-ki-modelle.md).
 
 **Kubernetes:** Ein System, das viele Container auf mehreren Servern betreibt, neu startet und verteilt. Für kleine Anwendungen oft nicht nötig. Siehe: [grundlagen/werkzeuge.md](grundlagen/werkzeuge.md).
 
 **Label:** Eine farbige Markierung für Issues und Pull Requests, z. B. "bug", "security" oder "dokumentation". Labels helfen beim Sortieren.
 
-**Lint:** Eine automatische Prüfung auf Stilfehler und typische Programmierfehler. Siehe: [Modul 07](07-pull-request-und-review.md).
+**Lint:** Eine automatische Prüfung auf Stilfehler und typische Programmierfehler. Sie läuft in Sekunden, ohne die Software zu starten. Siehe: [Modul 07](07-pull-request-und-review.md), [Modul 12](12-testen.md).
 
-**Lizenz:** Legt fest, wer eine Software oder einen Text wie nutzen, ändern und weitergeben darf. Bei fremdem Code und Paketen muss die Lizenz zum eigenen Projekt passen. Siehe: [Modul 04](04-marktrecherche.md).
+**Lizenz:** Legt fest, wer eine Software oder einen Text wie nutzen, ändern und weitergeben darf. Freizügige Lizenzen wie MIT oder Apache 2.0 erlauben fast alles, solange der Urheber- und Lizenzhinweis erhalten bleibt; Copyleft-Lizenzen wie die GPL verlangen, dass Änderungen offen bleiben. Code ohne Lizenz darf man grundsätzlich nicht verwenden. Siehe: [Modul 04](04-marktrecherche.md), [Modul 18](18-lizenzen-und-recht.md).
 
-**LLM (Large Language Model):** Ein großes Sprachmodell, die Technik hinter Assistenten und Coding-Agenten. Es erzeugt Text, indem es wahrscheinliche Fortsetzungen berechnet, und kann sich dabei irren.
+**Lizenzkompatibilität:** Die Frage, ob sich Code unter verschiedenen Lizenzen in einem Projekt kombinieren lässt. Eine GPL-Abhängigkeit passt z. B. nicht ohne Weiteres in ein Projekt, das unter MIT veröffentlicht wird. Neue Abhängigkeiten werden deshalb auch auf ihre Lizenz geprüft. Siehe: [Modul 18](18-lizenzen-und-recht.md).
+
+**LLM (Large Language Model):** Ein großes Sprachmodell, die Technik hinter Assistenten und Coding-Agenten. Es erzeugt Text, indem es wahrscheinliche Fortsetzungen berechnet, und kann sich dabei irren. Siehe: [Modul 17](17-ki-modelle.md).
 
 **Lockfile:** Eine Datei, die festhält, welche Abhängigkeiten in genau welcher Version verwendet werden, auch die indirekten. Siehe: [Modul 09](09-wartung-und-releases.md).
 
-**Log:** Eine Protokolldatei, in der eine Software notiert, was sie tut. Personenbezogene Daten und Secrets gehören nicht hinein. Siehe: [Modul 08](08-sicherheit.md).
+**Log:** Eine Protokolldatei, in der eine Software notiert, was sie tut. Personenbezogene Daten und Secrets gehören nicht hinein, und Logs aus QA oder Produktion gehören nicht in einen KI-Chat. Siehe: [Modul 08](08-sicherheit.md), [Modul 14](14-ki-und-datenschutz.md).
+
+**Lokales Modell:** Ein KI-Modell, das auf dem eigenen Rechner läuft, z. B. mit Ollama oder LM Studio, sodass keine Daten an einen Anbieter gehen. Für echte Softwareentwicklung sind kleine lokale Modelle meist zu schwach, für einfache Aufgaben und zum Lernen aber brauchbar. Siehe: [Modul 17](17-ki-modelle.md).
 
 **main:** Der Hauptbranch eines Repositories. Er enthält den geprüften Stand, niemand arbeitet direkt darauf. Siehe: [Modul 10](10-standards.md).
 
@@ -4984,41 +5692,69 @@ Die wichtigsten Begriffe rund um Software, KI-Agenten, Review, Sicherheit und Wa
 
 **Merge:** Das Übernehmen der Änderungen aus einem Branch in einen anderen, meist nach `main`, nachdem das Review abgeschlossen ist. Siehe: [Modul 07](07-pull-request-und-review.md).
 
+**Merge-Konflikt:** Siehe Konflikt.
+
 **Migration:** Ein Schritt, der die Struktur der Datenbank ändert, z. B. ein neues Feld anlegt. Bereits ausgelieferte Migrationen werden nicht mehr geändert. Siehe: [Modul 05](05-datenmodell.md).
+
+**MIT-Lizenz:** Eine kurze, freizügige Open-Source-Lizenz. Jeder darf den Code nutzen, ändern, weitergeben und auch in geschlossene Produkte einbauen, solange der Urheber- und Lizenzhinweis erhalten bleibt. Siehe: [Modul 18](18-lizenzen-und-recht.md).
+
+**Monitoring (Überwachung):** Ein System prüft ständig, ob die Software erreichbar ist, ob auffällig viele Fehler auftreten und ob Speicher, Zertifikate und Backups in Ordnung sind. Bei Problemen alarmiert es die Verantwortlichen, bevor die Nutzer es merken (siehe Alerting). Siehe: [Modul 16](16-vom-prototyp-zum-betrieb.md).
+
+**MVP (Minimum Viable Product):** Die kleinste Version einer Software, die schon echten Nutzen bringt. Ein MVP entsteht nach Konzept und Basis, nicht als schneller Prototyp. Siehe: [Modul 15](15-projekt-lebenszyklus.md).
 
 **Native App:** Eine App, die speziell für ein System gebaut ist, z. B. nur für iPhone oder nur für Android, und über den App-Store installiert wird. Siehe: [grundlagen/sprachen-und-plattformen.md](grundlagen/sprachen-und-plattformen.md).
 
 **npm:** Das Paketverzeichnis und Werkzeug für JavaScript. Darüber werden Abhängigkeiten installiert. Siehe: [Modul 09](09-wartung-und-releases.md).
 
-**Open Source:** Software, deren Quellcode öffentlich ist und unter einer Lizenz steht, die Nutzung und Änderung erlaubt. Siehe: [Modul 04](04-marktrecherche.md).
+**Onboarding (Einarbeitung):** Der Weg, wie neue Mitwirkende ins Projekt kommen: Zugänge, Regeln, erstes kleines Issue, Begleitung bei den ersten Pull Requests. Siehe: [Modul 19](19-gut-zusammenarbeiten.md), [Schulungsablauf](schulungsablauf.md).
+
+**Open Source:** Software, deren Quellcode öffentlich ist und unter einer Lizenz steht, die Nutzung und Änderung erlaubt. Öffentlich sichtbarer Code ohne Lizenz ist kein Open Source. Siehe: [Modul 04](04-marktrecherche.md), [Modul 18](18-lizenzen-und-recht.md).
+
+**Open-Weight-Modell (offenes Modell):** Ein KI-Modell, dessen trainierte Gewichte veröffentlicht sind, sodass man es herunterladen und selbst betreiben kann. Große offene Modelle brauchen teure Hardware. Siehe: [Modul 17](17-ki-modelle.md).
 
 **Paket:** Ein veröffentlichter Software-Baustein, z. B. bei npm. Siehe Abhängigkeit.
 
 **Passwort-Hash:** Passwörter werden nie im Klartext gespeichert, sondern nur als Hash mit einem dafür gemachten, absichtlich langsamen Verfahren. Bei der Anmeldung wird der Hash der Eingabe verglichen. Siehe: [Modul 08](08-sicherheit.md).
 
-**Personenbezogene Daten:** Alle Angaben, die sich einer bestimmten Person zuordnen lassen, z. B. Name, Adresse, Geburtsdatum. Gesundheitsdaten sind besonders geschützt. Siehe: [Modul 08](08-sicherheit.md).
+**Personenbezogene Daten:** Alle Angaben, die sich einer bestimmten Person zuordnen lassen, z. B. Name, Adresse, Geburtsdatum. Gesundheitsdaten sind besonders geschützt. Siehe: [Modul 08](08-sicherheit.md), [Modul 14](14-ki-und-datenschutz.md).
 
-**Pipeline:** Die Abfolge automatischer Schritte in der CI/CD, z. B. erst prüfen, dann testen, dann bauen, dann ausliefern. Siehe: [Modul 07](07-pull-request-und-review.md).
+**Pinning (Versionen festnageln):** Abhängigkeiten, Container-Images und Pipeline-Bausteine werden auf eine feste Version oder Prüfsumme festgelegt, damit nicht unbemerkt etwas anderes eingebaut wird. Renovate aktualisiert sie kontrolliert. Siehe: [Modul 16](16-vom-prototyp-zum-betrieb.md).
 
-**Produktion:** Die echte Installation einer Software mit echten Nutzern und echten Daten. Siehe Umgebung.
+**Pipeline:** Die Abfolge automatischer Schritte in der CI/CD, z. B. erst prüfen, dann testen, dann bauen, dann ausliefern. Siehe: [Modul 07](07-pull-request-und-review.md), [Modul 11](11-umgebungen-und-zusammenarbeit.md).
+
+**Playwright:** Ein Werkzeug für End-to-End-Tests. Es startet einen Browser, klickt, tippt und prüft, was auf dem Bildschirm erscheint, und sucht Felder dabei über ihre sichtbare Beschriftung. Siehe: [Modul 12](12-testen.md).
+
+**PoC (Proof of Concept):** Ein Nachweis, dass eine Idee grundsätzlich funktioniert, z. B. dass sich Prüftermine automatisch berechnen lassen. Ein PoC ist kein fertiges Produkt. Siehe: [Modul 15](15-projekt-lebenszyklus.md).
+
+**Preview-Umgebung (Vorschau):** Eine kleine, eigene Installation der Software pro Pull Request oder pro Entwickler, mit erfundenen Daten. Man probiert seine Änderung über einen Link im Browser aus, nach dem Merge wird sie gelöscht. Siehe: [Modul 11](11-umgebungen-und-zusammenarbeit.md).
+
+**Produktion (prod):** Die echte Installation einer Software mit echten Nutzern und echten Daten. KI-Agenten haben dort niemals Zugriff, auch nicht nur lesend. Siehe: [Modul 11](11-umgebungen-und-zusammenarbeit.md), [Modul 16](16-vom-prototyp-zum-betrieb.md).
 
 **Programmiersprache:** Eine Sprache, in der Code geschrieben wird, z. B. JavaScript, TypeScript, Python oder Go. Siehe: [grundlagen/sprachen-und-plattformen.md](grundlagen/sprachen-und-plattformen.md).
 
-**Prompt:** Der Text, mit dem man einem Assistenten oder Agenten sagt, was er tun soll. Siehe: [Modul 03](03-konzept-und-prompt.md).
+**Prompt:** Der Text, mit dem man einem Assistenten oder Agenten sagt, was er tun soll. Siehe: [Modul 03](03-konzept-und-prompt.md), [Vorlage](vorlagen/prompt-coding-agent.md).
 
 **Prompt Injection:** Ein Angriff, bei dem versteckte Anweisungen in Texten (z. B. in einem Issue oder auf einer Webseite) einen Agenten dazu bringen, etwas Unerwünschtes zu tun. Siehe: [Modul 08](08-sicherheit.md).
 
+**Prototyp:** Eine schnelle, anklickbare Skizze, die zeigt, wie etwas aussehen und sich anfühlen könnte. Er ist zum Lernen da, enthält nur erfundene Daten und wird meist weggeworfen; die Ideen bleiben. Siehe: [Modul 15](15-projekt-lebenszyklus.md), [Modul 16](16-vom-prototyp-zum-betrieb.md).
+
 **Pull:** Die neuesten Änderungen von der Plattform in die eigene Kopie holen. Siehe: [grundlagen/versionskontrolle.md](grundlagen/versionskontrolle.md).
 
-**Pull Request (PR):** Die Bitte, die Änderungen eines Branches in `main` zu übernehmen. Hier finden Prüfungen und Review statt. Siehe: [Modul 07](07-pull-request-und-review.md).
+**Pull Request (PR):** Die Bitte, die Änderungen eines Branches in `main` zu übernehmen. Hier finden Prüfungen und Review statt. Siehe: [Modul 07](07-pull-request-und-review.md), [Vorlage](vorlagen/pull-request.md).
 
 **Push:** Eigene Commits von der lokalen Kopie auf die Plattform hochladen. Siehe: [grundlagen/versionskontrolle.md](grundlagen/versionskontrolle.md).
 
 **PWA (Progressive Web App):** Eine Web-App, die sich wie eine App auf dem Handy installieren lässt, ohne App-Store. Siehe: [grundlagen/sprachen-und-plattformen.md](grundlagen/sprachen-und-plattformen.md).
 
-**Rebase:** Die eigenen Commits auf einen neueren Stand von `main` umsetzen, damit der Branch wieder aktuell ist. Kann Konflikte auslösen. Siehe: [grundlagen/versionskontrolle.md](grundlagen/versionskontrolle.md).
+**QA (Quality Assurance) / Staging:** Die letzte Umgebung vor der Produktion, möglichst genau wie diese aufgebaut, um ein Release zu prüfen. Liegen dort echte oder nur teilweise anonymisierte Daten, haben KI-Agenten und KI-Chats keinen Zugriff. Siehe: [Modul 11](11-umgebungen-und-zusammenarbeit.md).
+
+**Reasoning-Modell:** Ein KI-Modell, das vor der Antwort "nachdenkt": Es zerlegt die Aufgabe in Schritte und prüft Zwischenergebnisse. Das lohnt sich für Architektur, Datenmodell, Sicherheit und hartnäckige Fehler, nicht für kurze Fragen. Siehe: [Modul 17](17-ki-modelle.md).
+
+**Rebase:** Die eigenen Commits auf einen neueren Stand von `main` umsetzen, damit der Branch wieder aktuell ist. Kann Konflikte auslösen. Siehe: [Modul 11](11-umgebungen-und-zusammenarbeit.md), [grundlagen/versionskontrolle.md](grundlagen/versionskontrolle.md).
 
 **Recht (Berechtigung):** Die Erlaubnis, etwas Bestimmtes zu tun, z. B. Untersuchungsfristen sehen. Rechte werden meist über Rollen vergeben. Siehe: [Modul 08](08-sicherheit.md).
+
+**Refactor (Umbau):** Code grundsätzlich umbauen, ohne das Verhalten zu ändern, z. B. die Rechteprüfung neu ordnen. Große Umbauten berühren viele Dateien und kommen nur nach Absprache mit dem Maintainer und mit Ankündigung. Siehe: [Modul 11](11-umgebungen-und-zusammenarbeit.md).
 
 **Release:** Eine feste, benannte Version der Software, die ausgeliefert wird, z. B. `v1.4.0`. Siehe: [Modul 09](09-wartung-und-releases.md).
 
@@ -5028,15 +5764,19 @@ Die wichtigsten Begriffe rund um Software, KI-Agenten, Review, Sicherheit und Wa
 
 **REST:** Ein verbreiteter Stil für APIs im Web: Jede Sache hat eine Adresse, z. B. `/fahrzeuge/7`, und man liest, legt an, ändert oder löscht sie mit festen Befehlen. Siehe: [grundlagen/web-und-daten.md](grundlagen/web-und-daten.md).
 
-**Review:** Die Prüfung eines Pull Requests durch Werkzeuge und Menschen, bevor er übernommen wird. Siehe: [Modul 07](07-pull-request-und-review.md).
+**Review:** Die Prüfung eines Pull Requests durch Werkzeuge und Menschen, bevor er übernommen wird. Kritik im Review gilt dem Code, nicht der Person. Siehe: [Modul 07](07-pull-request-und-review.md), [Modul 19](19-gut-zusammenarbeiten.md).
+
+**Rollback:** Das Zurückkehren zu einer früheren Version, wenn nach einem Release etwas schiefgeht. Bei Datenbankänderungen nicht immer einfach. Siehe: [Modul 09](09-wartung-und-releases.md).
 
 **Rolle:** Eine Aufgabe mit festen Rechten und Pflichten. Im Projekt z. B. Architekt, in der Software z. B. "Wehrführung", die Untersuchungsfristen sehen darf. Siehe: [Modul 01](01-rollen-und-ablauf.md), [Modul 08](08-sicherheit.md).
 
-**Rollback:** Das Zurückkehren zu einer früheren Version, wenn nach einem Release etwas schiefgeht. Bei Datenbankänderungen nicht immer einfach. Siehe: [Modul 09](09-wartung-und-releases.md).
+**Runbook (Betriebshandbuch):** Eine kurze Anleitung für den Betrieb: wo was läuft, wie man neu startet, wie man ein Backup zurückspielt, wer welche Zugänge hat, wen man anruft. So kann auch eine Vertretung handeln. Siehe: [Modul 16](16-vom-prototyp-zum-betrieb.md).
 
 **Sandbox:** Eine abgeschottete Umgebung, in der ein Programm oder Agent arbeitet, ohne dem Rest des Systems schaden zu können. Siehe Cloud-Sandbox.
 
 **SAST:** Statische Analyse: Werkzeuge, die den Code nach unsicheren Mustern durchsuchen, ohne ihn auszuführen. Siehe: [Modul 08](08-sicherheit.md).
+
+**SBOM (Software Bill of Materials):** Die maschinenlesbare "Zutatenliste" einer Software: alle Komponenten mit Versionen. Automatisch mit neuen CVEs abgeglichen beantwortet sie "Sind wir betroffen?" in Minuten. Siehe: [Modul 16](16-vom-prototyp-zum-betrieb.md).
 
 **Secret:** Ein Geheimnis wie Passwort, Schlüssel oder Token. Secrets gehören nie in Code, Prompts oder Screenshots. Siehe: [Modul 08](08-sicherheit.md).
 
@@ -5050,7 +5790,21 @@ Die wichtigsten Begriffe rund um Software, KI-Agenten, Review, Sicherheit und Wa
 
 **Session (Sitzung):** Die Zeit zwischen Anmelden und Abmelden. Der Server merkt sich, wer angemeldet ist, meist über ein Cookie. Siehe: [grundlagen/web-und-daten.md](grundlagen/web-und-daten.md).
 
+**Signatur (Signieren):** Ein digitales Siegel auf einem Build-Ergebnis, z. B. einem Container-Image, das zeigt, wer es gebaut hat und dass es unverändert ist. Der Server startet nur, was korrekt signiert ist. Siehe: [Modul 16](16-vom-prototyp-zum-betrieb.md).
+
+**SLSA (Supply-chain Levels for Software Artifacts):** Ein Rahmenwerk mit Stufen dafür, wie gut nachweisbar ist, aus welchem Code und mit welcher Pipeline eine Software gebaut wurde (Herkunftsnachweis, englisch Provenance). Siehe: [Modul 16](16-vom-prototyp-zum-betrieb.md).
+
+**SPDX:** Ein verbreitetes Format für SBOMs und zugleich eine Liste fester Kurznamen für Lizenzen, z. B. `MIT` oder `GPL-3.0-only`. Siehe: [Modul 16](16-vom-prototyp-zum-betrieb.md), [Modul 18](18-lizenzen-und-recht.md).
+
+**Spec-Test (Spezifikationstest):** Ein Test, der Verhalten als feste Regel beschreibt, oft in der Form "Gegeben, Wenn, Dann". Weil das fast normale Sprache ist, können Domänenexperten solche Regeln direkt mitschreiben. Siehe: [Modul 12](12-testen.md).
+
 **SQL:** Die Sprache, mit der man Datenbanken abfragt und ändert. Falsch zusammengebaute SQL-Abfragen ermöglichen Injection-Angriffe. Siehe: [grundlagen/web-und-daten.md](grundlagen/web-und-daten.md), [Modul 08](08-sicherheit.md).
+
+**Staging:** Siehe QA.
+
+**Supply Chain (Lieferkette):** Alles, was in die eigene Software einfließt: Abhängigkeiten, Container-Images, Pipeline-Bausteine, Werkzeuge. Angreifer manipulieren oft lieber ein Glied dieser Kette als die Anwendung selbst; dagegen helfen Pinning, Prüfung neuer Abhängigkeiten, Signaturen und SBOM. Siehe: [Modul 09](09-wartung-und-releases.md), [Modul 16](16-vom-prototyp-zum-betrieb.md).
+
+**Synthetische Daten (Testdaten):** Erfundene Daten, die echt aussehen, z. B. "Max Mustermann" oder "HLF 20 Musterstadt". In Entwicklung, Tests, Prompts und Screenshots werden nur sie verwendet. Siehe: [Modul 12](12-testen.md), [Modul 14](14-ki-und-datenschutz.md).
 
 **Tabelle:** Ein Teil einer Datenbank mit Zeilen (Einträgen) und Spalten (Feldern), z. B. eine Tabelle "Fahrzeug". Siehe: [Modul 05](05-datenmodell.md).
 
@@ -5058,25 +5812,37 @@ Die wichtigsten Begriffe rund um Software, KI-Agenten, Review, Sicherheit und Wa
 
 **Terminal (Kommandozeile):** Ein Fenster, in dem man dem Rechner Befehle als Text gibt statt mit der Maus. Für den Einstieg mit einem Cloud-Agenten nicht nötig. Siehe: [grundlagen/werkzeuge.md](grundlagen/werkzeuge.md).
 
-**Test:** Ein kleines Programm, das automatisch prüft, ob die Software in einem bestimmten Fall richtig reagiert. Siehe Unit-Test und End-to-End-Test.
+**Test:** Ein kleines Programm, das automatisch prüft, ob die Software in einem bestimmten Fall richtig reagiert. Ein roter Test wird repariert, nicht gelöscht oder übersprungen. Siehe: [Modul 12](12-testen.md).
+
+**Testpyramide:** Ein Bild für die Arten von Prüfungen: unten viele schnelle (Lint, Typprüfung, Unit-Tests), oben wenige langsame (End-to-End-Tests im Browser). Alle laufen bei jeder Änderung in der CI. Siehe: [Modul 12](12-testen.md).
 
 **TLS:** Das Verfahren, das Verbindungen im Internet verschlüsselt, z. B. bei HTTPS. Es sorgt dafür, dass niemand unterwegs mitlesen oder Daten verändern kann. Siehe: [grundlagen/web-und-daten.md](grundlagen/web-und-daten.md).
 
-**Token:** Zwei Bedeutungen: (1) Ein digitaler Schlüssel, mit dem sich ein Programm anmeldet, also ein Secret. (2) Bei KI-Modellen ein Textstückchen, in dem Länge und Kosten gemessen werden.
+**Token:** Zwei Bedeutungen: (1) Ein digitaler Schlüssel, mit dem sich ein Programm anmeldet, also ein Secret. (2) Bei KI-Modellen ein Textstückchen, etwa ein kurzes Wort oder ein Wortteil, in dem Länge und Kosten gemessen werden. Abgerechnet werden Eingabe-Token (alles, was das Modell liest, auch der bisherige Verlauf) und teurere Ausgabe-Token, deshalb kosten lange Sitzungen mehr. Siehe: [Modul 08](08-sicherheit.md), [Modul 13](13-werkzeuge-und-kosten.md).
 
 **Transaktion:** Mehrere Datenbankänderungen, die nur zusammen gelingen oder zusammen scheitern. So entsteht nie ein halber Zustand. Siehe: [Modul 05](05-datenmodell.md).
 
+**Trivy:** Ein freier Scanner, der ermittelt, welche Komponenten in welchen Versionen in einer Software oder einem Container-Image stecken, diese mit CVE-Datenbanken abgleicht und auch SBOMs erzeugen kann. Ähnlich ist Grype. Siehe: [Modul 08](08-sicherheit.md), [Modul 16](16-vom-prototyp-zum-betrieb.md).
+
 **Typosquatting:** Ein Schadpaket mit einem Namen, der einem bekannten Paket zum Verwechseln ähnlich ist. Siehe: [Modul 08](08-sicherheit.md).
 
-**Umgebung (Dev, Test, Produktion):** Getrennte Installationen derselben Software. In Dev wird entwickelt, in Test mit erfundenen Daten ausprobiert, in Produktion mit echten Daten gearbeitet. Siehe: [Modul 07](07-pull-request-und-review.md), [Modul 09](09-wartung-und-releases.md).
+**Umgebung (lokal, Preview, Dev/Test, QA, Produktion):** Getrennte Installationen derselben Software mit eigenen Daten und Zugängen. In Entwicklungs- und Testumgebungen gibt es nur erfundene Daten, und KI-Agenten dürfen zugreifen; wo echte Daten sind, ist keine KI. Siehe: [Modul 11](11-umgebungen-und-zusammenarbeit.md).
 
-**Unit-Test:** Ein Test, der einen kleinen Teil des Codes einzeln prüft, z. B. ob die Fälligkeit einer Prüfung richtig berechnet wird. Unit-Tests sind schnell und laufen bei jedem Pull Request.
+**Unit-Test:** Ein Test, der einen kleinen Teil des Codes einzeln prüft, z. B. ob die Fälligkeit einer Prüfung richtig berechnet wird. Unit-Tests sind schnell und laufen bei jedem Pull Request. Siehe: [Modul 12](12-testen.md).
+
+**Upstream:** Das Original-Projekt, von dem ein Fork abstammt oder dessen Paket man verwendet. Fehlerkorrekturen schickt man am besten "upstream", also an das Original, damit alle davon profitieren und der eigene Fork nicht veraltet. Siehe: [Modul 18](18-lizenzen-und-recht.md).
+
+**Urheberrecht:** Das Recht der Person, die ein Werk geschaffen hat, z. B. Code oder Text, über dessen Nutzung zu bestimmen. Fremden Code darf man nur nutzen, wenn eine Lizenz es erlaubt. Rein KI-erzeugter Code ist nach überwiegender Auffassung nicht urheberrechtlich geschützt (bitte prüfen). Siehe: [Modul 18](18-lizenzen-und-recht.md).
+
+**Verantwortlicher (DSGVO):** Die Stelle, die entscheidet, wofür und wie personenbezogene Daten verarbeitet werden, z. B. der Verein oder die Gemeinde, nicht der einzelne Mitwirkende und nicht der KI-Anbieter. Der Verantwortliche muss die Einhaltung der DSGVO sicherstellen und schließt z. B. den AVV ab. Siehe: [Modul 14](14-ki-und-datenschutz.md).
 
 **Verschlüsselung:** Daten so umwandeln, dass nur lesen kann, wer den passenden Schlüssel hat. Wichtig bei der Übertragung (TLS) und bei gespeicherten Daten, z. B. Backups. Siehe: [Modul 08](08-sicherheit.md).
 
 **Versionskontrolle:** Ein System, das jede Änderung an Dateien mit Autor, Zeit und Begründung speichert, sodass man jeden früheren Stand wiederherstellen kann. Das bekannteste ist Git. Siehe: [grundlagen/versionskontrolle.md](grundlagen/versionskontrolle.md).
 
 **Web-App:** Eine Anwendung, die im Browser läuft und nicht installiert werden muss, z. B. das Wachbuch. Siehe: [grundlagen/sprachen-und-plattformen.md](grundlagen/sprachen-und-plattformen.md).
+
+**Wiederherstellungstest (Backup-Test):** Ein Backup probeweise zurückspielen, um zu sehen, ob es vollständig ist und wie lange es dauert. Erst ein geübter Wiederherstellungstest zeigt, dass das Backup im Ernstfall hilft. Siehe: [Modul 16](16-vom-prototyp-zum-betrieb.md).
 
 **Workflow:** Eine beschriebene Abfolge automatischer Schritte, bei GitHub z. B. eine Datei, die festlegt, welche Prüfungen bei einem Pull Request laufen. Siehe: [Modul 07](07-pull-request-und-review.md).
 

@@ -9,6 +9,7 @@ Dieser Ordner ist ein leeres Projektgerüst für neue Projekte, die so arbeiten 
 | `AGENTS.md` | Regeln für Coding-Agenten, mit Platzhaltern für die Befehle |
 | `CONTRIBUTING.md` | Kurze Anleitung für Menschen, verweist auf `docs/mitarbeit/` |
 | `SECURITY.md` | Nicht-öffentlicher Meldeweg für Sicherheitslücken |
+| `CODE_OF_CONDUCT.md` | Verhaltenskodex nach dem Contributor Covenant 2.1, Platzhalter `[KONTAKT]` für den Meldeweg |
 | `Makefile` | `make help`, `make docs`, `make docs-serve`, Platzhalter für `lint` und `test` |
 | `mkdocs.yml` | Dokumentationsseite mit MkDocs Material, Deutsch, strenger Build, Mermaid |
 | `docs/` | Gliederung der Dokumentation: Einstieg, Scope, Mitarbeit, Architektur, ADRs, Datenmodell, Betrieb, Entwicklung, Workboard |
@@ -65,4 +66,4 @@ Die Checklisten in [Ein Projekt vorbereiten](../docs/neues-projekt.md#checkliste
 
 ## Lizenz
 
-Der Starter-Bausatz steht unter der Lizenz Apache-2.0 und darf frei in eigene Projekte übernommen werden, auch in kommerzielle und Open-Source-Projekte.
+Der Starter-Bausatz steht unter der MIT-Lizenz und darf frei in eigene Projekte übernommen werden, auch in kommerzielle und Open-Source-Projekte.

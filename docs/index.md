@@ -38,6 +38,8 @@ Durch alle Module zieht sich ein erfundenes Beispiel: die [Feuerwehr Musterstadt
 | 15 | [Projekt-Lebenszyklus](15-projekt-lebenszyklus.md) | Vom Prototyp über die gemeinsame Basis bis zur Übernahme durch die Fachleute |
 | 16 | [Vom Prototyp zum Betrieb](16-vom-prototyp-zum-betrieb.md) | Warum ein Prototyp in einer Stunde steht, der Betrieb aber Backup, Monitoring, automatische Updates, CVEs und SBOMs braucht |
 | 17 | [KI-Modelle: welches wofür](17-ki-modelle.md) | Modellfamilien, Reasoning oder schnell, warum kleine lokale Modelle für Entwicklung selten reichen, Empfehlung nach Aufgabe |
+| 18 | [Lizenzen, Forks und Recht](18-lizenzen-und-recht.md) | Welche Lizenzen es gibt, warum man Autoren nicht entfernen darf, was Veröffentlichen bedeutet, Forks, KI-Code, Haftung im Verein |
+| 19 | [Gut zusammenarbeiten](19-gut-zusammenarbeiten.md) | Gute Fragen stellen, Reviews geben und annehmen, Verhaltensregeln, neue Leute einarbeiten, Zeit im Ehrenamt |
 | | [Übungen](uebungen.md) | Übungen zu den Modulen und eine Checkliste für den ersten eigenen Pull Request |
 | | [Schulungsablauf](schulungsablauf.md) | Wie die Schulung durchgeführt wird: Formate, Dauer, Reihenfolge |
 | | [Glossar](glossar.md) | Begriffe von Abhängigkeit bis Pull Request, einfach erklärt |
