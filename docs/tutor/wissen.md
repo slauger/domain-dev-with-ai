@@ -51,7 +51,12 @@ Domänenexperten tragen die Entwicklung mit und bauen mit Agenten, IT-Experten f
 
 ## Lizenz
 
-Vor einer Veröffentlichung festzulegen. Vorschlag: CC BY 4.0 für die Inhalte.
+Copyright Simon Lauger. Das Repository hat zwei Lizenzen:
+
+| Was | Lizenz | Bedeutet |
+| --- | --- | --- |
+| Schulungsinhalte: alles in `docs/` außer `docs/vorlagen/`, dazu Folien in `slides/` | [CC BY-NC-SA 4.0](LICENSE) | Nutzen, weitergeben und anpassen ist erlaubt, wenn der Urheber genannt wird, die Nutzung nicht kommerziell ist und Bearbeitungen unter derselben Lizenz stehen. Für eine kommerzielle Nutzung bitte vorher fragen. |
+| Zum Kopieren in Projekte: `starter/`, `docs/vorlagen/`, `scripts/` | [Apache-2.0](LICENSE-CODE) | Frei verwendbar, auch in kommerziellen und Open-Source-Projekten, mit Erhalt des Lizenzhinweises. |
 
 ---
 
@@ -4565,6 +4570,10 @@ Hinweise in HTML-Kommentaren (`<!-- ... -->`) erklären, was in einen Abschnitt 
 - Geheimnis-Scan und Prüfung der Abhängigkeiten aktivieren ([Modul 08](../docs/08-sicherheit.md)).
 
 Die Checklisten in [Ein Projekt vorbereiten](../docs/neues-projekt.md#checkliste) und [Modul 15](../docs/15-projekt-lebenszyklus.md#checkliste-basis-fertig-übergabe-möglich) zeigen, was danach noch fehlt.
+
+## Lizenz
+
+Der Starter-Bausatz steht unter der Lizenz Apache-2.0 und darf frei in eigene Projekte übernommen werden, auch in kommerzielle und Open-Source-Projekte.
 
 ---
 
