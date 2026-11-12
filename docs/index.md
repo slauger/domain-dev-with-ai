@@ -4,7 +4,7 @@ Im Kern geht es um die Zusammenarbeit von Domänenexperten und IT-Experten: Fach
 
 ## Folien
 
-Die Schulung gibt es auch als [Foliensatz](https://slauger.github.io/domain-dev-with-ai/slides/) für Vorträge und Workshops.
+Die Schulung gibt es auch als [Foliensatz](https://slauger.github.io/domain-dev-with-ai/slides/) für Vorträge und Workshops, und als [PDF](https://github.com/slauger/domain-dev-with-ai/blob/main/slides/2026-11-12-schulung.pdf) zum Weitergeben.
 
 ## Wer verantwortet was
 

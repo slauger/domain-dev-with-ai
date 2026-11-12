@@ -15,10 +15,10 @@ npm ci
 npx playwright install chromium   # einmalig, nur für den PDF-Export
 npm run dev                       # Dev-Server auf http://localhost:3030, Presenter-Modus mit Taste p
 npm run build                     # Web-Version nach build/slides (Basis-Pfad /domain-dev-with-ai/slides/)
-npm run export                    # PDF nach build/2026-11-12-schulung.pdf
+npm run export                    # PDF nach slides/2026-11-12-schulung.pdf (liegt im Repository)
 ```
 
-`build/` wird nicht versioniert.
+`build/` wird nicht versioniert. Das PDF liegt bewusst im Repository, damit man es ohne Werkzeuge weitergeben kann; nach jeder Änderung an den Folien neu exportieren und mit committen.
 
 ## Mit Docker
 
@@ -34,9 +34,9 @@ docker run --rm -v "$PWD:/repo" -w /repo mcr.microsoft.com/playwright:v1.64.1-no
 Nach jeder Änderung exportieren, Seitentitel durchgehen und geänderte Folien als Bild ansehen:
 
 ```bash
-pdfinfo build/2026-11-12-schulung.pdf | grep Pages
-pdftotext build/2026-11-12-schulung.pdf - | grep -n "layout:"   # darf nichts finden
-pdftoppm -r 60 -png -f 10 -l 10 build/2026-11-12-schulung.pdf /tmp/folie
+pdfinfo slides/2026-11-12-schulung.pdf | grep Pages
+pdftotext slides/2026-11-12-schulung.pdf - | grep -n "layout:"   # darf nichts finden
+pdftoppm -r 60 -png -f 10 -l 10 slides/2026-11-12-schulung.pdf /tmp/folie
 ```
 
 ## Lizenz
